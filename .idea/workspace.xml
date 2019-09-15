@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a378948f-abed-4678-abe3-1c442629d8a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proyecto/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proyecto/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/wsgi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,11 +77,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proyecto/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/proyecto/wsgi.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+              <folding>
+                <element signature="e#224#233#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,7 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/proveedor/eliminar_proveedor.html" />
         <option value="$PROJECT_DIR$/templates/proveedor/create_update_proveedor.html" />
         <option value="$PROJECT_DIR$/templates/proveedor/detalle_proveedor.html" />
         <option value="$PROJECT_DIR$/ventas/views.py" />
@@ -153,11 +164,12 @@
         <option value="$PROJECT_DIR$/templates/factura/imprimir_factura.html" />
         <option value="$PROJECT_DIR$/templates/laboratorios/crear_laboratorios.html" />
         <option value="$PROJECT_DIR$/proyecto/settings.py" />
+        <option value="$PROJECT_DIR$/proyecto/wsgi.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="776" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="983" />
     <option name="width" value="1084" />
     <option name="height" value="1054" />
   </component>
@@ -311,12 +323,12 @@
       <workItem from="1568434862727" duration="3048000" />
       <workItem from="1568438168228" duration="1155000" />
       <workItem from="1568439482907" duration="800000" />
-      <workItem from="1568509316184" duration="1481000" />
+      <workItem from="1568509316184" duration="1979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="257626000" />
+    <option name="totallyTimeSpent" value="258124000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -328,15 +340,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="983" y="0" width="1084" height="1054" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.20042644" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3671875" />
       <window_info id="Structure" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5021322" side_tool="true" weight="0.20693392" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Python Console" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.4978678" visible="true" weight="0.20693392" />
+      <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.4978678" visible="true" weight="0.20738328" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Run" order="6" />
@@ -384,11 +397,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/compras/crear_compras.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-710" />
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/browser.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -746,7 +754,17 @@
     <entry file="file://$PROJECT_DIR$/proyecto/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proyecto/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#224#233#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
