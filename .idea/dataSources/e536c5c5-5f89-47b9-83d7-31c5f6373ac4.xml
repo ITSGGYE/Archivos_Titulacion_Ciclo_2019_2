@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="db.sqlite3">
-  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.15">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.17">
     <root id="1">
       <ServerVersion>3.25.1</ServerVersion>
     </root>
     <schema id="2" parent="1" name="main">
       <Current>1</Current>
-      <Visible>1</Visible>
     </schema>
     <collation id="3" parent="1" name="BINARY"/>
     <collation id="4" parent="1" name="NOCASE"/>
@@ -67,7 +66,6 @@
     <index id="46" parent="6" name="sqlite_autoindex_auth_group_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>name</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="47" parent="6">
@@ -97,16 +95,13 @@
     <index id="52" parent="7" name="auth_group_permissions_group_id_permission_id_0cd325b0_uniq">
       <ColNames>group_id
 permission_id</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="53" parent="7" name="auth_group_permissions_group_id_b120cbf9">
       <ColNames>group_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="54" parent="7" name="auth_group_permissions_permission_id_84c5c92e">
       <ColNames>permission_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="55" parent="7">
       <ColNames>id</ColNames>
@@ -150,12 +145,10 @@ permission_id</ColNames>
     <index id="62" parent="8" name="auth_permission_content_type_id_codename_01ab375a_uniq">
       <ColNames>content_type_id
 codename</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="63" parent="8" name="auth_permission_content_type_id_2f476e4b">
       <ColNames>content_type_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="64" parent="8">
       <ColNames>id</ColNames>
@@ -226,7 +219,6 @@ codename</ColNames>
     <index id="77" parent="9" name="sqlite_autoindex_auth_user_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>username</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="78" parent="9">
@@ -256,16 +248,13 @@ codename</ColNames>
     <index id="83" parent="10" name="auth_user_groups_user_id_group_id_94350c0c_uniq">
       <ColNames>user_id
 group_id</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="84" parent="10" name="auth_user_groups_user_id_6a12ed8b">
       <ColNames>user_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="85" parent="10" name="auth_user_groups_group_id_97559544">
       <ColNames>group_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="86" parent="10">
       <ColNames>id</ColNames>
@@ -304,16 +293,13 @@ group_id</ColNames>
     <index id="92" parent="11" name="auth_user_user_permissions_user_id_permission_id_14a6b632_uniq">
       <ColNames>user_id
 permission_id</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="93" parent="11" name="auth_user_user_permissions_user_id_a95ead1b">
       <ColNames>user_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="94" parent="11" name="auth_user_user_permissions_permission_id_1fbb5f2c">
       <ColNames>permission_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="95" parent="11">
       <ColNames>id</ColNames>
@@ -367,7 +353,6 @@ permission_id</ColNames>
     <index id="104" parent="12" name="sqlite_autoindex_clientes_cliente_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>cedula</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="105" parent="12">
@@ -422,20 +407,16 @@ permission_id</ColNames>
     <index id="115" parent="13" name="sqlite_autoindex_compras_cabeceracompra_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>codigo</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="116" parent="13" name="compras_cabeceracompra_distribuidor_id_f6e0959e">
       <ColNames>distribuidor_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="117" parent="13" name="compras_cabeceracompra_laboratorio_id_29009cbc">
       <ColNames>laboratorio_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="118" parent="13" name="compras_cabeceracompra_trabajador_id_f5f983a6">
       <ColNames>trabajador_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="119" parent="13">
       <ColNames>id</ColNames>
@@ -489,11 +470,9 @@ permission_id</ColNames>
     </column>
     <index id="128" parent="14" name="compras_detallecompra_list_id_a3737b54">
       <ColNames>list_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="129" parent="14" name="compras_detallecompra_producto_id_38c7f9c4">
       <ColNames>producto_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="130" parent="14">
       <ColNames>id</ColNames>
@@ -554,11 +533,9 @@ permission_id</ColNames>
     </column>
     <index id="141" parent="15" name="django_admin_log_content_type_id_c4bce8eb">
       <ColNames>content_type_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="142" parent="15" name="django_admin_log_user_id_c564eba6">
       <ColNames>user_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="143" parent="15">
       <ColNames>id</ColNames>
@@ -600,7 +577,6 @@ permission_id</ColNames>
     <index id="150" parent="16" name="django_content_type_app_label_model_76bd3d3b_uniq">
       <ColNames>app_label
 model</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="151" parent="16">
@@ -650,12 +626,10 @@ model</ColNames>
     <index id="160" parent="18" name="sqlite_autoindex_django_session_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>session_key</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="161" parent="18" name="django_session_expire_date_a5c62663">
       <ColNames>expire_date</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="162" parent="18">
       <ColNames>session_key</ColNames>
@@ -710,19 +684,15 @@ model</ColNames>
     </column>
     <index id="172" parent="19" name="empresa_cabfactura_idEmpresa_id_58203190">
       <ColNames>idEmpresa_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="173" parent="19" name="empresa_cabfactura_idTipoDocumento_id_f26205a9">
       <ColNames>idTipoDocumento_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="174" parent="19" name="empresa_cabfactura_idTipoPago_id_2c40f19b">
       <ColNames>idTipoPago_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="175" parent="19" name="empresa_cabfactura_idUsuario_id_8a7658c5">
       <ColNames>idUsuario_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="176" parent="19">
       <ColNames>id</ColNames>
@@ -829,11 +799,9 @@ model</ColNames>
     </column>
     <index id="195" parent="21" name="empresa_detfactura_idCabFactura_id_be83c727">
       <ColNames>idCabFactura_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="196" parent="21" name="empresa_detfactura_idProducto_id_59836930">
       <ColNames>idProducto_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="197" parent="21">
       <ColNames>id</ColNames>
@@ -1011,11 +979,9 @@ model</ColNames>
     </column>
     <index id="231" parent="26" name="empresa_relacionrolesusuario_idRoles_id_4610a9e4">
       <ColNames>idRoles_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="232" parent="26" name="empresa_relacionrolesusuario_idUsuario_id_1859db69">
       <ColNames>idUsuario_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="233" parent="26">
       <ColNames>id</ColNames>
@@ -1238,11 +1204,9 @@ model</ColNames>
     </column>
     <index id="276" parent="32" name="factura_detallefactura_factura_id_2b91fc6c">
       <ColNames>factura_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="277" parent="32" name="factura_detallefactura_producto_id_1b19e197">
       <ColNames>producto_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="278" parent="32">
       <ColNames>id</ColNames>
@@ -1299,16 +1263,13 @@ model</ColNames>
     <index id="288" parent="33" name="factura_factura_serie_numero_b5cfac3a_uniq">
       <ColNames>serie
 numero</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="289" parent="33" name="factura_factura_cliente_id_dbff4235">
       <ColNames>cliente_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="290" parent="33" name="factura_factura_vendedor_id_485d1ffa">
       <ColNames>vendedor_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="291" parent="33">
       <ColNames>id</ColNames>
@@ -1446,7 +1407,6 @@ numero</ColNames>
     </column>
     <index id="317" parent="36" name="preventa_detventa_idCabVenta_id_5c5c4efd">
       <ColNames>idCabVenta_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="318" parent="36">
       <ColNames>id</ColNames>
@@ -1563,18 +1523,15 @@ numero</ColNames>
     <index id="340" parent="38" name="sqlite_autoindex_productos_producto_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>lote</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="341" parent="38" name="sqlite_autoindex_productos_producto_2">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>nombre</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="342" parent="38" name="productos_producto_presentacion_id_3e18a480">
       <ColNames>presentacion_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="343" parent="38">
       <ColNames>id</ColNames>
@@ -1637,7 +1594,6 @@ numero</ColNames>
     <index id="355" parent="39" name="sqlite_autoindex_proveedor_proveedor_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ruc</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <key id="356" parent="39">
@@ -1707,12 +1663,10 @@ numero</ColNames>
     <index id="371" parent="42" name="sqlite_autoindex_ventas_cabeceraventa_1">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>ruc</ColNames>
-      <ColumnCollations></ColumnCollations>
       <Unique>1</Unique>
     </index>
     <index id="372" parent="42" name="ventas_cabeceraventa_cliente_id_13ec5591">
       <ColNames>cliente_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="373" parent="42">
       <ColNames>id</ColNames>
@@ -1752,11 +1706,9 @@ numero</ColNames>
     </column>
     <index id="380" parent="43" name="ventas_detalleventa_list_id_id_285cc982">
       <ColNames>list_id_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <index id="381" parent="43" name="ventas_detalleventa_producto_id_a820c807">
       <ColNames>producto_id</ColNames>
-      <ColumnCollations></ColumnCollations>
     </index>
     <key id="382" parent="43">
       <ColNames>id</ColNames>

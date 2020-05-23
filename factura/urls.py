@@ -1,6 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.urls import path
-from factura.views import ListaVentas, facturaCrear, buscarCliente, buscarProducto, consultarFactura, generar_pdf, \
+from factura.views import ListaVentas, facturaCrear, buscarCliente, buscarProducto, generar_pdf, \
     reporteventas
 
 urlpatterns = [

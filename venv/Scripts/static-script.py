@@ -1,4 +1,4 @@
-#!C:\Users\admin\Desktop\proyecto\venv\Scripts\python.exe
+#!C:\Users\admin\Desktop\PycharmProjects\humtrusa\venv\Scripts\python.exe
 # EASY-INSTALL-ENTRY-SCRIPT: 'static3==0.7.0','console_scripts','static'
 __requires__ = 'static3==0.7.0'
 import re

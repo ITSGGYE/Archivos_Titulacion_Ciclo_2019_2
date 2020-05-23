@@ -2,7 +2,7 @@
 from _threading_local import local
 
 from django.template import RequestContext as ctx
-from django.shortcuts import render_to_response, render, redirect
+from django.shortcuts import render, redirect
 from django.template import RequestContext  # For CSRF
 from django.forms.formsets import formset_factory, BaseFormSet
 from django.http import HttpResponse, HttpResponseRedirect
