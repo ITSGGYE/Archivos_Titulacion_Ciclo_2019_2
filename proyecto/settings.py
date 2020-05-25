@@ -11,10 +11,12 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+from django.urls import reverse_lazy
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-from cloudinary.templatetags import cloudinary
-from django.urls import reverse_lazy
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -159,7 +161,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')    
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = reverse_lazy('index')
@@ -168,17 +170,14 @@ LOGOUT_REDIRECT_URL = reverse_lazy('login')
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 25
-EMAIL_HOST_USER = 'jorgemv1986@gmail.com'
+EMAIL_HOST_USER = 'jamunoz@est.itsgg.edu.ec'
 EMAIL_HOST_PASSWORD = ''
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-
-
-
 cloudinary.config(
-    cloud_name = 'dkucydb3n',
-    api_key = '476829786569562',
-    api_secret = 'Y6KoN964010YS-B1_LEPVwlOw54',
+    cloud_name='dkucydb3n',
+    api_key='476829786569562',
+    api_secret='Y6KoN964010YS-B1_LEPVwlOw54',
 )
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'

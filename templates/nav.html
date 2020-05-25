@@ -1,3 +1,4 @@
+{% load cloudinary %}
 <meta charset="UTF-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <div class="wrapper">
@@ -21,14 +22,14 @@
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="{{ MEDIA_URL }}{{ user.userprofile.avatar }}" class="img-circle" alt="User Image"
+                            <img src="https://res.cloudinary.com/dkucydb3n/image/upload/{{user.userprofile.avatar }}" class="img-circle" alt="User Image"
                                  height="20" width="20">
                             <span class="hidden-xs">{{ user.username|capfirst }} {{ user.last_name|capfirst }}</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-                                <img src="{{ MEDIA_URL }}{{ user.userprofile.avatar }}" class="img-circle"
+                                <img src="https://res.cloudinary.com/dkucydb3n/image/upload/{{user.userprofile.avatar }}" class="img-circle"
                                      alt="User Image">
                                 <p>
                                     {{ user.username|capfirst }} {{ user.last_name|capfirst }}
@@ -62,7 +63,7 @@
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="{{ MEDIA_URL }}{{ user.userprofile.avatar }}" class="img-circle" alt="User Image">
+                    <img src="https://res.cloudinary.com/dkucydb3n/image/upload/{{user.userprofile.avatar }}" class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
                     <p>{{ user.username|capfirst }} {{ user.last_name|capfirst }}</p>

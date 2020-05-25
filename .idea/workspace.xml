@@ -2,10 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a378948f-abed-4678-abe3-1c442629d8a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/proyecto.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/proyecto.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/users/user-icon.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/proyecto/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/proyecto/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base_users.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base_users.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/nav.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userProfile/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/userProfile/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-3.0.5.dist-info/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-3.0.5.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-3.0.5.dist-info/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-3.0.5.dist-info/LICENSE.python" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-3.0.5.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-3.0.5.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-3.0.5.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-3.0.5.dist-info/entry_points.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/Django-3.0.5.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/sql/query.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/django/db/models/sql/query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_import_export-2.0.2.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_import_export-2.0.2.dist-info/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_import_export-2.0.2.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_import_export-2.0.2.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_import_export-2.0.2.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/django_import_export-2.0.2.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/gunicorn-20.0.4.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/gunicorn-20.0.4.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/import_export/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/import_export/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/import_export/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/import_export/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/import_export/resources.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/import_export/resources.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/import_export/widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/import_export/widgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz-2019.3.dist-info/DESCRIPTION.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz-2019.3.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz-2019.3.dist-info/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz-2019.3.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz-2019.3.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz-2019.3.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz-2019.3.dist-info/metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz-2019.3.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz-2019.3.dist-info/zip-safe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Africa/Casablanca" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Africa/Casablanca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Africa/El_Aaiun" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Africa/El_Aaiun" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/America/Dawson" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/America/Dawson" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/America/Whitehorse" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/America/Whitehorse" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Chongqing" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Chongqing" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Chungking" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Chungking" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Harbin" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Harbin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Shanghai" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Asia/Shanghai" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Canada/Yukon" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/Canada/Yukon" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/PRC" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/PRC" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/leapseconds" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/leapseconds" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/tzdata.zi" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/tzdata.zi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/zone.tab" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/zone.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/zone1970.tab" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/pytz/zoneinfo/zone1970.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-40.8.0-py3.7.egg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/setuptools-40.8.0-py3.7.egg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/six-1.14.0.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/six-1.14.0.dist-info/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/six-1.14.0.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/six-1.14.0.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/six-1.14.0.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/six-1.14.0.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/six.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/six.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/sqlparse-0.3.1.dist-info/RECORD" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/sqlparse-0.3.1.dist-info/RECORD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/static3-0.7.0-py3.7.egg-info/PKG-INFO" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/static3-0.7.0-py3.7.egg-info/PKG-INFO" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tablib-1.1.0.dist-info/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tablib-1.1.0.dist-info/INSTALLER" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tablib-1.1.0.dist-info/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tablib-1.1.0.dist-info/METADATA" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tablib-1.1.0.dist-info/RECORD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tablib-1.1.0.dist-info/WHEEL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tablib-1.1.0.dist-info/top_level.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tablib/core.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/tablib/core.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tablib/formats/_xls.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/tablib/formats/_xls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tablib/formats/_xlsx.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/tablib/formats/_xlsx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Lib/site-packages/tablib/packages/dbfpy/record.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Lib/site-packages/tablib/packages/dbfpy/record.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/django-admin.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/django-admin.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/gunicorn.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/gunicorn.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/Scripts/sqlformat.exe" beforeDir="false" afterPath="$PROJECT_DIR$/venv/Scripts/sqlformat.exe" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,13 +131,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proyecto/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="161" column="44" selection-start-line="161" selection-start-column="44" selection-end-line="161" selection-end-column="44" />
+            <state relative-caret-position="510">
+              <caret line="177" column="27" lean-forward="true" selection-start-line="177" selection-start-column="27" selection-end-line="177" selection-end-column="27" />
               <folding>
                 <element signature="e#309#318#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/userProfile/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,7 +172,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/proyecto/wsgi.py" />
+        <option value="$PROJECT_DIR$/templates/base_users.html" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/userProfile/models.py" />
+        <option value="$PROJECT_DIR$/templates/nav.html" />
         <option value="$PROJECT_DIR$/proyecto/settings.py" />
       </list>
     </option>
@@ -114,11 +205,6 @@
             <path>
               <item name="humtrusa" type="b2602c69:ProjectViewProjectNode" />
               <item name="humtrusa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="humtrusa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="humtrusa" type="462c0819:PsiDirectoryNode" />
-              <item name="proyecto" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -283,7 +369,8 @@
       <workItem from="1588698866789" duration="611000" />
       <workItem from="1588712449024" duration="217000" />
       <workItem from="1590254840162" duration="10359000" />
-      <workItem from="1590434244370" duration="199000" />
+      <workItem from="1590434244370" duration="2240000" />
+      <workItem from="1590437492711" duration="7408000" />
     </task>
     <task id="LOCAL-00001" summary="heroku++">
       <created>1568518713665</created>
@@ -310,13 +397,21 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10482000" />
+    <option name="totallyTimeSpent" value="20007000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2540453" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25809062" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -325,12 +420,12 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3298731" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.3298731" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5008091" side_tool="true" weight="0.3298731" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49919093" visible="true" weight="0.3298731" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -368,6 +463,29 @@
     <entry file="file://$PROJECT_DIR$/proyecto/urls.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/cloudinary/templatetags/cloudinary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-725">
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/cloudinary/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="179" column="4" selection-start-line="179" selection-start-column="4" selection-end-line="179" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/importlib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/proyecto/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -378,25 +496,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/userProfile/models.py">
+    <entry file="file://$PROJECT_DIR$/templates/clientes/detalle_clientes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="357">
+          <caret line="30" column="53" selection-start-line="30" selection-start-column="47" selection-end-line="30" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base_users.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1105">
+          <caret line="65" column="109" selection-start-line="65" selection-start-column="109" selection-end-line="65" selection-end-column="109" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proyecto/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="161" column="44" selection-start-line="161" selection-start-column="44" selection-end-line="161" selection-end-column="44" />
+        <state relative-caret-position="510">
+          <caret line="177" column="27" lean-forward="true" selection-start-line="177" selection-start-column="27" selection-end-line="177" selection-end-column="27" />
           <folding>
             <element signature="e#309#318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/userProfile/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
