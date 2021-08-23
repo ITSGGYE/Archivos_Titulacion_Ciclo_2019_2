@@ -1,0 +1,11 @@
+.container {
+    width: 1450px;
+}
+
+.span10{
+    width: 1450px;
+}
+
+.thumbnails > li {
+    margin-bottom: 10px;    
+}
