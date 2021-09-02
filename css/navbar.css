@@ -1,0 +1,21 @@
+.brand-logo {
+    letter-spacing: 1rem;
+}
+
+nav {
+    background-color: #95BC11;
+    width: 100%;
+}
+
+.link {
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+}
+
+.link:hover {
+    background-color: #FFEB00;
+    color: #95BC11;
+}

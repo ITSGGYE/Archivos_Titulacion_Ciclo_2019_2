@@ -1,0 +1,40 @@
+.row {
+    width: 80%;
+}
+
+.card-panel {
+    border-radius: 25px 25px 25px 25px;
+    -webkit-box-shadow: 2px 2px 8px #FECC43;
+}
+
+form {
+    width: 100%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 70%;
+    border-radius: 25px 25px 25px 25px;
+    background-color: #95BC11;
+    letter-spacing: 0.2rem;
+    font-size: 1.3rem;
+}
+
+.btn:hover {
+    background-color: #FECC43;
+    -webkit-box-shadow: 2px 2px 8px #FECC43;
+}
+
+.btn:active {
+    background-color: #95BC11;
+}
+
+input[type=text] {}
+
+#bnt-items{
+    width: 20%;
+}

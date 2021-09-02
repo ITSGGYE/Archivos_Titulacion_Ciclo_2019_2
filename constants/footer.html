@@ -1,0 +1,38 @@
+<footer class="page-footer">
+    <div class="footer-copyright">
+        <div class="container">
+            <img class="img-footer" src="../../images/istg.jpg"> © 2020 ISTG - Instituto Superior Tecnológico Guayaquil
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.sidenav').sidenav();
+        $('select').formSelect();
+        $('.datepicker').datepicker({
+            format: 'yyyy-mm-dd'
+        });
+        $('.dropdown-trigger').dropdown();
+        $('.modal').modal();
+        $('.collapsible').collapsible();
+        $('.fixed-action-btn').floatingActionButton({
+            toolbarEnabled: true
+        });
+        $('.tooltipped').tooltip();
+    });
+</script>
+
+<div class="fixed-action-btn toolbar">
+    <a class="btn-floating btn-large red">
+        <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+        <li><a href="./" class="btn-floating"><i class="material-icons">home</i></a></li>
+        <li><a onClick="javascript:history.back();" class="btn-floating"><i class="material-icons">arrow_back</i></a></li>
+        <li><a onclick="location.reload();" class="btn-floating"><i class="material-icons">autorenew</i></a></li>
+        <li><a href="../../constants/logout.php"  class="btn-floating"><i class="material-icons">logout</i></a></li>
+
+    </ul>
+</div>

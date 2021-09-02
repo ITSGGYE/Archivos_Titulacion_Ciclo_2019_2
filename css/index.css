@@ -1,0 +1,149 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+body {
+    margin: 0;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+main {
+    margin-top: 5%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.container {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#addProductButton{
+    width: 100%;
+    padding-right: 3%;
+
+}
+#addProductButton, #addProductButton .input-field{
+ float: right;
+}
+#button-container{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+}
+#facturar{
+    border-radius: 15px 15px 15px 15px ;
+    width: 50%;
+    letter-spacing: 0.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    background-color: #117864;
+}
+
+#facturar:hover{
+    -webkit-box-shadow: 5px 5px 8px 0px #48C9B0 ;
+}
+
+.boxes {
+    width: 25%;
+    display: inline-block;
+    margin: 2%;
+    border: 1px black solid;
+    -webkit-box-shadow: 2px 2px 8px #95BC11;
+}
+
+.boxes:hover {
+    -webkit-box-shadow: 2px 2px 8px #FECC43;
+}
+
+.images-boxes {
+    width: 100%;
+    height: auto;
+    margin: 2%;
+}
+
+.images-boxes img {
+    max-width: 80%;
+}
+
+.title-boxes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px black solid;
+    margin-top: 1%;
+    background-color: #95BC11;
+}
+
+.title-boxes span {
+    color: white;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+.boxes-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-indicator {
+    width: 100%;
+    font-size: 2.5rem;
+    letter-spacing: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    margin-bottom: 2%;
+}
+
+.title-indicator span {
+    text-shadow: 2px 2px 8px darkgrey;
+    font-weight: 800;
+}
+
+.page-footer{
+    background-color: white;
+}
+.page-footer,.footer-copyright,footer{
+    background-color: #FFFFFF;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    font-family: 'Lato',sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.4rem;
+}
+
+.page-footer .footer-copyright .container{
+    text-align: center;
+    color: #22408f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 100%;
+}
+.img-footer{
+    width: 5%;
+    height: auto;
+    margin-right: 2%;
+}
+#toast{
+    letter-spacing: 0.5rem;
+}
+
+#price_total{
+    margin: 0%;
+    padding: 0%;
+
+}
