@@ -1,0 +1,1 @@
+<script>module.exports={data:function data(){return{}},created:function created(){this.init()}};</script> <style></style> <template><q-layout view="hHh lpR fFf"><h1>fdfdf</h1></q-layout></template>

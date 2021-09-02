@@ -1,0 +1,133 @@
+<script>
+	export default {
+		data() {
+			return {
+				form: {
+					correo: "admin@gmail.com",
+					contrasena: "Inter123",
+				},
+				//admin@gmail.com
+				//Inter123
+			};
+		},
+		methods: {
+			login() {
+				this.$q.loading.show();
+				axios({
+					method: "post",
+					data: this.form,
+					url: "./login",
+					api: true,
+				})
+					.then((r) => {
+						localStorage.setItem(
+							_.camelCase(CONFIG.APP_NAME),
+							JSON.stringify(r.data)
+						);
+						location.reload();
+					})
+					.catch((r) => {
+						this.$q.notify({
+							type: "negative",
+							message:
+								r.message || "Error de correo y/o contraseña",
+						});
+					})
+					.finally(() => {
+						this.$q.loading.hide();
+					});
+			},
+		},
+		created() {
+			this.init();
+		},
+	};
+</script>
+
+<style lang="scss">
+	.q-card {
+		width: 360px;
+	}
+</style>
+
+<template>
+	<q-layout
+		class="window-height window-width row justify-center items-center casar"
+	>
+		<div class="column">
+			<div class="row">
+				<q-card
+					bordered
+					class="gre q-pa-lg shadow-1"
+					style="
+						border-radius: 5px;
+						background: rgba(255, 255, 255, 0.3);
+						box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.4);
+						backdrop-filter: blur(2px);
+						border: 1px solid rgba(255, 255, 255, 0.18);
+					"
+				>
+					<q-card-section class="text-center">
+						<q-avatar
+							size="100px"
+							font-size="52px"
+							color="indigo-10"
+							text-color="white"
+							icon="school"
+						></q-avatar>
+						<h5 class="text-h5 q-my-xs text-white">
+							{{ CONFIG.APP_NAME }}
+						</h5>
+					</q-card-section>
+					<q-card-section>
+						<q-form class="q-gutter-md">
+							<q-input
+								color="grey-6"
+								label-color="indigo-1"
+								outlined
+								v-model="form.correo"
+								type="email"
+								label="Correo electronico"
+								><template v-slot:prepend>
+									<q-icon name="mail" color="grey-6" />
+								</template>
+							</q-input>
+							<q-input
+								color="grey-6"
+								label-color="indigo-1"
+								outlined
+								v-model="form.contrasena"
+								type="password"
+								label="Contraseña"
+								><template v-slot:prepend>
+									<q-icon name="lock" color="grey-6" />
+								</template>
+							</q-input>
+						</q-form>
+					</q-card-section>
+					<q-card-actions class="q-px-md">
+						<q-btn
+							unelevated
+							color="indigo-10"
+							size="md"
+							class="full-width"
+							label="Iniciar sesión"
+							@click="login"
+						></q-btn>
+					</q-card-actions>
+					<!--<q-card-section class="text-center q-pa-none">
+						<p class="text-grey-6">Not reigistered? Created an Account</p>
+					</q-card-section>-->
+				</q-card>
+			</div>
+		</div>
+		<div class="absolute-bottom text-center text-body2">
+			<q-toolbar>
+				<q-toolbar-title style="font-size: 12px; color: white">
+					<q-icon name="copyright" style="font-size: 1.5em"></q-icon>
+					2020 Matricali. Todos los derechos reservados
+				</q-toolbar-title>
+			</q-toolbar>
+		</div>
+	</q-layout>
+</template>

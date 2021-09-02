@@ -1,0 +1,1 @@
+<script>module.exports={created:function created(){this.init()},methods:{otra:function otra(){this.section("otrita",{x:666})}}};</script> <style></style> <template><q-page class="q-pa-md"><h1>dgfhgh</h1></q-page></template>
