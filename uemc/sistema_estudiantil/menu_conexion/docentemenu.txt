@@ -1,0 +1,51 @@
+<nav>
+<ul>
+
+
+<li><a href="#">Cuenta</a>
+	<ul>
+		
+		<li><a href="changePWD.php">Cambia la contraseña
+</a></li>
+		<li><a href="logout/logout.php">Cerrar sesión
+</a></li>
+		
+	</ul>
+
+
+
+</li>
+
+<li><a href="#">Calificaciones</a>
+	<ul>
+                <li><a href="notas.view.php">Registro Calificaciones</a>
+                <li><a href="#">Modificar Calificaciones</a>
+                <li><a href="#">Ver Calificaciones</a>	
+	</ul>
+</li>
+
+
+<li><a href="#">Asistencia</a>
+	<ul>
+		<li><a href="asistencia.php">Agregar Asistencia</a>
+                <li><a href="verAsistDiaria.php">Ver Asistencia Diaria</a>
+                <li><a href="verAsistMensual.php">Ver Asistencia Mensual</a>
+                <li><a href="editarAsistencia.php">Editar Asistencia</a>
+                <li><a href="reporteAsistencia.php">Reporte de Asistencia</a>
+</a></li>
+		
+	</ul>
+</li>
+
+<li><a href="#">Horarios</a>
+	<ul>
+		                <li><a href="verHorarios.php">Ver Horarios</a>	
+		
+	</ul>
+</li>
+
+<li><a href="inicio.php">Inicio</a></li>
+
+</ul>
+
+</nav>

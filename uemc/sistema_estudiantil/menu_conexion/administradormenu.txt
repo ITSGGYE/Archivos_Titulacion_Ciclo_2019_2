@@ -1,0 +1,95 @@
+<nav>
+<ul>
+<li><a href="#">Cuenta</a>
+	<ul>
+		<li><a href="modificarUs.php">Modificar Usuario</a></li>
+		
+	
+		<li><a href="modificarCon.php">Cambiar la contraseña</a></li>
+		
+		
+		
+		<li><a href="cerrarSesion/cerrarSesion.php">Cerrar sesión
+</a></li>
+		
+	</ul>
+
+
+
+</li>
+
+<li><a href="#">Materia</a>
+	<ul>
+		<li><a href="registrarMateria.php">Registro de materias</a></li>
+                <li><a href="verMaterias.php">Ver materias</a></li>
+		<li><a href="editarMateria.php">Editar materias</a></li>
+		
+	</ul>
+</li>
+<li><a href="#">Calificaciones</a>
+	<ul>
+                <li><a href="registroCal.php">Registro Calificaciones</a>
+                <li><a href="#">Modificar Calificaciones</a>
+		<ul><li>
+                <li><a href="edit-qualification.php">Básica</a></li>
+		<li><a href="edit-qualification2.php">Bachillerato</a></li>
+		</li></ul></li>
+                <li><a href="#">Ver Calificaciones</a>
+		<ul><li>
+                <li><a href="view-qualification.php">Básica</a></li>
+		<li><a href="view-qualification2.php">Bachillerato</a></li>
+		</li></ul></li> 	
+	</ul>
+</li>
+<li><a href="#">Estudiante</a>
+	<ul>    
+                <li><a href="registrarEst.php">Registro de Estudiante</a>
+                <li><a href="verEstudiantes.php">Ver Estudiante</a>
+                <li><a href="promoverEst.php">Promover al siguiente Curso</a>
+                <li><a href="SuspenderEst.php">Suspender Estudiantes</a>
+                <li><a href="HabilitarEs.php">Recuperar Estudiante</a>	
+	</ul>
+</li>
+<li><a href="#">Cursos</a>
+	<ul>
+		<li><a href="registrarDoc.php">Registro de docentes</a>
+	<ul>
+                <li><a href="verDoc.php">Ver Docentes</a>
+
+	</ul>
+</li>
+
+                <li><a href="registrarUs.php">Registrar Usuarios</a></li> 
+			<li><a href="fac_view.php">Ver</a></li>
+		<li><a href="materiaDocente.php">Asignación de asignatura</a></li>  
+		<li><a href="editarMatDoc.php">Asignación de cambio</a></li>
+		<li><a href="class_report.php">Detalle de clase</a></li>
+		<li><a href="verAsignacionMatDoc.php">Detalle del asunto</a></li>
+		<li><a href="restablecerCon.php">Restablecer la contraseña</a></li>
+							
+	
+	</ul>
+</li>
+
+<li><a href="#">Asistencia</a>
+	<ul>
+                <li><a href="asistencia.php">Agregar Asistencia</a>
+                <li><a href="verAsistDiaria.php">Ver Asistencia Diaria</a>
+                <li><a href="verAsistMensual.php">Ver Asistencia Mensual</a>
+                <li><a href="editarAsistencia.php">Editar Asistencia</a>
+                <li><a href="reporteAsistencia.php">Reporte de Asistencia</a>	
+		
+	</ul>
+</li>
+<li><a href="#">Horario</a>
+	<ul>
+                <li><a href="horarios.php">Registrar Horarios</a>
+                <li><a href="modificarHorarios.php">Modificar Horarios</a>
+                <li><a href="verHorarios.php">Ver Horarios</a>	
+	</ul>
+</li>
+
+<li><a href="inicio.php">Inicio</a></li>
+</ul>
+
+</nav>

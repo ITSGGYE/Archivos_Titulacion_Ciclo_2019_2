@@ -1,0 +1,48 @@
+
+<?php
+session_start();
+include ("../menu_conexion/conectar.php");
+     if(!isset($_SESSION["tipo_usuario"])){
+       header("location:../inicio.php");
+     }
+	 else{
+	
+	   $check_did = $_SESSION["tipo_usuario"];
+		if($check_did !=2){
+			 header("location:../inicio.php");
+		}
+	}
+?>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/slider.css"/>
+		<title>
+		       Unidad Educativa PCEI "Manuela Cañizares"
+		</title>
+	</head>
+<body  background="../imagenes/backgrounds.jpg">
+		<div class="container" align="center">
+			<div class="head pull-left">
+</br>
+				<h2 class="pull-left">SGA<small>&nbsp;&nbsp;Para Personas Con Escolaridad Inconclusa </small>"Manuela Cañizares"</h2>
+			</div>
+			<hr class="horline" width="100%" /> 
+			<div><?php include("../menu_conexion/administradormenu.txt");?></div>
+			<h3><font color="663300">Bienvenido al sistema  "Administrador"
+ </font></h3>
+		</div>
+		<div class="slider">
+		    <ul>
+            <li><img src="../imagenes/1.jpg"></li>
+			<li><img src="../imagenes/2.jpg"></li>
+			<li><img src="../imagenes/3.jpg"></li>
+			<li><img src="../imagenes/4.jpg"></li>
+			<li><img src="../imagenes/5.jpg"></li>
+			<li><img src="../imagenes/6.jpg"></li>
+		    </ul>
+		</div>
+	</body>
+</html>

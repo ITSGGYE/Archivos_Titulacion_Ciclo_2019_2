@@ -1,0 +1,143 @@
+<nav>
+<ul>
+<li><a href="#">Cuenta</a>
+	<ul>
+		<li><a href="changeID.php">Cambiar ID</a></li>
+		
+	
+		<li><a href="changePWD.php">Cambia la contraseña</a></li>
+		
+		
+		
+		<li><a href="logout/logout.php">Cerrar sesión
+</a></li>
+		
+	</ul>
+
+
+
+</li>
+
+<li><a href="#">Tema</a>
+	<ul>
+		<li><a href="subject_register.php">Registro</a></li>
+		<li><a href="editSubject.php">Editar</a></li>
+		
+	</ul>
+</li>
+<li><a href="#">Calificaciones</a>
+	<ul>
+                <li><a href="#">Registro Calificaciones</a>
+		<ul><li>
+                <li><a href="qualification.php">Básica</a></li>
+		<li><a href="qualification2.php">Bachillerato</a></li>
+		</li></ul></li>
+                <li><a href="#">Modificar Calificaciones</a>
+		<ul><li>
+                <li><a href="edit-qualification.php">Básica</a></li>
+		<li><a href="edit-qualification2.php">Bachillerato</a></li>
+		</li></ul></li>
+                <li><a href="#">Ver Calificaciones</a>
+		<ul><li>
+                <li><a href="view-qualification.php">Básica</a></li>
+		<li><a href="view-qualification2.php">Bachillerato</a></li>
+		</li></ul></li> 	
+	</ul>
+</li>
+<li><a href="#">Estudiante</a>
+	<ul>    
+                <li><a href="#">Registro de Estudiante</a>
+		<ul><li>
+                <li><a href="student_register.php">Básica</a></li>
+                <li><a href="student_register2.php">Bachillerato</a></li>
+		</li></ul></li>
+                <li><a href="#">Ver Estudiante</a>
+		<ul><li>		
+                <li><a href="student_view.php">Básica</a></li>
+                <li><a href="student_view2.php">Bachillerato</a></li>
+		</li></ul></li>
+                <li><a href="#">Promover al siguiente Curso</a>
+		<ul><li>				
+                <li><a href="promote.php">Básica</a></li>
+                <li><a href="promote2.php">de Básica a Bach.</a></li>
+                <li><a href="promote3.php">Bachillerato.</a></li>
+		</li></ul></li>
+                <li><a href="#">Suspender Estudiantes</a>
+                <ul><li>				
+                <li><a href="detain.php">Básica</a></li>
+		<li><a href="detain2.php">Bachillerato</a></li>
+		</li></ul></li>
+                <li><a href="#">Recuperar Estudiante</a>
+		<ul><li>		
+                <li><a href="undetain.php"> Básica</a></li>
+                <li><a href="undetain2.php">Bachillerato</a></li>
+		</li></ul></li>	
+	</ul>
+</li>
+<li><a href="#">Cursos</a>
+	<ul>
+		<li><a href="fac_register.php">Registro</a></li>
+			<li><a href="fac_view.php">Ver</a></li>
+		<li><a href="sub_allocate.php">Asignación de asignatura</a></li>  
+		<li><a href="edit_alloc.php">Asignación de cambio</a></li>
+		<li><a href="class_report.php">Detalle de clase</a></li>
+		<li><a href="fac_subdetails.php">Detalle del asunto</a></li>
+		<li><a href="resetPWD.php">Restablecer la contraseña</a></li>
+							
+	
+	</ul>
+</li>
+
+<li><a href="#">Asistencia</a>
+	<ul>
+                <li><a href="#">Agregar Asistencia</a>
+		<ul><li>
+                <li><a href="add_attendance.php">Básica</a></li>
+                <li><a href="add_attendance2.php">Bachillerato</a></li>		
+                </li></ul></li> 
+                <li><a href="#">Ver Asistencia</a>
+		<ul><li>
+		<li><a href="view.php">Diaria-Básica</a></li>
+                <li><a href="view2.php">Diaria-Bachillerato</a></li>
+		<li><a href="view_monthly.php">Mensual-Básica</a>
+                <li><a href="view_monthly2.php">Mensual-Bachillerato</a>
+		</li></ul></li>
+                <li><a href="#">Editar Asistencia</a>
+		<ul><li><li><a href="edit_attandance.php">Básica</a></li>
+                <li><a href="edit_attandance2.php">Bachillerato</a></li>
+		</li></ul></li>
+                <li><a href="#">Reporte de Asistencia</a>
+		<ul><li>
+                <li><a href="attendance_print_report.php">Básica</a></li>
+                <li><a href="attendance_print_report2.php">Bachillerato</a></li>		
+                </li></ul></li>
+		
+	</ul>
+</li>
+<li><a href="#">Horario</a>
+	<ul>
+                <li><a href="#">Registrar Asistencia</a>
+		<ul><li>
+		<li><a href="add_timetable2.php">Básica</a></li>
+		<li><a href="add_timetable.php">Bachillerato</a></li>
+		</li></ul></li>
+                <li><a href="#">Modificar Horarios</a>
+		<ul><li>
+                <li><a href="edit_timetable2.php">Básica</a></li>
+                <li><a href="edit_timetable.php">Bachillerato</a></li>
+		</li></ul></li>
+                <li><a href="#">Ver Horarios</a>
+		<ul><li>		
+                <li><a href="view_timetable2.php">Básica</a></li>	
+		<li><a href="view_timetable.php">Bachillerato</a></li>
+		</li></ul></li>
+
+	
+	
+	</ul>
+</li>
+
+<li><a href="index.php">Inicio</a></li>
+</ul>
+
+</nav>
