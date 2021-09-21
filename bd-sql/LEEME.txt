@@ -1,0 +1,32 @@
+SE RECOMIENDA TENER INSTALADO (PHP SUPERIOR O IGUAL A 5.6)
+
+Para la configuracion de conexion del sistema, debere de modificar los sistemas archivos
+
+Dentro de la carpeta HOTEL se encuentra un archivo que se llama softhotel_backup.sql - ese archivo debera de importarlo en el phpmyadmin,
+donde primero deberá de crear una Base de Datos llamada softhotel
+
+Para configurar los titulos y footer del sistema, deberan de modificar los archivos titulos.js, que se encuentran en la
+carpeta assets ---> script / titulos.js
+
+Detro de la carpeta class tenemos:
+
+classconexion.php
+caledarioconexion.php
+conexion.php
+
+que serán archivos de configuracion para conexiones dentro del sistema en general.
+
+Dentro de la carpeta hotel, donde se encuentran todos los archivos .php del sistema, debera de configurar los siguientes archivos,
+que son encargados para el respaldo y restauracion de la Base de Datos:
+
+backup.php
+restore.php
+
+Actualmente para acceder al Sistema se puede ingresar al mismo con los siguientes datos de acceso:
+
+ADMINISTRADOR - USUARIO Y CLAVE = RUBENCHIRINOS
+SECRETARIA - USUARIO Y CLAVE = LEIDARODRIGUEZ
+RECEPCIONISTA - USUARIO Y CLAVE = MARBELLAPAREDES
+RECEPCIONISTA - USUARIO Y CLAVE = MOISESCHIRINOS
+CLIENTE - USUARIO Y CLAVE = 216900456
+

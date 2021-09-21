@@ -1,0 +1,49 @@
+/*!
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+
+.has-feedback .form-control-feedback {
+  top: 4px;
+  width: 70px;
+  font-size: 75px;
+  color: #6fd653;
+  opacity: 0; }
+
+
+form .form-group .input-group-addon {
+      height: 44px;
+      width: 44px;
+      padding-top: 15px;
+      position: absolute;
+      left: -4;
+      top: 0;
+      border: 0;
+      background-color: transparent; }
+    form .form-group .input-group-addon .glyphicon {
+        font-size: 14px; }
+    form .form-group .form-control {
+      height: 44px;
+      padding: 12px;
+      padding-left: 46px;
+      background-color: white;
+      font-weight: 500; }
+
+form.animate-form .has-feedback .form-control-feedback {
+  opacity: 1;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.25s cubic-bezier(0.035, 1.22, 0.645, 1.385);
+  -moz-transition: all 0.25s cubic-bezier(0.035, 1.22, 0.645, 1.385);
+  transition: all 0.25s cubic-bezier(0.035, 1.22, 0.645, 1.385); }
+form.animate-form .form-group.has-success .form-control-feedback {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1); }
