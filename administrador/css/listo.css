@@ -1,0 +1,306 @@
+
+*{
+-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin:0px;
+	padding:0px;
+
+}
+
+.titulo:hover{
+	background: #6654F0;
+
+}
+.titulo{
+text-align: center;
+background: grey;
+width: 60%;
+margin-left: 30%;
+padding: 2px 0px;
+}
+
+.titulo ul {
+	color: white;
+	list-style: none;
+	font-size:18px;
+	 letter-spacing: 8px;
+}
+
+/*bloque de inicio*/
+ aside {
+	background-color: white;
+	color:#fff;
+    border-radius:5px;
+font-weight: bold;
+margin-left: 3px;
+margin-top: -60px;
+}
+
+
+.inicio ul li{
+	border-radius:5px;
+	margin: 12px 0px;
+	width:98%;
+	color:black;
+	display:block;
+	  cursor:pointer;
+	  margin-top:3px;
+	  border:1px solid #ccc;
+	  border-bottom:3px solid gray;
+	  font-size:17px;
+	  text-decoration:none;
+}
+.inicio span {
+	position: relative;
+	top: 10px;
+	right: -5px;
+    display:block;
+	color: brown;	text-decoration: none;
+
+}
+.inicio .icon-home{
+float: left;
+margin-left: -35px;
+}
+
+ .inicio .icon-calendar{
+position: relative;
+top: -20px;
+right: 27px;
+}
+.citas{
+position: relative;
+top: 8px;
+}
+aside a{
+	position: relative;
+	top: -10px;
+	 display:block;
+	 margin: -7px;
+	padding: 10px 40px;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+
+}
+aside a:hover{
+	color: white;
+text-decoration: none;
+}
+
+em {
+	position: absolute;
+	top: 15px;
+	right: 20px;
+}
+aside li:hover {
+	background:aqua;
+	  color: black;
+	  font-weight: bold;
+text-decoration: none;
+
+	  border-bottom:2px solid gray;
+}
+
+
+.principal_vista {
+color: brown;
+
+}
+.principal_vista span{
+color: black;	
+
+}
+
+
+.principal_vista p {
+	text-align: center;
+	color: brown;
+
+ }
+.principal_vista a:hover{
+ 	background: aqua;
+ 	text-decoration: none;
+ }
+ .principal_vista a{
+font-size: 15px;
+border-radius: 12px;
+width: 170px;
+background:white;
+color: black;
+text-decoration: none;
+position: relative;
+top: 12px;
+ }
+.principal_vista .icon-calendar{
+position: absolute;
+top: 8%;
+left:9%;
+font-size:75px;
+ }
+ .cita{
+
+margin-top: 2%;
+margin-left: 2%;
+}
+
+ .principal_vista .icon-user{
+position: absolute;
+top: 10%;
+left:41%;
+font-size:75px;
+ }
+ .especialista  {
+	top: 28%;
+	left: 18%;
+
+}
+ .principal_vista .icon-man{
+position: absolute;
+top: 9%;
+left:75%;
+font-size:75px;
+ }
+ .vista2 {
+float: left;
+margin-top: -6%;
+margin-left: 70%;
+  }
+
+
+ .principal_vista .icon-list{
+position: absolute;
+top: 50%;
+left:8%;
+font-size:70px;
+ }
+  .vista3 {
+  	margin-left: 2%;
+ }
+
+  .principal_vista .icon-history{
+position: absolute;
+top: 53%;
+left:42%;
+font-size:75px;
+ }
+  .vista4 {
+margin-top: 6%;
+margin-left: 19%;
+ }
+
+   .principal_vista .icon-users{
+position: absolute;
+top: 53%;
+left:74%;
+font-size:75px;
+   	}
+ .vista5 {
+
+	left: 16%;
+ } 
+ /*mensaje
+
+.wrapp {
+
+	font-size: 10px;
+	padding: 0% 1%;
+	margin: 10px;
+
+}*/
+.mensaje h2{
+	margin-top: 8px;
+	font-size: 25px;
+	color: white;
+}
+.mensaje {
+	position: relative;
+	top: -40px;
+	background: green;
+	padding:5px;
+	color:#fff;
+	height:50px;
+	border-radius:5px;
+	text-align: center;
+	margin-bottom: 5px;
+  box-shadow: 0 0px 2px #013D82 !important;
+} 
+ 
+ /*llenar informacion*/
+
+
+ article{
+	
+
+ 	position: relative;
+ 	right: -1px;
+ 	top: -45px;
+ margin: 70px 0px 0px 0px;
+	 margin-left:1%;
+	float: left;
+	width: 98%;
+ 	padding:20px;
+ 	background: rgb(255, 255, 255);
+	border-radius:5px;
+ }
+
+ article,aside, .mensaje{
+ 	border:1px solid #ccc;
+ }
+ article a{
+	display:inline-block;
+
+	color: white;
+	border-radius:5px;
+	cursor:pointer;
+	border-bottom: 3px solid rgba(0, 0, 0,.5);
+	width:auto;
+	text-decoration: none;
+	text-align:center;
+	position: relative;
+}
+
+
+.agregar{
+
+	position: relative;
+	top: -30px;
+	font-family:relaway;
+	font-size: 18px;
+color: white;
+padding: 3px;
+
+}
+.agregar:hover{
+	background: black;
+	color: white;
+
+}
+
+
+article .agregar{
+	background-color: grey;
+
+}
+article .editar{
+	background:#F44336;
+}
+article .buscar{
+	background:#FF9800;
+}
+article .eliminar{
+	background:#F44336;
+
+}
+@media screen and (min-width:400px  )and (max-width: 765px) {
+aside img{
+margin-left: 20%;
+    width: 60%;
+
+  }
+  .titulo{
+  	width: 100%;
+  	margin-left: 1%;
+  }
+ }

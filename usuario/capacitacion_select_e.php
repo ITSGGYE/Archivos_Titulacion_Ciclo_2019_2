@@ -1,0 +1,18 @@
+<?php  
+session_start();
+if (!isset($_SESSION['nombre'])) {
+	header('Location: ../index.html');
+	
+}
+
+?>
+<?php
+include_once("conexion.php");
+$sentencia=$bd->query("SELECT * FROM  especialidad
+	;");
+$paciente=$sentencia->fetchAll(PDO::FETCH_OBJ);
+?>
+<?php foreach($paciente as $row): ?>
+	<option value="<?php echo $row->id_especialidad; ?>"><?php echo $row->nombre_especialidad; ?></option>
+<?php endforeach; ?>
+

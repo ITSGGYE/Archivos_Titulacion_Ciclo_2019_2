@@ -1,0 +1,104 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+body{
+  margin: auto;
+
+}
+form{
+  position: relative;
+  top: 100px;
+ background:white;
+  max-width: 450px;
+  margin: 0 auto 100px;
+  padding: 15px 20px;
+  text-align: center;
+  border: 1px solid #14BACE;
+  box-shadow: 0 0px 10px #14BACE !important;
+}
+
+div img{
+background-color: white;
+position: relative;
+top: -80px;
+border: 1px solid light blue;
+box-shadow: 0 0px 10px #14BACE !important;
+width: 350px;
+height: 100px;
+}
+
+h2{
+position: relative;
+top: -80px;
+font-weight: bold; 
+letter-spacing: 2px; 
+font-size: 20px;
+
+}
+label{
+position: relative;
+top: -50px;
+font-size:20px;
+letter-spacing: 1px;
+  font-weight: bold;
+
+}
+label{
+position: relative;
+top: -50px;
+font-size:20px;
+letter-spacing: 1px;
+  font-weight: bold;
+
+}
+.input-group{
+  position: relative;left: 1px;
+  margin-top: 10px;
+  width: 110%;
+}
+.input-group span{
+position: relative;
+right: 77px;
+top: -70px;
+background: white;
+
+}
+
+
+
+input {
+position: relative;
+top: -70px;
+  font-weight: bold;
+  font-size: 15px; 
+  margin:  20px 0px 15px;
+  padding: 12px;
+    color: black;
+  width: 80%;
+letter-spacing: 1px;
+}
+button {
+   border: 1px solid #14BACE;
+    box-shadow: 0 0px 10px #14BACE !important;
+  cursor:pointer;
+    color:black;
+    font-weight: bold;
+    letter-spacing: 25px;  
+    font-size:20px;
+    padding: 10px;
+    width: 85%;
+    position: relative;
+    position: relative;
+    position: relative;
+    top: -50px;
+}
+
+/* registrase aun */
+p{
+font-weight: bold;
+}
+a{
+color: blue;
+text-decoration: none;
+}
