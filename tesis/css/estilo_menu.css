@@ -1,0 +1,167 @@
+*{
+	padding:0%;
+	margin:0%;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+.caja_general{
+	width: 100%;
+	height:100%;	 
+}
+
+.caja_cabezera{
+	width: 100%;
+	height: 84px;
+	background: #1F618D;
+	color: #FFFF;
+}
+
+.caja_cabezera h1{
+	line-height: 80px;
+	margin-left: 300px;
+}
+
+
+.caja_menu{
+	display: list-item;
+	float: left;
+	width: 15%;
+	height: 670px;
+	background: #2874A6;
+}
+
+.caja_cuerpo{
+	width: 85%;
+	height: 670px; 
+	float: right;
+	background: #EBF5FB;
+}
+
+.inicio{
+	border: 4px solid #D5936B;
+	margin-left: 480px;
+	margin-top: 120px;
+}
+
+.titulo{
+	text-align: center;
+}
+
+.caja_menu ul{
+	list-style: none;
+	color: #FFFFFF;	
+	margin: 0;	
+	padding: 0;
+}
+
+.caja_menu ul ul {
+  display: none;
+  position: absolute;
+  background:#2874A6;
+  min-width: 185px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 0px;
+  z-index: 1;
+}
+
+.caja_menu ul li{
+	background: transparent;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	letter-spacing: 1px;
+	text-align: center;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.caja_menu ul li:hover{
+	background: #2980B9;
+}
+
+.caja_menu ul li:hover  ul{
+  display: block;
+}
+
+.caja_menu ul li ul li:hover{
+	background: #5499C7 ;
+}
+
+.caja_menu ul li ul li a{
+	text-decoration: none;
+	color: black;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.caja_menu .icono_izquierda{
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin-top: 4px;
+	margin-left: 5px;
+}
+
+.caja_menu .icono_derecha{
+	float: right;
+	margin-right: 20px;
+	margin-top: 20px;
+	margin-left: 5px;
+	padding-left: 5px;
+	width: 15px;
+	border-left: 2px solid black;
+	height: 15px;
+}
+
+#btn_cerrar {
+	border:none;
+	margin-top:70%;
+	line-height: 45px;
+	background:#0D87BA;
+	color: #FFFF;
+	width: 100%;
+	height: 50px;
+	outline: none;
+	font-weight: bold;
+	font-size: 14px;
+	padding:5px;
+	cursor:pointer;
+}
+
+#btn_cerrar:hover {
+	background-color: #A9CCE3;
+	color:black; 
+}
+
+#icon_cerrar {
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-top: 4px;
+	margin-left: 5px;
+}
+
+#btn_inicio {
+	border:none;
+	line-height: 45px;
+	background:#0D87BA;
+	color: #FFFF;
+	width: 100%;
+	height: 50px;
+	outline: none;
+	font-weight: bold;
+	font-size: 14px;
+	padding:5px;
+	cursor:pointer;
+}
+
+#btn_inicio:hover {
+	background-color: #A9CCE3;
+	color:black; 
+}

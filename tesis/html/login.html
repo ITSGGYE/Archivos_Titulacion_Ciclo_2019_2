@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilo_login.css">
+	<script src="../js/funciones.js"></script> 
+</head>
+<body>
+	<div class="caja">
+		<h2>login</h2>
+		<form id="formulario" autocomplete="off">
+			<div class="caja_input">
+				<input type="text" required id="txt_usuario">
+				<label>Usuario</label>
+			</div>
+			<div class="caja_input">
+				<input type="password" required id="txt_clave">
+				<label>Contraseña</label>
+			</div>
+			<input type="button" id="btn_ingresar" value="Ingresar" onclick="iniciar()">
+			<br><br>
+			<div id="respuesta"></div>
+		</form>
+	</div>
+	<div class="caja_input2">
+		<input type="button"  id="btn_regresar" value="Regresar" onclick="regresar()">
+	</div>	
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Menu</title>
+	<link rel="stylesheet" type="text/css" href="../css/estilo_menu.css">
+	<script src="../js/funciones.js"></script> 
+</head>
+<body>
+	<div class="caja_general">
+		<div class="caja_cabezera">
+			<h1>INSTITUCION EDUCATIVA "ROSA GARCIA MONTENEGRO"</h1>
+		</div> 
+		<div class="caja_menu">
+			<button id="btn_inicio" onclick="location.reload();">Inicio</button>
+			<br><br>
+			<ul>
+				<li><img class="icono_izquierda" src="../imagenes/icono_grado.png">Grado<img class="icono_derecha" src="../imagenes/icono_expandir.png">
+					<ul>
+						<li><a onclick="enlacePag('registro_Grado.html')">Registrar</a></li>
+						<li><a onclick="enlacePag('reporte_grado.html')">Consultar</a></li>
+					</ul>
+				</li>
+				<br>
+				<li><img class="icono_izquierda" src="../imagenes/icono_docente.png">Docente<img class="icono_derecha" src="../imagenes/icono_expandir.png">
+					<ul>
+						<li><a onclick="enlacePag('registro_profesor.html')">Registrar</a></li>
+						<li><a onclick="enlacePag('reporte_profesor.html')">Consultar</a></li>
+					</ul>
+				</li>
+				<br>											
+				<li><img class="icono_izquierda" src="../imagenes/icono_alumno.png">Alumnos<img class="icono_derecha" src="../imagenes/icono_expandir.png">
+					<ul>
+						<li><a onclick="enlacePag('registro_alumno.html')">Registrar</a></li>
+						<li><a onclick="enlacePag('reporte_alumno.html')">Consultar</a></li>
+					</ul>
+				</li>
+				<br>	
+				<li><img class="icono_izquierda" src="../imagenes/icono_materia.png">Materias<img class="icono_derecha" src="../imagenes/icono_expandir.png">
+					<ul>
+						<li><a onclick="enlacePag('registro_materia.html')">Registrar</a></li>
+						<li><a onclick="enlacePag('reporte_materia.html')">Consultar</a></li>
+					</ul>
+				</li>
+				<br>
+				<li><img class="icono_izquierda" src="../imagenes/icono_reporte.png">Notas<img class="icono_derecha" src="../imagenes/icono_expandir.png">
+					<ul>
+						<li><a onclick="enlacePag('registro_nota.html')">Ingreso de Notas</a></li>
+					</ul>
+				</li>	
+			</ul>
+			<button id="btn_cerrar" onclick="cerrar()"><img src="../imagenes/icono_cerrar.png" id="icon_cerrar">Cerrar sesion</button>			
+		</div>
+		<div class="caja_cuerpo" id="cuerpo">
+			<img class="inicio" src="../imagenes/logo.png">
+			<br><br>
+			<h1 class="titulo">Sistema de matriculacion y calificacion</h1>
+		</div>
+	</div>
+</body>
+</html>

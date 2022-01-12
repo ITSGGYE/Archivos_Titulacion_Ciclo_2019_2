@@ -1,0 +1,283 @@
+form{
+	width: 100%;
+	margin-top:12%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #EBF5FB;
+}
+
+.caja_primaria{
+	width: 100%;
+	height: 650px; 
+}
+
+ 	
+.caja_buscar {
+  width: 60%;
+  height: 50px;
+  margin-left:auto;
+  margin-right: auto;
+  text-align: center;
+  background: #D6EAF8;
+  border-bottom:1px solid black; 
+  border-left:1px solid black;
+  border-right:1px solid black;
+} 
+
+#btn_buscar {
+	border:none;
+	background:#0D87BA;
+	color: #FFFF;
+	outline: none;
+	font-weight: bold;
+	border:1px solid black;
+	font-size: 14px;
+	padding:5px;
+	cursor:pointer;
+}
+
+#btn_buscar:hover {
+	background-color: #A9CCE3;
+	color:black; 
+}
+
+#btn_actualizar {
+	border:none;
+	background:#0D87BA;
+	color: #FFFF;
+	outline: none;
+	font-weight: bold;
+	border:1px solid black;
+	font-size: 14px;
+	padding:10px;
+	cursor:pointer;
+}
+
+#btn_actualizar:hover {
+	background-color: #A9CCE3;
+	color:black; 
+}
+
+#btn_regresar {
+	border:none;
+	margin-left:20px;
+	background:#0D87BA;
+	color: #FFFF;
+	outline: none;
+	font-weight: bold;
+	border:1px solid black;
+	font-size: 14px;
+	padding:10px;
+	cursor:pointer;
+}
+
+#btn_regresar:hover {
+	background-color: #A9CCE3;
+	color:black; 
+}
+
+#btn_registrar {
+	border:none;
+	background:#0D87BA;
+	color: #FFFF;
+	outline: none;
+	font-weight: bold;
+	border:1px solid black;
+	font-size: 14px;
+	padding:10px;
+	cursor:pointer;
+}
+
+#btn_registrar:hover {
+	background-color: #A9CCE3;
+	color:black; 
+}
+
+#btn_limpiar {
+	border:none;
+	margin-left:20px;
+	background:#0D87BA;
+	color: #FFFF;
+	outline: none;
+	font-weight: bold;
+	border:1px solid black;
+	font-size: 14px;
+	padding:10px;
+	cursor:pointer;
+}
+
+#btn_limpiar:hover {
+	background-color: #A9CCE3;
+	color:black; 
+}
+
+#imagen {
+  width: 55px;
+  height: 55px;
+}
+
+#icon_opcion{
+	width: 20px;
+	height: 20px; 
+	float: left;
+}
+
+label{
+	margin-right: 4px;
+	margin-left: 4px;
+	font-weight: bold;
+	font-size: 16px;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+}
+
+#td_titulo1{
+	font-size: 32px;
+	font-weight: bold;
+	color:#2D67EC;
+}
+
+#lbl_buscar{
+  font-weight: bold;
+  font-size: 14px;
+  font-family: sans-serif;
+  letter-spacing: 1px;	
+  line-height: 50px;
+}
+
+#txt_buscar {
+  font-family: sans-serif;
+  letter-spacing: 1px; 
+  padding: 5px;
+  width: 600px; 
+
+}
+
+#txtar_observacion{
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding: 3px;
+	width: 508px;
+	height: 50px;
+	resize: none;
+}
+
+#txt_grado {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left: 5px;
+	padding: 3px;
+	width: 105px;	
+}
+
+#txt_cantidad {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left: 3px;
+	padding: 3px;
+	width: 100px;	
+}
+
+#txt_codigo {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left: 3px;
+	padding: 3px;
+	width: 150px;	
+}
+
+#sel_nivel {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left: 6px; 
+	padding: 3px;
+	width: 110px;
+}
+
+#tab_dato1{
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#tab_dato2{
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding: 5px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#tab_dato1 tr td{
+	padding: 5px;
+}
+
+#tabla {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin-top:40px;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+#tabla th {
+  border: 1px solid #A9CCE3;
+  text-align: center;
+  width: 200px;
+  padding: 8px;
+}
+
+#tabla td{
+  border: 1px solid #A9CCE3;
+  text-align: center;
+  width: 200px;
+  padding: 8px;
+}
+
+#tabla tr{
+  background: #D6EAF8 ;
+}
+
+#tabla tr:hover {
+  background-color: #A9CCE3;
+  border: 2px solid #373636;
+}
+
+#tabla th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0D87BA;
+  color: white;
+  text-align: center;
+}
+
+#tabla a{
+	cursor:pointer;
+}
+
+#tabla a:hover{
+	color:#FFFF;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  visibility: hidden; 
+}
+
+input[type=number]::-moz-inner-spin-button, 
+input[type=number]::-moz-outer-spin-button { 
+  -moz-appearance: none;
+  visibility: hidden; 
+}
+
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+

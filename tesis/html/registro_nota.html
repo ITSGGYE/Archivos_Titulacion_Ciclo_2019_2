@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/estilo_Nota.css">
+</head>
+<body>
+	<form id="formulario">
+		<table id="tab_dato1">
+			<tr>
+				<td colspan="7" align="center" id="td_titulo1">REGISTRO DE NOTAS</td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+			<tr>
+				<td style="text-align: center;"><label>Nivel escolar</label></td>
+				<td style="text-align: center;"><label>Grado escolar</label></td>
+				<td style="text-align: center;"><label>Materia</label></td>
+				<td style="text-align: center;"><label>Quimestre</label></td>
+			</tr>
+			<tr>
+				<td>
+					<select id="sel_nivel" onchange="comboxG('registro_nota')">
+						<option style="color: #F71919">seleccionar</option>
+						<option value="Jardin">Jardin</option>
+						<option value="Primero">Primero</option>
+						<option value="Segundo">Segundo</option>					
+					</select>
+				</td>
+				<td>
+					<select id="sel_grado" onchange="comboxM()">
+					</select>
+				</td>
+				<td>
+					<select id="sel_materia">					
+					</select>
+				</td>
+				<td>
+					<select id="sel_quimestre">
+						<option style="color: #F71919">seleccionar</option>
+						<option>1er Quimestre</option>
+						<option>2do Quimestre</option>					
+					</select>
+				</td>
+				<td><input type="button" id="btn_registrar" onclick="infoAlumno()" value="Ingresar Notas" title="Click para registrar la nota del alumno"></td>
+				<td><input type="button" id="btn_limpiar" onclick="mostrarNota()" value="Consultar" title="Click para consultar las notas"></td>
+				<td><input type="button" id="btn_limpiar" onclick="limpiarCamposN()" value="Limpiar campos" title="Click para limpiar todos los campos"></td>
+			</tr>
+		</table>
+		<table id="tab_nota">
+			<tr>
+				<td><div id="respuesta" style="margin-left: auto; margin-right: auto"></div></td>
+			</tr>
+		</table>
+	</form>
+	<form id="formularioN">
+		<div style="text-align: center;" id="tablaNota"></div>
+	</form>
+</body>
+</html>

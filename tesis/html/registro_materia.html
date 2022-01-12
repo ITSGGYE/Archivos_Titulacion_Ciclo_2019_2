@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/estilo_materia.css">
+	<script type="text/javascript" src="../js/funciones.js"></script>
+</head>
+<body>
+	<form id="formulario">
+		<table id="tab_dato1">
+			<tr>
+				<td colspan="3" align="center" id="td_titulo1">REGISTRO DE MATERIA</td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+			<tr>
+			<td><label>Codigo: <input type="number" id="txt_codigo" required readonly> </label></td>
+				<td>
+					<label>Grado escolar: 
+						<select id="sel_grado">
+						</select>
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Materia: <input type="text" id="txt_materia" required> </label></td>
+				<td>
+					<label>jornada escolar:
+						<select id="sel_jornada">
+							<option>seleccionar</option>
+							<option value="Matutina">Matutina</option>
+							<option value="Vespertina">Vespertina</option>					
+						</select>
+					</label>
+				</td>
+			</tr>
+		</table>
+		<table id="tab_dato2">
+			<tr>
+				<td><input type="button" id="btn_registrar" onclick="materia()" value="Registrar" title="Click para registrar la materia"></td>
+				<td><input type="submit" id="btn_limpiar" onclick="limpiarCampos()" value="Limpiar campos" title="Click para limpiar todos los campos"></td>
+			</tr>
+		</table>
+		<table id="tab_dato2">
+			<tr>
+				<td><div id="respuesta" style="margin-left: auto; margin-right: auto"></div></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

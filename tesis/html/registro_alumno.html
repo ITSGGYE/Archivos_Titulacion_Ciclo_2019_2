@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/estilo_Alumno.css">
+	<script type="text/javascript" src="../js/funciones.js"></script>
+</head>
+<body>
+	<form id="formulario">
+		<table id="tab_dato1">
+			<tr>
+				<td colspan="3" align="center" id="td_titulo1">REGISTRO DE ALUMNO</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left" id="td_titulo2">DATOS PERSONALES:</td>
+			</tr>
+			<tr>
+				<td><label>Cedula: <input type="number" id="txt_cedula" required> </label></td>
+				<td><label>telefono: <input type="number" id="txt_telefono" required> </label></td>
+				<td><label>Celular: <input type="number" id="txt_celular" required> </label></td>				
+			</tr>
+			<tr>
+				<td><label>Nombres: <input type="text" id="txt_nombres" required> </label></td>
+				<td><label>Apellidos: <input type="text" id="txt_apellidos" required> </label></td>
+				<td><label>Nacionalidad: <input type="text" id="txt_nacionalidad" required> </label></td>
+			</tr>
+			<tr>
+				<td>
+					<label>Genero: 
+						<select id="sel_genero">
+							<option style="color: #F71919">seleccionar</option>
+							<option value="Masculino">Masculino</option>
+							<option value="Femenino">Femenino</option>					
+						</select>
+					</label>
+				</td>
+				<td>
+					<label>Sangre:
+						<select id="sel_sangre">
+							<option style="color: #F71919">seleccionar</option>
+							<option>A positivo</option>
+							<option>A negativo</option>
+							<option>B positivo</option>
+							<option>B negativo</option>
+							<option>AB positivo</option>
+							<option>AB negativo</option>
+							<option>O positivo</option>
+							<option>O negativo</option>					
+						</select>
+					</label>
+				</td>
+				<td><label>Discapacidad: <input type="text" id="txt_discapacidad" placeholder="si no tiene poner ninguna"> </label></td>
+			</tr>
+			<tr>
+				<td><label>Fecha Nacimiento: <input type="date" id="dat_fecha" min="1999-01-01" max="2099-01-01" onfocusout="mostrarEdad()"> </label></td>
+				<td><label>Edad: <input type="number" id="txt_edad" min="1" max="999" readonly> </label></td>
+				<td>
+					<label>Etnia:
+						<select id="sel_etnia">
+							<option style="color: #F71919">seleccionar</option>
+							<option>Mestizo</option>
+							<option>Indigena</option>
+							<option>Afroecuatoriano</option>
+							<option>Negro</option>
+							<option>Mulato</option>
+							<option>Montuvio</option>
+							<option>Asiatico</option>
+							<option>Blanco</option>
+							<option>Otro</option>
+							<option>No reconocida</option>					
+						</select>
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Domicilio: <br><input type="text" id="txt_domicilio" required> </label></td>
+				<td><label>Correo educativo: <br><input type="email" id="txt_correoI" placeholder="Example@rosa.edu.ec" required> </label></td>
+				<td><label>Correo: <br><input type="email" id="txt_correoP" placeholder="Example@gmail.com" required> </label></td>
+			</tr>
+		</table>
+		<table id="tab_dato2">
+			<tr>
+				<td colspan="3" align="left" id="td_titulo3">DATOS EDUCATIVOS:</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Estado Actual:
+						<select id="sel_estado">
+							<option style="color: #F71919">seleccionar</option>
+							<option value="Activo">Activo</option>
+							<option value="Inactivo">Inactivo</option>					
+						</select>
+					</label>
+				</td>
+				<td><label>Matricula: <input type="number" id="txt_matricula" min="0" max="999999" required readonly> </label></td>
+				<td><label>Fecha de matricula: <input type="date" id="dat_fechaM" min="2020-01-01" max="2099-01-01"> </label></td>
+			</tr>
+			<tr>
+				<td><label>Fecha de admision: <input type="date" id="dat_fechaI" min="2020-01-01" max="2099-01-01"> </label></td>
+				<td>
+					<label>Nivel escolar:
+						<select id="sel_nivel" onchange="comboxG('registro_alumno')">
+							<option style="color: #F71919">seleccionar</option>
+							<option value="Jardin">Jardin</option>
+							<option value="Primero">Primero</option>
+							<option value="Segundo">Segundo</option>					
+						</select>
+					</label>
+				</td>
+				<td><label>Periodo escolar: <input type="number" id="txt_Pinicial" min="0" max="999999" required placeholder="Inicial"> - <input type="number" id="txt_Pfinal" min="0" max="999999" required placeholder="Final"></label></td>
+			</tr>
+			<tr>
+				<td>
+					<label>Grado escolar: 
+						<select id="sel_grado">
+						</select>
+					</label>
+				</td>
+				<td>
+					<label>jornada escolar:
+						<select id="sel_jornada">
+							<option style="color: #F71919">seleccionar</option>
+							<option value="Matutina">Matutina</option>
+							<option value="Vespertina">Vespertina</option>					
+						</select>
+					</label>
+				</td>
+				<td>
+					<label>Procedencia: 
+						<select id="sel_procedencia">
+							<option style="color: #F71919">seleccionar</option>
+							<option value="Traslado/a">Traslado/a</option>
+							<option value="Residente">Residente</option>					
+						</select>
+					</label>
+				</td>
+			</tr>
+		</table>
+		<table id="tab_dato3">
+			<tr>
+				<td><input type="button" id="btn_registrar" onclick="Alumno()" value="Registrar" title="Click para registrar al alumno"></td>
+				<td><input type="button" id="btn_limpiar" onclick="limpiarCampos()" value="Limpiar campos" title="Click para limpiar todos los campos"></td>
+			</tr>
+		</table>
+		<table id="tab_dato2">
+			<tr>
+				<td><div id="respuesta"></div></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

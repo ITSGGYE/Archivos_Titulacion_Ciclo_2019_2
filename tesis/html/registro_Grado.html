@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="../js/funciones.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/estilo_Grado.css">
+</head>
+<body>
+	<form id="formulario">
+		<table id="tab_dato1">
+			<tr>
+				<td colspan="2" align="center" id="td_titulo1">REGISTRO DE GRADO</td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+			<tr>
+				<td><label>Codigo: <input type="number" id="txt_codigo" required readonly></label></td>
+				<td>
+					<label>Nivel escolar:
+						<select id="sel_nivel">
+							<option>seleccionar</option>
+							<option value="Jardin">Jardin</option>
+							<option value="Primero">Primero</option>
+							<option value="Segundo">Segundo</option>					
+						</select>
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Nro. Alumnos: <input type="number" id="txt_cantidad" required> </label></td>
+				<td><label>Grado nuevo: <input type="text" id="txt_grado" required placeholder="ej: Primero A"> </label></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<label>Observacion:</label>
+					<br>
+					<textarea id="txtar_observacion" rows="10" cols="40" placeholder="Escribe su observacion  (si no tiene una observacion poner ninguna)"></textarea>
+				</td>
+			</tr>
+		</table>
+		<table id="tab_dato2">
+			<tr>
+				<td><input type="button" id="btn_registrar" value="Registrar" title="Click para registrar el grado" onclick="Grado()"></td>
+				<td><input type="button" id="btn_limpiar" value="Limpiar campos" title="Click para limpiar todos los campos" onclick="limpiarCampos()"></td>
+			</tr>
+		</table>
+		<table id="tab_dato2">
+			<tr>
+				<td><div id="respuesta" style="margin-left: auto; margin-right: auto"></div></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

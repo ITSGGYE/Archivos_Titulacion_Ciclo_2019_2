@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/estilo_Docente.css">
+	<script type="text/javascript" src="../js/funciones.js"></script>
+</head>
+<body>
+	<form id="formulario">
+		<table id="tab_dato1">
+			<tr>
+				<td colspan="3" align="center" id="td_titulo1">REGISTRO DE DOCENTE</td>
+			</tr>
+			<tr>
+				<td colspan="3" align="left" id="td_titulo2">DATOS DEL DOCENTE:</td>
+			</tr>
+			<tr>
+				<td><label>Cedula: <input type="number" id="txt_cedula" required> </label></td>
+				<td><label>telefono: <input type="number" id="txt_telefono" required> </label></td>
+				<td><label>Celular: <input type="number" id="txt_celular" required> </label></td>				
+			</tr>
+			<tr>
+				<td><label>Nombres: <input type="text" id="txt_nombres" required> </label></td>
+				<td><label>Apellidos: <input type="text" id="txt_apellidos" required> </label></td>
+				<td><label>Nacionalidad: <input type="text" id="txt_nacionalidad" required> </label></td>
+			</tr>
+			<tr>
+				<td>
+					<label>Genero: 
+						<select id="sel_genero">
+							<option style="color: #F71919">seleccionar</option>
+							<option>Masculino</option>
+							<option>Femenino</option>					
+						</select>
+					</label>
+				</td>
+				<td>
+					<label>Sangre:
+						<select id="sel_sangre">
+							<option style="color: #F71919">seleccionar</option>
+							<option>A positivo</option>
+							<option>A negativo</option>
+							<option>B positivo</option>
+							<option>B negativo</option>
+							<option>AB positivo</option>
+							<option>AB negativo</option>
+							<option>O positivo</option>
+							<option>O negativo</option>					
+						</select>
+					</label>
+				</td>
+				<td><label>Discapacidad: <input type="text" id="txt_discapacidad" placeholder="si no tiene poner ninguna"> </label></td>
+			</tr>
+			<tr>
+				<td><label>Fecha Nacimiento: <input type="date" id="dat_fecha" onfocusout="mostrarEdad()"> </label></td>
+				<td><label>Edad: <input type="number" id="txt_edad" min="1" max="999" readonly> </label></td>
+				<td>
+					<label>Etnia:
+						<select id="sel_etnia">
+							<option style="color: #F71919">seleccionar</option>
+							<option>Mestizo</option>
+							<option>Indigena</option>
+							<option>Afroecuatoriano</option>
+							<option>Negro</option>
+							<option>Mulato</option>
+							<option>Montuvio</option>
+							<option>Asiatico</option>
+							<option>Blanco</option>
+							<option>Otro</option>
+							<option>No reconocida</option>					
+						</select>
+					</label>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Domicilio: <br><input type="text" id="txt_domicilio" required> </label></td>
+				<td><label>Correo educativo: <br><input type="email" id="txt_correoI" placeholder="Example@rosa.edu.ec" required> </label></td>
+				<td><label>Correo: <br><input type="email" id="txt_correoP" placeholder="Example@gmail.com" required> </label></td>
+			</tr>
+			<tr>
+				<td>
+					<label>Nivel educativo: 
+						<select id="sel_nivel">
+							<option style="color: #F71919">seleccionar</option>
+							<option value="Bachillerato">Bachillerato</option>
+							<option value="Tecnico">Tecnico</option>
+							<option value="Universitario">Universitario</option>
+							<option value="Doctorado">Doctorado</option>				
+						</select>
+					</label>
+				</td>
+				<td><label>Especialidad: <input type="text" id="txt_especialidad" required> </label></td>
+				<td>
+					<label>Turno:
+						<select id="sel_turno">
+							<option style="color: #F71919">seleccionar</option>
+							<option value="Matutina">Matutina</option>
+							<option value="Vespertina">Vespertina</option>	
+							<option value="Todas jornadas">Todas jornadas</option>									
+						</select>
+					</label>
+				</td>
+			</tr>	
+			<tr>
+				<td colspan="3">
+					<label>Observacion:</label>
+					<br>
+					<textarea id="txtar_observacion" rows="10" cols="40" placeholder="Escribe su observacion  (si no tiene una observacion poner ninguna)"></textarea>	
+				</td>
+			</tr>
+		</table>
+		<table id="tab_dato2">
+			<tr>
+				<td><input type="button" onclick="docente()" id="btn_registrar" value="Registrar" title="Click para registrar al docente"></td>
+				<td><input type="button" onclick="limpiarCampos()" id="btn_limpiar" value="Limpiar campos" title="Click para limpiar todos los campos"></td>
+			</tr>
+		</table>
+		<table id="tab_dato2">
+			<tr>
+				<td><div id="respuesta" style="margin-left: auto; margin-right: auto"></div></td>
+			</tr>
+		</table>
+	</form>	
+</body>
+</html>

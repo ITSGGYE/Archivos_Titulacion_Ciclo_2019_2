@@ -1,0 +1,52 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: url(../imagenes/background-inicio.jpg);
+	background-size: 100% 100%;
+	background-attachment: fixed;
+}
+
+.caja{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 900px;
+	height: 450px;
+	padding: 40px;
+	background: rgba(240,255,255,.6);
+	box-sizing: border-box;
+	box-shadow: 0px 15px 25px rgba(0,0,0,.5);
+	border-radius: 10px;
+}
+
+.caja_content img{
+	width: 140px;
+	height: 140px;
+	border-radius: 30px;
+	border: 2px solid #D5936B;
+}
+
+.caja_content{
+	text-align: center;
+	letter-spacing: 1px;
+}
+
+.caja_input{
+	text-align: center;
+	padding: 30px;
+	letter-spacing: 40px;
+}
+
+#btn_acceder {
+	border:none;
+	background:#0D87BA;
+	color: #FFFF;
+	outline: none;
+	font-weight: bold;
+	border:1px solid black;
+	font-size: 24px;
+	padding:10px;
+	cursor:pointer;
+}

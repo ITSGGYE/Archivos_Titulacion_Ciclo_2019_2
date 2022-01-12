@@ -1,0 +1,472 @@
+form{
+	width: 100%;
+	margin-top:40px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #EBF5FB;
+}
+
+#res{
+	overflow:auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	height: 600px; 
+}
+
+
+.caja_buscar {
+  width: 60%;
+  height: 50px;
+  margin-left:auto;
+  margin-right: auto;
+  text-align: center;
+  background: #D6EAF8;
+  border-bottom:1px solid black; 
+  border-left:1px solid black;
+  border-right:1px solid black;
+} 	
+
+#btn_buscar {
+	border:none;
+	background:#0D87BA;
+	color: #FFFF;
+	outline: none;
+	font-weight: bold;
+	border:1px solid black;
+	font-size: 14px;
+	padding:5px;
+	cursor:pointer;
+}
+
+#btn_buscar:hover {
+	background-color: #A9CCE3;
+	color:black; 
+}
+
+#btn_actualizar {
+	border:none;
+	background:#0D87BA;
+	color: #FFFF;
+	outline: none;
+	font-weight: bold;
+	border:1px solid black;
+	font-size: 14px;
+	padding:10px;
+	cursor:pointer;
+}
+
+#btn_actualizar:hover {
+	background-color: #A9CCE3;
+	color:black; 
+}
+
+#btn_regresar {
+	border:none;
+	margin-left:20px;
+	background:#0D87BA;
+	color: #FFFF;
+	outline: none;
+	font-weight: bold;
+	border:1px solid black;
+	font-size: 14px;
+	padding:10px;
+	cursor:pointer;
+}
+
+#btn_regresar:hover {
+	background-color: #A9CCE3;
+	color:black; 
+}
+
+#btn_registrar {
+	border:none;
+	background:#0D87BA;
+	color: #FFFF;
+	outline: none;
+	font-weight: bold;
+	border:1px solid black;
+	font-size: 14px;
+	padding:10px;
+	cursor:pointer;
+}
+
+#btn_registrar:hover {
+	background-color: #A9CCE3;
+	color:black; 
+}
+
+#btn_limpiar {
+	border:none;
+	margin-left:20px;
+	background:#0D87BA;
+	color: #FFFF;
+	outline: none;
+	font-weight: bold;
+	border:1px solid black;
+	font-size: 14px;
+	padding:10px;
+	cursor:pointer;
+}
+
+#btn_limpiar:hover {
+	background-color: #A9CCE3;
+	color:black; 
+}
+
+#imagen {
+  width: 65px;
+  height: 65px;
+}
+
+#icon_opcion{
+	width: 20px;
+	height: 20px; 
+	float: left;
+}
+
+label{
+	margin-right: 4px;
+	margin-left: 4px;
+	font-weight: bold;
+	font-size: 14px;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+}
+
+#td_titulo1{
+	font-size: 32px;
+	font-weight: bold;
+	color:#2D67EC;
+}
+
+#td_titulo2, #td_titulo3{
+	font-size: 18px;
+	font-weight: bold;
+	color:#2D67EC;
+}
+
+#fil_archivo {
+	border: 1px solid black;
+	background:#96BDDE;
+	font-family: sans-serif;
+	letter-spacing: 1px; 
+	padding: 5px;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+}
+
+#lbl_buscar{
+  font-weight: bold;
+  font-size: 14px;
+  font-family: sans-serif;
+  letter-spacing: 1px;	
+  line-height: 50px;
+}
+
+#txt_buscar {
+  font-family: sans-serif;
+  letter-spacing: 1px; 
+  padding: 5px;
+  width: 600px; 
+
+}
+
+#txt_cedula {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left: 17px;
+	padding: 3px;
+	width: 210px;	
+}
+
+#txt_nombres {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding: 3px;
+	margin-left: 2px;
+	width: 210px;
+}
+
+#txt_edad{
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding: 3px;
+	margin-left: 34px;
+	width: 210px;
+}
+
+#txt_telefono {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left: 10px;
+	padding: 3px;
+	width: 210px;
+}
+
+#txt_apellidos {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding: 3px;
+	width: 210px;
+}
+
+#txt_celular {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left: 46px;
+	padding: 3px;
+	width: 210px;
+}
+
+#txt_nacionalidad {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding: 3px;
+	margin-left: 2px;
+	width: 210px;
+}
+
+#txt_discapacidad {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding: 3px;
+	width: 210px;
+}
+
+#txt_domicilio {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding: 3px;
+	width: 300px;	
+}
+
+#txt_correoI {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left: 6px;
+	padding: 3px;
+	width: 290px;	
+}
+
+#txt_correoP {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left: 1px;
+	padding: 3px;
+	width: 325px;
+}
+
+#txt_especialidad {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding: 3px;
+	width: 184px;
+}
+
+#txt_matricula {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left: 48px;
+	padding: 3px;
+	width: 182px;	
+}
+
+#txt_Pinicial {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left: 38px; 
+	padding: 3px;
+	width: 50px;	
+}
+
+#txt_Pfinal {
+	font-family: sans-serif;
+	letter-spacing: 1px; 
+	padding: 3px;
+	width: 50px;	
+}
+
+#txtar_observacion{
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding: 3px;
+	width: 980px;
+	height: 90px;
+	resize: none;
+}
+
+#dat_fecha {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding: 3px;
+	width: 145px;	
+}
+
+#dat_fechaM {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding: 3px;
+	width: 150px;	
+}
+
+#dat_fechaI {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding: 3px;
+	width: 135px;	
+}
+
+#sel_estado {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left: 38px;
+	padding: 3px;
+	width: 144px;
+}
+
+#sel_genero {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left: 14px;
+	padding: 3px;
+	width: 220px;
+}
+
+#sel_sangre {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left: 18px;
+	padding: 3px;
+	width: 221px;	
+}
+
+#sel_etnia {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left: 63px;
+	padding: 3px;
+	width: 220px;
+}
+
+#sel_nivel {
+	font-family: sans-serif;
+	letter-spacing: 1px; 
+	padding: 3px;
+	width: 178px;
+}
+
+#sel_grado {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left: 35px; 
+	padding: 3px;
+	width: 145px;
+}
+
+
+#sel_situacion {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left:55px; 
+	padding: 3px;
+	width: 142px;
+}
+
+#sel_procedencia {
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	margin-left: 52px; 
+	padding: 3px;
+	width: 160px;
+}
+
+#sel_jornada {
+	font-family: sans-serif;
+	letter-spacing: 1px; 
+	padding: 3px;
+	width: 194px;
+}
+
+#sel_turno {
+	font-family: sans-serif;
+	letter-spacing: 1px; 
+	padding: 3px;
+	width: 194px;
+}
+
+#tab_dato1{
+	margin-left:auto;
+	margin-right:auto;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding: 5px;
+}
+
+#tab_dato2{
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	padding: 5px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#tab_dato1 tr td{
+	padding: 5px;
+}
+
+#tabla {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 90%;
+  margin-top:40px;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+#tabla td, #tabla th {
+  border: 1px solid #A9CCE3;
+  text-align: center;
+  min-width: 150px;
+  padding: 5px;
+}
+
+
+#tabla tr{
+  background: #D6EAF8 ;
+}
+
+#tabla tr:hover {
+  background-color: #A9CCE3;
+  border: 2px solid #373636;
+}
+
+#tabla a{
+	cursor:pointer;
+}
+
+#tabla a:hover{
+	color:#FFFF;
+}
+
+#tabla th {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-align: left;
+  background-color: #0D87BA;
+  color: white;
+  text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  visibility: hidden; 
+}
+
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
