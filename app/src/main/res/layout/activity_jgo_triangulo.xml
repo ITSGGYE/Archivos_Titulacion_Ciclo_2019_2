@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:background="#66FF66"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txt_puntaje_tri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tam_texto_descripcion" />
+
+    <TextView
+        android:id="@+id/txt_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#2979FF"
+        android:textSize="@dimen/tam_texto_descripcion" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ly_area_triangulo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_fondo_triangulo">
+
+        <TextView
+            android:id="@+id/txtEtiSumLin3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suma línea3"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/txtSumaLinea3"
+            app:layout_constraintTop_toBottomOf="@+id/txtSumaLinea3" />
+
+        <TextView
+            android:id="@+id/txtEtiSumLin2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suma línea2"
+            android:textSize="10sp"
+            app:layout_constraintStart_toStartOf="@+id/txtSumaLinea2"
+            app:layout_constraintTop_toBottomOf="@+id/txtSumaLinea2" />
+
+        <TextView
+            android:id="@+id/txtSumaLinea3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/borde"
+            android:ems="10"
+            android:gravity="center|center_horizontal"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@+id/edtNodo6"
+            app:layout_constraintTop_toBottomOf="@+id/edtNodo6" />
+
+        <TextView
+            android:id="@+id/txtSumaLinea2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/borde"
+            android:ems="10"
+            android:gravity="center|center_horizontal"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintStart_toEndOf="@+id/edtNodo4"
+            app:layout_constraintTop_toBottomOf="@+id/edtNodo4" />
+
+        <TextView
+            android:id="@+id/txtSumaLinea1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/borde"
+            android:ems="10"
+            android:gravity="center|center_horizontal"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/edtNodo1"
+            app:layout_constraintEnd_toStartOf="@+id/edtNodo1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtNodo1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/boton_enfocado"
+            android:ems="10"
+            android:gravity="center|center_horizontal"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtNodo2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/color_celeste"
+            android:ems="10"
+            android:gravity="center|center_horizontal"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtNodo1" />
+
+        <EditText
+            android:id="@+id/edtNodo3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/boton_rosa"
+            android:ems="10"
+            android:gravity="center|center_horizontal"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtNodo1" />
+
+        <EditText
+            android:id="@+id/edtNodo4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/color_azul"
+            android:ems="10"
+            android:gravity="center|center_horizontal"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtNodo2" />
+
+        <EditText
+            android:id="@+id/edtNodo5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/color_verde"
+            android:ems="10"
+            android:gravity="center|center_horizontal"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toStartOf="@+id/edtNodo6"
+            app:layout_constraintStart_toEndOf="@+id/edtNodo4"
+            app:layout_constraintTop_toBottomOf="@+id/edtNodo2" />
+
+        <EditText
+            android:id="@+id/edtNodo6"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/color_rojo"
+            android:ems="10"
+            android:gravity="center|center_horizontal"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtNodo3" />
+
+        <TextView
+            android:id="@+id/txtNumeroTriangulo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="12dp"
+            android:background="#2979FF"
+            android:ems="10"
+            android:gravity="center|center_horizontal"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txtEtiSumLin4"
+            app:layout_constraintTop_toBottomOf="@+id/txtEtiSumLin4" />
+
+        <TextView
+            android:id="@+id/txtEtiSumLin1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:text="Suma línea1"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toStartOf="@+id/edtNodo1"
+            app:layout_constraintTop_toBottomOf="@+id/txtSumaLinea1" />
+
+        <TextView
+            android:id="@+id/txtEtiSumLin4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:text="Número a completar"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btComprobar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/color_verde_claro"
+            android:text="@string/comprobar"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@+id/edtNodo5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtNodo1"
+            app:layout_constraintVertical_bias="0.916" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

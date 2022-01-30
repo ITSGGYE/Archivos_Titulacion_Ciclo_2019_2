@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/icon_info_jg1"
+        android:icon="@drawable/ic_info"
+        android:title="@string/informacion"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/icon_regresar_jgo1"
+        android:icon="@drawable/ic_regresar"
+        app:showAsAction="always"
+        android:title="@string/regresar" />
+
+</menu>

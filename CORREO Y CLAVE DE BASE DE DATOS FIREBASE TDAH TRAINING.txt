@@ -1,0 +1,10 @@
+*BASE DE DATOS*
+
+Firebase:
+https://console.firebase.google.com/u/1/?pli=1
+
+correo:
+tdah.training@gmail.com
+
+clave:
+TD@HTR@1N1NG

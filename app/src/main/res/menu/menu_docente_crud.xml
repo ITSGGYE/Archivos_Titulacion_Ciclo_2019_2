@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/icon_agregar_doc"
+        android:icon="@drawable/ic_agregar"
+        android:title="Edit Done"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/icon_actualizar_doc"
+        android:icon="@drawable/ic_actualizar"
+        android:title="Edit Done"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/icon_eliminar_doc"
+        android:icon="@drawable/ic_eliminar"
+        android:title="Edit Done"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/icon_regresar_doc"
+        android:icon="@drawable/ic_regresar"
+        android:title="Edit Done"
+        app:showAsAction="always" />
+
+</menu>

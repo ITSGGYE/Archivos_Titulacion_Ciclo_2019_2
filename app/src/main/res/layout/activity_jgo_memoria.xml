@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/txt_puntaje_mem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:textSize="@dimen/tam_texto_descripcion" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_muestra"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:padding="15dp" />
+
+        <Button
+            android:id="@+id/img_reloj"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="30sp"
+            android:background="@drawable/ic_reloj" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="SELECCIONE"
+        android:textAlignment="center"
+        android:textSize="@dimen/tam_texto_descripcion" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/f1"
+            android:layout_width="@dimen/grilla"
+            android:layout_height="@dimen/grilla"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/f2"
+            android:layout_width="@dimen/grilla"
+            android:layout_height="@dimen/grilla"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/f3"
+            android:layout_width="@dimen/grilla"
+            android:layout_height="@dimen/grilla"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/f4"
+            android:layout_width="@dimen/grilla"
+            android:layout_height="@dimen/grilla"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/f5"
+            android:layout_width="@dimen/grilla"
+            android:layout_height="@dimen/grilla"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/f6"
+            android:layout_width="@dimen/grilla"
+            android:layout_height="@dimen/grilla"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/f7"
+            android:layout_width="@dimen/grilla"
+            android:layout_height="@dimen/grilla"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/f8"
+            android:layout_width="@dimen/grilla"
+            android:layout_height="@dimen/grilla"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/f9"
+            android:layout_width="@dimen/grilla"
+            android:layout_height="@dimen/grilla"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+</LinearLayout>

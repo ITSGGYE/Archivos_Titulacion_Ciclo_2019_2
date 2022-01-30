@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "613567885018",
+    "firebase_url": "https://tdah-training.firebaseio.com",
+    "project_id": "tdah-training",
+    "storage_bucket": "tdah-training.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613567885018:android:a31048a1dd0b91342ebfe3",
+        "android_client_info": {
+          "package_name": "com.tdah_training"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613567885018-h7of5ktb5rg1er976bpu3c7844u314ae.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tdah_training",
+            "certificate_hash": "5ced128ebda193755f2336ea34fb3d66b1fffe91"
+          }
+        },
+        {
+          "client_id": "613567885018-e92sb6d4as2810j1h9gb5eprv2tt28st.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWJQ3ttuPqV3-qawI-_Y4eyJq_RqQEXu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613567885018-e92sb6d4as2810j1h9gb5eprv2tt28st.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:613567885018:android:dd86498e066dfdb22ebfe3",
+        "android_client_info": {
+          "package_name": "com.tdahtraining"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "613567885018-e92sb6d4as2810j1h9gb5eprv2tt28st.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWJQ3ttuPqV3-qawI-_Y4eyJq_RqQEXu4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "613567885018-e92sb6d4as2810j1h9gb5eprv2tt28st.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:layout_height="match_parent"
+    tools:context=".vista.DocenteCrudActivity">
+
+    <EditText
+        android:id="@+id/crud_nombres_est"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:paddingTop="10dp"
+        android:hint="Nombres"/>
+
+    <EditText
+        android:id="@+id/crud_apellidos_est"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:paddingTop="10dp"
+        android:hint="Apellidos"/>
+
+    <Spinner
+        android:id="@+id/crud_sexo_est"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:entries="@array/lstSexo" />
+
+    <EditText
+        android:id="@+id/crud_curso_est"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:paddingTop="10dp"
+        android:hint="Curso"/>
+
+    <EditText
+        android:id="@+id/crud_correo_est"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:paddingTop="10dp"
+        android:hint="Correo"/>
+
+    <EditText
+        android:id="@+id/crud_contrasena_est"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textVisiblePassword"
+        android:paddingTop="10dp"
+        android:hint="Contraseña"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textSize="30dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Lista de estudiantes" />
+
+    <ListView
+        android:id="@+id/lv_datosEstudiantes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

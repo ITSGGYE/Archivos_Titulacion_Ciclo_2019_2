@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/borde"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".matematica.OperacionesActivity">
+
+    <TextView
+        android:id="@+id/txt_puntaje_ope"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/tam_texto_descripcion" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/bt_num1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/color_azul"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            tools:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/bt_oper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/color_naranja"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            tools:layout_margin="5dp" />
+
+        <Button
+            android:id="@+id/bt_num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/color_celeste"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp"
+            tools:layout_margin="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_res"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/bk_boton_plano"
+            android:textColor="#FFFFFF"
+            android:textSize="60sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/seleccione_la_respuesta_correcta"
+        android:textColor="#2979FF"
+        android:textSize="@dimen/tam_texto_descripcion" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/bt_op1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:autoText="true"
+                android:background="@drawable/color_naranja"
+                android:textColor="#FFFFFF"
+                android:textSize="70sp" />
+
+            <Button
+                android:id="@+id/bt_op2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:autoText="true"
+                android:background="@drawable/color_azul"
+                android:textColor="#FFFFFF"
+                android:textSize="70sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/bt_op3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:autoText="true"
+                android:background="@drawable/color_verde_claro"
+                android:textColor="#FFFFFF"
+                android:textSize="70sp" />
+
+            <Button
+                android:id="@+id/bt_op4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:autoText="true"
+                android:background="@drawable/color_rojo"
+                android:textColor="#FFFFFF"
+                android:textSize="70sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
