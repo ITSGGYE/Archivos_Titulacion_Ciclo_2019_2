@@ -1,0 +1,10 @@
+package com.humtrusa.enumRecursos;
+
+public enum EnumRecursosArticulos {
+	LISTAR_ARTICULOS_PEDIDOS,
+	GUARDAR_ARTICULO,
+	MODIFICAR_ARTICULO,
+	LISTAR_ARTICULOS_FILTROS,
+	INACTIVAR_ARTICULO;
+	
+}

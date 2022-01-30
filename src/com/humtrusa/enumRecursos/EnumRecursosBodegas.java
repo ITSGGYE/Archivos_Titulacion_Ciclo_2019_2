@@ -1,0 +1,9 @@
+package com.humtrusa.enumRecursos;
+
+public enum EnumRecursosBodegas {
+	LISTAR_BODEGASXAGENCIAS,
+	GUARDAR_BODEGA,
+	INACTIVAR_BODEGA,
+	MODIFICAR_BODEGA,
+	LISTAR_ARTICULOSXBODEGAS,
+}

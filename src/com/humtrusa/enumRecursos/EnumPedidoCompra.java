@@ -1,0 +1,11 @@
+package com.humtrusa.enumRecursos;
+
+public enum EnumPedidoCompra {
+	GUARDAR_PEDIDO,
+	LISTAR_PEDIDOS_X_FILTROS,
+	LISTAR_DETALLES_PEDIDOS,
+	APROBAR_PEDIDO,
+	ANULAR_PEDIDO,
+	GUARDAR_COMPRA,
+	INACTIVAR_PEDIDO,
+}

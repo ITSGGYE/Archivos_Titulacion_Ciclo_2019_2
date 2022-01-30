@@ -1,0 +1,9 @@
+package com.humtrusa.enumRecursos;
+
+public enum EnumRecursosCotizaciones {
+	LISTAR_COTIZACIONES_FILTROS,
+	GUARDAR_COTIZACIONES,
+	OBTENER_DETALLE_COTIZACION,
+	CARGAR_ARCHIVO,
+	COTIZACION_ESTADO
+}
