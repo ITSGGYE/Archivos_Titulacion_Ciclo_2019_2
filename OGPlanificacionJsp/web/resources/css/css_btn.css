@@ -1,0 +1,103 @@
+/*<style><%@include file="/WEB-INF/css/style.css"%></style>*/
+
+.btn_actualizar,  
+.btn_imprimir, 
+.btn_planificacion, 
+.btn_estado_a, 
+.btn_estado_i,
+.btn_nuevo
+.btn_buscar{
+    /*border: 1px solid black;*/
+    padding: 0.4%;
+    border-radius: 7%;
+}
+
+.btn_buscar{
+    cursor: pointer;
+    /*background-color: #19647e;*/
+/*    background-color: #235789;
+    border: 1px solid #0016b0;*/
+    padding: 0.4%;
+    /*color: #ffffff;*/
+}
+.btn_buscar:hover{
+/*    color: #1883ba;
+    background-color: #e8e8e8;*/
+}
+
+.btn_planificacion{
+    cursor: pointer;
+    /*background-color: #157a6e;*/
+    background-color: #097351;
+    border: 1px solid black;
+    color: #ffffff;
+}
+.btn_planificacion:hover{
+    color: green;
+    background-color: #e8e8e8;
+    border: 1px solid black;
+}
+
+.btn_estado_i{
+    cursor: pointer;
+    background-color: #e8e8e8;
+    border: 1px solid #0016b0;
+    color: black;
+}
+.btn_estado_i:hover{
+    color: #ffffff;
+    background-color: #a4036f;
+    border: 1px solid black;
+}
+
+.btn_estado_a{
+    cursor: pointer;
+    background-color: #e8e8e8;
+    border: 1px solid #0016b0;
+    color: black;
+}
+.btn_estado_a:hover{
+    color: #ffffff;
+    background-color: #df2935;
+    border: 1px solid black;
+}
+
+.btn_imprimir{
+    cursor: pointer;
+    background-color: #e8e8e8;
+    border: 1px solid #0016b0;
+    color: black;
+}
+.btn_imprimir:hover{
+    color: #0016b0;
+    background-color: #e3b505;
+    border: 1px solid black;
+}
+
+.btn_actualizar{
+    cursor: pointer;
+    background-color: #e8e8e8;
+    border: 1px solid #0016b0;
+    color: black;
+}
+.btn_actualizar:hover{
+    color: #ffffff;
+    background-color: #f7921e;
+    border: 1px solid black;
+}
+
+
+.btn_nuevo{
+    cursor: pointer;
+    /*background-color: #19647e;*/
+    background-color: #235789;
+    border: 1px solid #0016b0;
+    padding: 0.4%;
+    color: #ffffff;
+}
+.btn_nuevo:hover{
+    color: #1883ba;
+    background-color: #e8e8e8;
+}
+  
+  

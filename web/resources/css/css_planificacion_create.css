@@ -1,0 +1,137 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31/03/2020, 17:51:57
+    Author     : carlos
+*/
+
+main{
+    margin-top: 5%;
+    background: #FAFAFA;
+    border: 2px solid #9c9c9c; 
+    width: 80%; 
+    height: 100%;
+    min-height: 350px;
+    margin-left: 10%;
+    font-size: 85%;
+    border-radius: 0.5%;
+}
+
+.ctn_planificacion{
+    /*border: 1px solid blue;*/
+    width: 100%;
+    height: 100%;
+    min-height: 80px;
+    display: inline-block;
+    justify-content:flex-start;
+    align-items:flex-start
+}
+
+section{
+    /*border: 1px solid red;*/
+    width: 49%;
+    min-width: 100px;
+    height: 100%;
+    min-height: 80px;
+    align-self:auto;
+    display: inline-block;
+}
+
+input, textarea, select{
+    width: 90%;
+}
+
+p, input, textarea, select {
+    margin-left: 2%;
+    font-size: 95%;
+}
+
+.css_guardar, .css_cancelar{
+    text-decoration: none;
+    margin-bottom: 2px;
+    margin-left: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    cursor: pointer;
+    width: 78%;
+    height: 25px;
+}
+
+.css_cancelar:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+}
+
+.css_guardar:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+}
+
+textArea{
+    resize: none;
+}
+
+
+
+@media(max-width: 550px){
+    main{
+        /*margin-top: 5%;*/
+        background: #FAFAFA;
+        border: 1px solid #9c9c9c; 
+        width: 80%; 
+        height: 100%;
+        min-height: 350px;
+        margin-left: 10%;
+        text-align: center;
+        font-size: 85%;
+        border-radius: 0.5%;
+    }
+
+    .ctn_planificacion{
+        /*border: 1px solid blue;*/
+        width: 100%;
+        min-width: 155px;
+        height: 100%;
+        min-height: 80px;
+        display: inline-block;
+        /*margin-top: 2%;*/
+        justify-content:flex-start;
+        align-items:flex-start
+    }
+
+
+    section{
+        /*border: 1px solid cyan;*/
+        width: 47%;
+        min-width: 50px;
+        height: 100px;
+        min-height: 80px;
+        align-self:auto;
+        display: inline-block;
+    }
+
+    input, textArea,select{
+        width: 95%;
+    }
+    p, input, textArea,select{
+    margin-left: 0%;
+    font-size: 80%;
+}
+
+textArea{
+    resize: none;
+}
+
+
+}

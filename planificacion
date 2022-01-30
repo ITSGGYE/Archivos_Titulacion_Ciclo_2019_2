@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9e7626ca-78d7-497b-a28a-7f938c079ae2">
+	<queryString language="SQL">
+		<![CDATA[SELECT
+  `pla_planificacion_union`.`estado_pla_union`,`pla_planificacion_union`.`f_actualizacion`, 
+  `pla_planificacion_union`.`f_creacion`,`pla_planificacion_union`.`id_materia`, 
+  `pla_planificacion_union`.`id_objetivo`,`pla_planificacion_union`.`id_paralelo`, 
+  `pla_planificacion_union`.`id_periodo`,`pla_planificacion_union`.`id_planificacion`, 
+  `pla_planificacion_union`.`id_planificacion_union`,`pla_planificacion_union`.`id_usuario`, 
+  `pla_planificacion_union`.`u_actualizacion`,`pla_planificacion_union`.`u_creacion`, 
+  `pla_planificacion`.`id_planificacion`,`pla_planificacion`.`fecha`, 
+  `pla_planificacion`.`hora`,`pla_planificacion`.`objetivo_unidad`,`pla_planificacion`.`criterio_evaluacion`,
+  `pla_planificacion`.`destresa_criterio_desempeno`,`pla_planificacion`.`actividades_aprendizaje`,
+  `pla_planificacion`.`recursos`,`pla_planificacion`.`tecnicas_instrumentos_evaluacion`,
+  `pla_planificacion`.`especificaciones_unidad_educativa`,`pla_planificacion`.`especificaciones_adaptacion_aplicada`,
+  `pla_planificacion`.`revisado`,`pla_planificacion`.`aprovado`,`pla_planificacion`.`evaluacion_unidad`, 
+  
+  `ca_materia`.`materia`,`ma_paralelo`.`paralelo`,`ma_periodo`.`periodo`,`pla_objetivos`.`objetivos`, 
+  `pla_objetivos`.`descripcion`, 
+  
+  `us_usuario`.`usuario`,`us_rol`.`id_rol`,`us_rol`.`rol`,`us_registro`.`id_registro`,`us_registro`.`apellidos_nombres`, 
+  
+  `em_sucursal`.`id_sucursal`,`em_sucursal`.`nombre_comercial_su` 
+  
+FROM `pla_planificacion` 
+INNER JOIN `pla_planificacion_union` ON `pla_planificacion`.`id_planificacion` = `pla_planificacion_union`.`id_planificacion` 
+INNER JOIN `ca_materia` ON `ca_materia`.`id_materia` = `pla_planificacion_union`.`id_materia` 
+INNER JOIN `ma_paralelo` ON `ma_paralelo`.`id_paralelo` = `pla_planificacion_union`.`id_paralelo` 
+INNER JOIN `ma_periodo` ON `ma_periodo`.`id_periodo` = `pla_planificacion_union`.`id_periodo` 
+INNER JOIN `pla_objetivos` ON `pla_objetivos`.`id_objetivos` = `pla_planificacion_union`.`id_objetivo` 
+INNER JOIN `us_usuario` ON `us_usuario`.`id_usuario` = `pla_planificacion_union`.`id_usuario` 
+INNER JOIN `us_rol` ON `us_rol`.`id_rol` = `us_usuario`.`id_rol` 
+INNER JOIN `us_registro` ON `us_registro`.`id_registro` = `us_usuario`.`id_registro` 
+INNER JOIN `em_sucursal` ON `em_sucursal`.`id_sucursal` = `us_usuario`.`id_sucursal`
+WHERE `pla_planificacion_union`.`id_planificacion` = 1 ;]]>
+	</queryString>
+	<field name="fecha" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hora" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="objetivo_unidad" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="criterio_evaluacion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="destresa_criterio_desempeno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="actividades_aprendizaje" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="recursos" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tecnicas_instrumentos_evaluacion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="especificaciones_unidad_educativa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="especificaciones_adaptacion_aplicada" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="revisado" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aprovado" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="evaluacion_unidad" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="materia" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="paralelo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="periodo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="descripcion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="usuario" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apellidos_nombres" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombre_comercial_su" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="objetivos" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

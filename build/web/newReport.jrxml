@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="0e1138fe-2c39-479d-a0d6-e89af4360aad">
+	<property name="ireport.zoom" value="1.100000000000001"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="id" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[CALL pla_planifiacion_lista_select_id($P{id});]]>
+	</queryString>
+	<field name="estado_pla_union" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="f_actualizacion" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="f_creacion" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_materia" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_paralelo" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_periodo" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_planificacion" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_planificacion_union" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_usuario" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="u_actualizacion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="u_creacion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fecha" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hora" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="objetivo_unidad" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="criterio_evaluacion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="destresa_criterio_desempeno" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="actividades_aprendizaje" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="recursos" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tecnicas_instrumentos_evaluacion" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="especificaciones_unidad_educativa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="especificaciones_adaptacion_aplicada" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="revisado" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="aprovado" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="evaluacion_unidad" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="materia" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="paralelo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="periodo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="usuario" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_rol" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rol" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_registro" class="java.lang.Long">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apellidos_nombres" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_sucursal" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombre_comercial_su" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<title>
+		<band height="555" splitType="Stretch">
+			<rectangle>
+				<reportElement x="2" y="501" width="271" height="20" uuid="f320d98e-38f5-42bf-ad4a-fa65dad95a22"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="537" y="501" width="259" height="20" uuid="1f0f36e5-f86e-4d80-b7ea-ace92b231ba2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="273" y="501" width="264" height="20" uuid="cf7843d0-9430-45ca-a748-9421482e76ea"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="273" y="481" width="264" height="20" uuid="a5970aa9-9ef4-4836-9c60-ebad88358b97"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="537" y="481" width="259" height="20" uuid="329b5a07-3cee-49c3-9cad-f460b74686dc"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="537" y="458" width="259" height="23" uuid="9fce24b0-cf06-4173-b00c-9d9ded31fe10"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="2" y="458" width="271" height="23" uuid="3bb6f32f-4274-4ed7-bd06-356e32ab598c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="78" y="410" width="81" height="48" uuid="dd8ee565-0ee0-4ad8-a39a-6807a2f4a347"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="159" y="410" width="270" height="48" uuid="1ad2ba43-24a2-4157-b1d1-f43bb3f30656"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="658" y="306" width="138" height="104" uuid="a51bddcf-d9f0-46c3-a635-331d92fae978"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="512" y="306" width="146" height="104" uuid="ddf7e802-8bb0-4bcf-8b66-6131d3241a36"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="412" y="306" width="100" height="104" uuid="dce4ec37-5c50-49b2-9b00-96297d718cdb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="27" y="306" width="137" height="104" uuid="602333ce-1068-4d71-bdd9-b197f5b2e46a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="27" y="229" width="137" height="77" uuid="a96e0548-32be-4b52-a535-94d31ec29f96"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="658" y="280" width="138" height="26" uuid="500ee59c-2fdf-48d7-95f6-1822e3825769"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="512" y="280" width="146" height="26" uuid="063bb621-9a3c-4653-86dc-1dc771d6d6bf"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="512" y="229" width="284" height="51" uuid="566cf08c-e782-436e-bd25-3394c43af431"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="412" y="229" width="100" height="77" uuid="c22c1ea0-c6a6-4c33-ab67-9786fb7d2fc3"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="164" y="229" width="248" height="51" uuid="e7d216b4-947f-480e-8f98-348a3f07c4cb"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="369" y="105" width="217" height="20" uuid="583f8e12-63bd-470f-b0d1-97df45fe6d06"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="2" y="105" width="367" height="20" uuid="e2e140c2-d341-4cc5-8420-82a746447b8a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="183" y="85" width="309" height="20" uuid="73ae0736-a99b-4f89-8d34-673a524f9b5c"/>
+			</rectangle>
+			<textField>
+				<reportElement x="234" y="85" width="258" height="20" uuid="1c35e100-a35d-4e1e-87a0-8769bec302cd"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{apellidos_nombres}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="2" y="177" width="160" height="52" uuid="d9af2301-9ccc-496e-80b9-54dfbd808eee"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="162" y="177" width="634" height="52" uuid="e9442cd2-bcf4-4b22-a0b1-7cd81ae461bd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="656" y="85" width="140" height="20" uuid="e757d359-637d-44e8-bd24-e01e20d803c9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="492" y="85" width="164" height="20" uuid="0daaa7e0-08f5-4cf5-905e-c8875e03e11c"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="2" y="85" width="181" height="20" uuid="62a0662e-ad5e-4a18-b337-2f02aa07d4fa"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="2" y="65" width="794" height="20" uuid="2eec5260-af15-4ebd-bd86-fe6ffd416b5a"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="566" y="6" width="230" height="59" uuid="6f379719-0739-4114-9df8-91431342abe6"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="199" y="6" width="367" height="59" uuid="2b3e817c-610e-44b4-98e9-b996cdbde324"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="2" y="6" width="197" height="59" uuid="d114889d-314a-4f29-af05-08337cadca6c"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="615" y="39" width="54" height="20" uuid="62ba0505-3b28-4f57-bf1e-f62cde3b6240"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Impreso:]]></text>
+			</staticText>
+			<image>
+				<reportElement x="47" y="13" width="176" height="50" uuid="cdb8edbc-4098-4299-abae-750e096b3b69"/>
+				<imageExpression><![CDATA["C:\\Users\\carlos\\Documents\\NetBeansProjects\\OGPlanificacionJsp\\web\\resources\\images\\escuela OG.jpeg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="605" y="12" width="76" height="20" uuid="3c1d5909-401a-449c-a67b-20c4e907fb50"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" isBold="true"/>
+				</textElement>
+				<text><![CDATA[AÑO LECTIVO]]></text>
+			</staticText>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="669" y="39" width="127" height="20" uuid="ff5e5f09-6ce8-436f-8471-c2121da6d19e"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="681" y="12" width="100" height="20" uuid="3dbef1c3-f113-41dc-b9e8-f55d8f76a845"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{periodo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="199" y="7" width="367" height="57" uuid="e938c5f3-6260-445b-b12f-f33651bb2d52"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre_comercial_su}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="174" y="65" width="427" height="20" uuid="d939585a-8ff7-4bfa-a63f-97be8cf11b8a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PLANIFICACION MICROCURRICULAR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="193" y="85" width="41" height="20" uuid="87ae063f-db46-40cf-9050-4b1cd5f00332"/>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SansSerif" size="12"/>
+				</textElement>
+				<text><![CDATA[Prof/a.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="662" y="85" width="119" height="20" uuid="467de88f-2317-4c11-b7c2-351fd8beef00"/>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="28" y="85" width="146" height="20" uuid="1ededad9-afd5-45e5-85b7-c02d4d6cdec0"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombre del Docente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="515" y="85" width="100" height="20" uuid="7151c9ae-9d0e-478b-82d5-4aca628de013"/>
+				<textElement verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="162" y="125" width="634" height="52" uuid="2444bc6e-c715-46a3-8430-17edd93ca989"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="586" y="105" width="210" height="20" uuid="a5f3cb3a-f7a5-46c8-bb9d-1312e6c190b8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="2" y="125" width="160" height="52" uuid="1e01c1b3-d0f4-499e-b25d-f34ea12a9096"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="28" y="105" width="100" height="20" uuid="c3c05151-237a-49ff-8a7c-5f62f36a7834"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Asignatura:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="373" y="107" width="59" height="20" uuid="294bd9c8-dc81-41db-8090-c96b46f3fae3"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Paralelo: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="592" y="108" width="51" height="20" uuid="cd37fd96-c2b0-4c56-b94f-ddd283f10431"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tiempo:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="662" y="107" width="100" height="17" uuid="28b71500-184a-4acb-849e-1b113aa4d9b3"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{hora}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="19" y="142" width="136" height="20" uuid="3e7de448-7ccd-4e2b-90f9-dfd9c8f5ea6e"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Objetivo de la unidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="191" width="136" height="20" uuid="48cb5a65-bdb3-4afb-aec2-76b01ec59cc9"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Criterios de evaluación]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="167" y="129" width="625" height="42" uuid="2ffea631-3599-4e39-b143-b2e4d26b0aa7"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{objetivo_unidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="167" y="182" width="625" height="42" uuid="db0c0cca-9d4d-4a98-90fc-79760584166a"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{criterio_evaluacion}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="134" y="107" width="145" height="20" uuid="c69a2b04-e1c4-4c75-bc16-9ae2516c8ece"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{materia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="432" y="105" width="134" height="20" uuid="d8ff6e81-2077-4b89-8982-f0ce683daad0"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{paralelo}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="164" y="280" width="248" height="26" uuid="cc75abc1-317b-4069-b2b5-66bbaaa79cc9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="2" y="229" width="25" height="77" uuid="2a0cb992-45b0-4744-be76-88ccf8416ae2"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="5" y="234" width="20" height="64" uuid="8cfa709a-1b68-4a8c-9391-cf8bf298c26f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sesiones]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="44" y="238" width="105" height="57" uuid="f585438c-94c8-4044-ae41-5872bbca19ea"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<text><![CDATA[¿Qué va a aprender? Destreza de criterio de desempeño]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="199" y="231" width="188" height="50" uuid="e1c0d1da-60af-4436-8460-3302bcb1573d"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[¿Cómo van a aprender? Actividades de aprendizaje (estrategias metodológicas)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="234" y="286" width="100" height="20" uuid="ca7b1bb9-c153-43d7-a82e-e790f37d3031"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Actividades]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="240" width="74" height="53" uuid="b5869917-3e6c-4da5-b5df-b4ee8ee15af0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Recursos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="516" y="281" width="140" height="26" uuid="3b09a294-cc3a-41c1-b7c4-192f5d2c7ec3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Indicadores de evaluacion de la unidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="592" y="238" width="148" height="37" uuid="4e940ad2-49d6-4f98-a820-481b963bca5f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[¿Qué y cómo evaluar? Evaluación]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="662" y="280" width="127" height="27" uuid="507a0b34-f1cd-4de5-94cd-f88641ef2e40"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Técnicas e instrumentos de evaluación]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="2" y="306" width="25" height="104" uuid="37bf40de-06b4-480d-bdad-3f2b45057d11"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="5" y="326" width="20" height="64" uuid="da57575b-aeef-47c0-b587-e4c56b8d0921"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="Left">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1. Sesión]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="164" y="306" width="248" height="104" uuid="4993b662-a20c-494c-8f85-b227c8734b8c"/>
+			</rectangle>
+			<textField>
+				<reportElement x="30" y="308" width="131" height="100" uuid="cd04d3d1-e0f3-4898-acd2-e64cca1dd83b"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{destresa_criterio_desempeno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="168" y="309" width="242" height="98" uuid="d8a4a167-226e-462f-ba45-232866515e84"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{actividades_aprendizaje}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="415" y="309" width="95" height="98" uuid="eb3d3eef-4c6f-4d97-a2d2-2b722bb3342f"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{recursos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="517" y="309" width="137" height="98" uuid="8efe4bf4-118f-4bc4-8ae9-5df0210d28d1"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{evaluacion_unidad}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="662" y="309" width="132" height="98" uuid="ff8ea069-125f-4694-a490-f13a0776d20c"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tecnicas_instrumentos_evaluacion}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="429" y="410" width="88" height="48" uuid="357c22ed-4840-4635-a0cb-caccb3caa59e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="2" y="410" width="76" height="48" uuid="96339645-b48b-4708-b414-045a10fa175f"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="3" y="412" width="75" height="44" uuid="f5f71d4c-c367-41c3-a630-b361fa195462"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Adaptaciones curriculares]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="517" y="410" width="279" height="48" uuid="b4fc1c85-7970-48e7-bc3e-b927044325d2"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="83" y="413" width="72" height="44" uuid="010791a0-8e58-40a2-a89c-3e67e7b2bda4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Especificación de la necesidad educativa]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="413" width="82" height="45" uuid="8000f846-baf8-4cbf-9bca-d73f6da05b32"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[especificación de la adaptación a ser aplicada]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="163" y="413" width="261" height="43" uuid="e1f3fa24-c7f4-493a-8988-a5fd8135b63b"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{especificaciones_unidad_educativa}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="529" y="413" width="260" height="43" uuid="c97d0a23-67e1-426b-ae4a-25e5660ec7e9"/>
+				<textElement>
+					<font size="7"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{especificaciones_adaptacion_aplicada}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="280" y="481" width="40" height="20" uuid="406571b4-05d0-426d-9ea4-395921f85ed2"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Firma:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="543" y="500" width="41" height="20" uuid="d0c21225-0164-4197-aea1-8e5aa842332a"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha: ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="280" y="501" width="40" height="20" uuid="4db2a171-8bc3-4125-98fd-634f1b8b90d8"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="501" width="41" height="20" uuid="a89e0b04-f8d2-435c-9af2-f1b06e41eeeb"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Fecha: ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="2" y="481" width="271" height="20" uuid="7209f681-2195-4432-bfa6-d59f39a9120e"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="543" y="480" width="41" height="20" uuid="0e352bfe-ae1c-4bda-bc8c-a5a49f3808d2"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Firma:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="8" y="481" width="40" height="20" uuid="7f6bb0cb-5ca1-47fe-9820-4068cc6d8b78"/>
+				<textElement>
+					<font fontName="SansSerif" size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Firma:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="273" y="458" width="264" height="23" uuid="a1cbc54b-e0a6-4bbd-a9c9-f476f433b575"/>
+			</rectangle>
+			<textField>
+				<reportElement x="82" y="460" width="180" height="20" uuid="8d36eae9-89b7-4523-8f4e-c907fa714fd5"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{apellidos_nombres}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="341" y="461" width="191" height="20" uuid="a74e2137-46f3-410d-926a-6cf4425b452a"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{revisado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="617" y="461" width="175" height="20" uuid="b827fa1e-2f3e-4ee9-ac2e-9d79e52111ea"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{aprovado}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="5" y="461" width="68" height="20" uuid="f1765b75-0eed-4199-bee6-6ccaf5c4533d"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Elaborado:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="275" y="460" width="64" height="20" uuid="750875cd-2efa-4b71-907b-4bc9d902f690"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Revisado:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="543" y="461" width="69" height="20" uuid="80a900bb-b7f5-41b1-93b7-6264e1d3cc83"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Aprobado:]]></text>
+			</staticText>
+		</band>
+	</title>
+</jasperReport>
