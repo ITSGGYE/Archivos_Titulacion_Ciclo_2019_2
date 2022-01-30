@@ -1,0 +1,1 @@
+start firefox localhost/clinigre/terminasesion.php

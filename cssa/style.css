@@ -1,0 +1,72 @@
+﻿/*
+Author:           Łukasz Girek
+Author URI:       http://www.rzepak.pure.pl/
+Project:
+Description:
+*/
+/*---------------------------------------------------------------------------------------
+--- RESETS
+---------------------------------------------------------------------------------------*/
+
+
+.titulo2{
+	float:right;
+	font-size:24px;
+	color:#FE9A2E;
+	font-weight:bold;
+	padding-left:6px;
+	padding-top:0px;
+}
+
+ /* for IE/Mac */
+
+/*---------------------------------------------------------------------------------------
+--- BASICS
+---------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+#table{width:100%;border:1px solid #c3c3c3;}
+#table th{background: url(../img/p.gif);padding:5px;text-align:left;}
+#table td{padding:5px;}
+#table .table_date{color:#5e5e5e;width:100px;font-weight:bold;}
+#table .table_check{width:20px;background:#eee;}
+#table .table_title a{color:#26608e;text-decoration:underline;font-weight:bold;}
+
+#table_options{background:#fff;border:solid #c3c3c3;border-width:0px 1px 1px 1px;padding:5px;}
+#table_options label{margin:0px;padding-top:2px;}
+#table_options ul{list-style:none;margin:0px;padding:0px;}
+#table_options ul li{float:left;padding:5px;margin-right:10px;}
+
+.pagination{margin-top:20px;}
+.pagination a, .pagination span{background:url("../img/borderbottom.jpg") bottom repeat-x #fff;padding:5px;margin:2px;border:1px solid #d9d9d9;text-decoration:none;-moz-border-radius:3px;-webkit-border-radius: 3px;}
+
+
+
+.transparent
+{
+   filter:alpha(opacity=60); 
+   -moz-opacity: 0.8; 
+   opacity: 0.9; 
+}
+.nobold{
+   font-weight:normal
+}
+
+.titulo{
+	font-size:12px;
+	color:#FE9A2E;
+	font-weight:bold;
+	padding-left:6px;
+	padding-top:4px;
+}

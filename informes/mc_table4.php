@@ -1,0 +1,149 @@
+<?php //session_start();
+//require('fpdf.php');
+require('fpdf/fpdf.php');
+
+class PDF_MC_Table extends FPDF
+{
+var $widths;
+var $aligns;
+
+function Header()
+{
+	$this->Image('imgs/cabe.jpg',0,0,200,0,'',''); //para la imagen del reporte
+	
+	$this->SetFont('Arial','B',16);
+	$this->Text(100,30,'',0,'C', 0);
+	$this->Text(80,38,'',0,'C', 0);
+	
+	$this->Ln(20);
+
+}
+
+function hora_local($zona_horaria = 0)
+{
+	if ($zona_horaria > -12.1 and $zona_horaria < 12.1)
+	{
+		$hora_local = time() + ($zona_horaria * 3600);
+		return $hora_local;
+	}
+	return 'error';
+}
+
+//echo gmdate('d-m-Y H:i:s', hora_local(-5));
+
+ function Footer()
+   {
+    $p10 = 1;
+//$p2 = $_SESSION['usuario'];
+$zona_horaria = -5;
+$p1 = gmdate('H:i:s', time() + ($zona_horaria * 3600));
+    $this->SetY(-15);
+    //Arial italic 8
+    $this->SetFont('Arial','I',8);
+    //Número de página
+  
+	// $this->Cell(80,10,'Hora '.$p1,0,0,'');
+	 // $this->Cell(90,10,'Usuario :'.$p2,0,0,'');
+   }
+
+function SetWidths($w)
+{
+	//Set the array of column widths
+	$this->widths=$w;
+}
+
+function SetAligns($a)
+{
+	//Set the array of column alignments
+	$this->aligns=$a;
+}
+
+function Row($data)
+{
+	//Calculate the height of the row
+	$nb=0;
+	for($i=0;$i<count($data);$i++)
+		$nb=max($nb,$this->NbLines($this->widths[$i],$data[$i]));
+	$h=5*$nb;
+	//Issue a page break first if needed
+	$this->CheckPageBreak($h);
+	//Draw the cells of the row
+	for($i=0;$i<count($data);$i++)
+	{
+		$w=$this->widths[$i];
+		$a=isset($this->aligns[$i]) ? $this->aligns[$i] : 'L';
+		//Save the current position
+		$x=$this->GetX();
+		$y=$this->GetY();
+		//Draw the border
+		$this->Rect(0,$y,0,$h);
+		
+		
+		//Print the text
+		$this->MultiCell($w,5,$data[$i],0,$a);
+		//Put the position to the right of the cell
+		$this->SetXY($x+$w,$y);
+	}
+	//Go to the next line
+	$this->Ln($h);
+}
+
+function CheckPageBreak($h)
+{
+	//If the height h would cause an overflow, add a new page immediately
+	if($this->GetY()+$h>$this->PageBreakTrigger)
+		$this->AddPage($this->CurOrientation);
+}
+
+function NbLines($w,$txt)
+{
+	//Computes the number of lines a MultiCell of width w will take
+	$cw=&$this->CurrentFont['cw'];
+	if($w==0)
+		$w=$this->w-$this->rMargin-$this->x;
+	$wmax=($w-2*$this->cMargin)*1000/$this->FontSize;
+	$s=str_replace("\r",'',$txt);
+	$nb=strlen($s);
+	if($nb>0 and $s[$nb-1]=="\n")
+		$nb--;
+	$sep=-1;
+	$i=0;
+	$j=0;
+	$l=0;
+	$nl=1;
+	while($i<$nb)
+	{
+		$c=$s[$i];
+		if($c=="\n")
+		{
+			$i++;
+			$sep=-1;
+			$j=$i;
+			$l=0;
+			$nl++;
+			continue;
+		}
+		if($c==' ')
+			$sep=$i;
+		$l+=$cw[$c];
+		if($l>$wmax)
+		{
+			if($sep==-1)
+			{
+				if($i==$j)
+					$i++;
+			}
+			else
+				$i=$sep+1;
+			$sep=-1;
+			$j=$i;
+			$l=0;
+			$nl++;
+		}
+		else
+			$i++;
+	}
+	return $nl;
+}
+}
+?>

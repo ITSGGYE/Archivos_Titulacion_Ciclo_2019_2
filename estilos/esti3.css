@@ -1,0 +1,454 @@
+.home > header .title {
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0);
+    border: 0px solid rgb(197, 236, 238);
+    background: none repeat scroll 0% 0% rgb(242, 242, 242);
+}
+
+.home > header .media {
+    background: none repeat scroll 0% 0% rgba(57, 203, 211,0);
+    border-width: 0px 0px 0px 0px;
+    padding: 0px;
+}
+
+.home > header .media .hero .play-intro {
+    background-image: linear-gradient(-90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    border: 0px solid rgba(255, 255, 255, 0);
+
+}
+
+.home > header .media .hero {
+    background: url("/static/cec-iaen/images/video2.8d02f2766aec.jpg") no-repeat scroll center center / cover transparent;
+}
+
+.home > header .outer-wrapper {
+    margin: 0px auto;
+    padding: 160px 10px 0px;
+    position: relative;
+    max-width: 1200px;
+    min-width: 760px;
+}
+.view-login .introduction header {
+    background-image: none;
+}
+
+.view-register .introduction header {
+    background-image:none;
+}
+
+header.global {
+	background: #2f3032;
+	border-bottom: 8px solid #e81e25; 
+	padding: 0px 0px;
+
+}
+.home header {
+		background-image: url("/static/cec-iaen/images/bannerAltoResol2.7e43c359369d.png");
+		height: 400px;
+}
+
+header.global .nav-courseware li .cta, header.global .nav-courseware div .cta, .view-partial-mktgregister .action.action-register, .view-partial-mktgregister .action.access-courseware {
+    box-shadow: 0px 2px 1px 0px #be1824;  /* Se cambio el menu*/
+    background: none repeat scroll 0% 0% #be1824; /* Se cambio el menu*/
+}
+
+header.global .nav-courseware li .cta:hover, header.global .nav-courseware div .cta:hover, .view-partial-mktgregister .action.action-register:hover, .view-partial-mktgregister .action.access-courseware:hover, header.global .nav-courseware li .cta:active, header.global .nav-courseware div .cta:active, .view-partial-mktgregister .action.action-register:active, .view-partial-mktgregister .action.access-courseware:active, header.global .nav-courseware li .cta:focus, header.global .nav-courseware div .cta:focus, .view-partial-mktgregister .action.action-register:focus, .view-partial-mktgregister .action.access-courseware:focus {
+    background: none repeat scroll 0% 0% #d67077;
+}
+
+header.global .nav-global li a, header.global .nav-global div a {
+    color: #FFF;
+}
+
+#content {
+	background-image: url("/static/cec-iaen/images/tileset.f00f72d2ea8d.png");
+	background-repeat: no-repeat;  /* Se cambio para que la imagen cubra todo el catalogo*/
+	background-size: cover; /* Se cambio para que la imagen cubra todo el catalogo*/
+}
+
+.container {
+
+/*	max-width: 100%;*/
+}
+
+login .content, .register .content, .passwordreset .content, #forgot-password-modal #password-reset .content {
+    float: left;
+    margin-right: 40px;
+		width: 600px;
+}
+
+.view-register .introduction, .view-login .introduction, .view-passwordreset .introduction {
+    padding: 0px;
+}
+.view-register .container, .view-register section.outside-app, .view-register .introduction, .view-login .container, .view-login section.outside-app, .view-login .introduction, .view-passwordreset .container, .view-passwordreset section.outside-app, .view-passwordreset .introduction {
+    box-sizing: border-box;
+    margin: 0px auto;
+    width: 700px;
+    background: none repeat scroll 0% 0% #FFF;
+}
+
+.container {
+    min-width: 700px;
+    border-bottom: 8px solid #E81E25;
+}
+
+.login .form-actions button[type="submit"], .register .form-actions button[type="submit"], .passwordreset .form-actions button[type="submit"], #forgot-password-modal #password-reset .form-actions button[type="submit"], .view-survey .action-primary, .view-partial-mktgregister .action.action-register, .view-partial-mktgregister .action.access-courseware {
+    box-shadow: 0px 2px 1px 0px #33b5bd;
+    background: none repeat scroll 0% 0% #33b5bd;
+
+}
+
+.login .form-actions button[type="submit"]:hover, .register .form-actions button[type="submit"]:hover, .passwordreset .form-actions button[type="submit"]:hover, #forgot-password-modal #password-reset .form-actions button[type="submit"]:hover, .view-survey .action-primary:hover, .view-partial-mktgregister .action.action-register:hover, .view-partial-mktgregister .action.access-courseware:hover, .login .form-actions button[type="submit"]:active, .register .form-actions button[type="submit"]:active, .passwordreset .form-actions button[type="submit"]:active, #forgot-password-modal #password-reset .form-actions button[type="submit"]:active, .view-survey .action-primary:active, .view-partial-mktgregister .action.action-register:active, .view-partial-mktgregister .action.access-courseware:active, .login .form-actions button[type="submit"]:focus, .register .form-actions button[type="submit"]:focus, .passwordreset .form-actions button[type="submit"]:focus, #forgot-password-modal #password-reset .form-actions button[type="submit"]:focus, .view-survey .action-primary:focus, .view-partial-mktgregister .action.action-register:focus, .view-partial-mktgregister .action.access-courseware:focus {
+    background: none repeat scroll 0% 0% #90f0f6;
+}
+/* Icon */
+
+	.icon {
+		position: relative;
+	}
+
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+		}
+
+		.icon.circle {
+			-moz-transition: all 0.2s ease-in-out;
+			-webkit-transition: all 0.2s ease-in-out;
+			-o-transition: all 0.2s ease-in-out;
+			-ms-transition: all 0.2s ease-in-out;
+			transition: all 0.2s ease-in-out;
+			border: 0;
+			border-radius: 100%;
+			display: inline-block;
+			font-size: 1.25em;
+			height: 2.25em;
+			left: 0;
+			line-height: 2.25em;
+			text-align: center;
+			text-decoration: none;
+			top: 0;
+			width: 2.25em;
+		}
+
+			.icon.circle:hover {
+				top: -0.2em;
+			}
+
+			.icon.circle.fa-twitter {
+				background: #70aecd;
+				color: white;
+			}
+
+				.icon.circle.fa-twitter:hover {
+					background: #7fb7d2;
+				}
+
+			.icon.circle.fa-facebook {
+				background: #7490c3;
+				color: white;
+			}
+
+				.icon.circle.fa-facebook:hover {
+					background: #829bc9;
+				}
+
+			.icon.circle.fa-google-plus {
+				background: #db6b67;
+				color: white;
+			}
+
+				.icon.circle.fa-google-plus:hover {
+					background: #df7b77;
+				}
+
+			.icon.circle.fa-github {
+				background: #dcad8b;
+				color: white;
+			}
+
+				.icon.circle.fa-github:hover {
+					background: #e1b89b;
+				}
+
+			.icon.circle.fa-dribbble {
+				background: #da83ae;
+				color: white;
+			}
+
+				.icon.circle.fa-dribbble:hover {
+					background: #df93b8;
+				}
+
+		.icon.featured {
+			cursor: default;
+			display: block;
+			margin: 0 0 1.5em 0;
+			opacity: 0.35;
+			text-align: center;
+		}
+
+			.icon.featured:before {
+				font-size: 5em;
+				line-height: 1em;
+			}
+
+		.icon > .label {
+			display: none;
+		}
+
+		/* Wrapper */
+
+			.wrapper {
+				padding: 0em;
+				background: #D1D2D4;
+
+			}
+
+				.wrapper.style1 {
+					padding: 0;
+				}
+
+				.wrapper.style2 {
+					background-color: #149494;
+					background-image: url("/static/cec-iaen/css/images/light-bl.8aba77688427.svg"), url("/static/cec-iaen/css/images/light-br.17364f0eba32.svg");
+					background-position: bottom left, bottom right;
+					background-repeat: no-repeat, no-repeat;
+					background-size: 25em, 25em;
+					color: white;
+				}
+
+					.wrapper.style2 .button:hover {
+						background: rgba(255, 255, 255, 0.15) !important;
+					}
+
+					.wrapper.style2 .button.special {
+						background: white;
+						border-color: white;
+						color: #83d3c9 !important;
+					}
+
+						.wrapper.style2 .button.special:hover {
+							border-color: inherit !important;
+							color: white !important;
+						}
+
+				.wrapper.style3 {
+					background: white;
+					color: inherit;
+				}
+
+				.wrapper.style4 {
+					background: white;
+					color: inherit;
+					padding: 4em;
+				}
+				.wrapper-footer footer {
+				    box-sizing: border-box;
+				    max-width: 100%;
+				    min-width: 760px;
+				    width: 100%;
+				    margin: 0px auto;
+				    text-align: center;
+				}
+
+        .inline_second {
+          display: inline-block;
+        }
+
+        .inline_second li {
+          display:inline;
+          text-align: center;
+				}
+
+        .inline {
+          display: inline-block;
+          margin: 0;
+          float:left;
+          text-align: left;
+        }
+
+        .inline li {
+          display:inline;
+
+				}
+
+				/* List */
+
+					ol.default {
+						list-style: decimal;
+						padding-left: 1.25em;
+					}
+
+						ol.default li {
+							padding-left: 0.25em;
+						}
+
+					ul.default {
+						list-style: disc;
+						padding-left: 1em;
+					}
+
+						ul.default li {
+							padding-left: 0.5em;
+						}
+
+					ul.icons {
+						cursor: default;
+					}
+
+						ul.icons li {
+							display: inline-block;
+							line-height: 1em;
+							padding-left: 0.5em;
+						}
+
+							ul.icons li:first-child {
+								padding-left: 0;
+							}
+
+					ul.featured-icons {
+						cursor: default;
+						margin: -0.75em 0 0 0;
+						opacity: 0.35;
+						overflow: hidden;
+						position: relative;
+					}
+
+						ul.featured-icons li {
+							display: block;
+							float: left;
+							text-align: center;
+							width: 50%;
+						}
+
+							ul.featured-icons li .icon {
+								display: inline-block;
+								font-size: 6.25em;
+								height: 1.25em;
+								line-height: 1.25em;
+								width: 1em;
+							}
+
+					ul.buttons {
+						cursor: default;
+					}
+
+						ul.buttons:last-child {
+							margin-bottom: 0;
+						}
+
+						ul.buttons li {
+							display: inline-block;
+							padding: 0 0 0 1.5em;
+						}
+
+							ul.buttons li:first-child {
+								padding: 0;
+							}
+
+						ul.buttons.vertical li {
+							display: block;
+							padding: 1.5em 0 0 0;
+						}
+
+							ul.buttons.vertical li:first-child {
+								padding: 0;
+							}
+	.highlighted-courses .courses .course .inner-wrapper, .find-courses .courses .course .inner-wrapper {
+	    border: 1px solid #FCFCFC;
+	    height: 300px;
+	    overflow: hidden;
+	    position: relative;
+	}
+
+	.highlighted-courses .courses .course .info .cover-image, .find-courses .courses .course .info .cover-image {
+	    height: 300px;
+	    overflow: hidden;
+	    width: 100%;
+	}
+
+	.highlighted-courses .courses .course .info, .find-courses .courses .course .info {
+	    background: #FFF none repeat scroll 0% 0%;
+	    height: 450px;
+	    left: 0px;
+	    position: absolute;
+	    top: 0px;
+	    transition: all 0.15s linear 0s;
+	    width: 100%;
+	    overflow: hidden;
+	}
+	.wrapper-footer footer a:hover, .wrapper-footer footer a:focus, .wrapper-footer footer a:active {
+	    border-bottom: 1px dotted #E81E25;
+	    color: #E81E25;
+	}
+	
+	.wrapper-footer footer a {
+	    transition: link-color 0.15s ease-in-out 0s, border 0.15s ease-in-out 0s;
+	    border-bottom: medium none;
+	    color: #E81E25;
+	    text-decoration: none !important;
+	}
+	
+	.wrapper-footer footer {
+	    box-sizing: border-box;
+	    max-width: 100%;
+	    min-width: 760px;
+	    width: 100%;
+	    margin: 0px auto;
+	    text-align: center;
+	    background-color: white;
+	}
+.wrapper {
+    padding: 0em;
+    background: #FDFEFF none repeat scroll 0% 0%;
+}
+
+.login .form-actions button[type="submit"], .register .form-actions button[type="submit"], .passwordreset .form-actions button[type="submit"], #forgot-password-modal #password-reset .form-actions button[type="submit"], .view-survey .action-primary, .view-partial-mktgregister .action.action-register, .view-partial-mktgregister .action.access-courseware {
+    box-shadow: 0px 2px 1px 0px #FFF;
+    background: #E11D23 none repeat scroll 0% 0%;
+}
+
+.login .form-actions button[type="submit"]:hover, .register .form-actions button[type="submit"]:hover, .passwordreset .form-actions button[type="submit"]:hover, #forgot-password-modal #password-reset .form-actions button[type="submit"]:hover, .view-survey .action-primary:hover, .view-partial-mktgregister .action.action-register:hover, .view-partial-mktgregister .action.access-courseware:hover, .login .form-actions button[type="submit"]:active, .register .form-actions button[type="submit"]:active, .passwordreset .form-actions button[type="submit"]:active, #forgot-password-modal #password-reset .form-actions button[type="submit"]:active, .view-survey .action-primary:active, .view-partial-mktgregister .action.action-register:active, .view-partial-mktgregister .action.access-courseware:active, .login .form-actions button[type="submit"]:focus, .register .form-actions button[type="submit"]:focus, .passwordreset .form-actions button[type="submit"]:focus, #forgot-password-modal #password-reset .form-actions button[type="submit"]:focus, .view-survey .action-primary:focus, .view-partial-mktgregister .action.action-register:focus, .view-partial-mktgregister .action.access-courseware:focus {
+    background: #EF8689 none repeat scroll 0% 0%;
+}
+
+span {
+    font: 1em/1.6em "Source Sans","Open Sans",Verdana,Geneva,sans-serif,sans-serif;
+    color: rgba(128, 17, 17, 0.84);
+}
+
+.find-courses, .university-profile {
+    background: none repeat scroll 0% 0%;
+    padding-bottom: 60px;
+}
+
+header.global.slim {
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    height: auto;
+    padding: 5px 0px 10px;
+    border-bottom: 1px solid #CBCBCB;
+    background: #191A1A none repeat scroll 0% 0%;
+}
+
+header.global.slim h2 {
+    display: block;
+    width: 550px;
+    float: left;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #FFF;
+    letter-spacing: 0px;
+    margin-top: 9px;
+    margin-bottom: 0px;
+    text-transform: none;
+    text-shadow: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

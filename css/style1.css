@@ -1,0 +1,659 @@
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+/*Cambios realizados por joe Aspiazu en linea 244 y 248...*/
+
+
+
+/* Header */
+
+
+#search {
+	float: right;
+	width: 230px;
+	padding: 0;
+}
+
+#search form {
+	height: 41px;
+	margin: 0;
+	padding: 70px 0 0 0px;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search-text {
+	width: 210px;
+	border: none;
+	text-transform: lowercase;
+	font: bold 1.2em Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+
+#search-submit {
+	display: none;
+}
+
+/* Menu */
+
+#menu {
+	width: 200px;
+	height: 50px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+	padding-left: 10px;
+	list-style: none;
+	line-height: normal;
+}
+
+#menu li {
+	float: left;
+	
+	height: 50px;
+	background: url(../images/img03.gif) no-repeat right top;
+}
+#menu .nobor{
+	float: left;
+	height: 50px;
+	background:none;
+}
+
+#menu a {
+	display: block;
+	margin-top: 10px;
+	margin-right: 3px;
+	padding: 7px 20px 7px 20px;
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #FFFFFF;
+	border: none;
+}
+
+#menu a:hover, #menu .current_page_item a {
+}
+
+#menu a:hover {
+	text-decoration: underline;
+}
+
+/* Page */
+
+#page {
+	width: 968px;
+	margin: 0 auto;
+	background: url(../images/img05.jpg) repeat-y left top;
+}
+
+#page-bgtop {
+	background: url(../images/img04.jpg) no-repeat left top;
+}
+
+#page-bgbtm {
+	background: url(../images/img06.jpg) no-repeat left bottom;
+}
+
+/* Content */
+
+#content {
+	float: right;
+	width: 880px;
+	padding: 10px 20px 0 30px;
+	margin-top:32px;
+	border-left: 1px solid #ddd;
+	min-height:504px;
+}
+#content2{
+	float: right;
+	width: 707px;
+	padding: 10px 0px 0 30px;
+	margin-top:32px;
+	
+}
+
+
+/* Sidebar */
+
+#sidebar {
+	float: left;
+	width: 210px;
+	margin-top:30px;
+	padding: 4px 0 0 10px;
+	color: #787878;
+	
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar li ul {
+	/*padding-bottom: 30px;*/
+}
+
+#sidebar li li {
+	line-height: 35px;
+	/*border-bottom: 1px dashed #D2D4C9;*/
+}
+
+#sidebar li li span {
+	display: block;
+	margin-top: -20px;
+	padding: 0;
+	font-size: 11px;
+	font-style: italic;
+}
+
+#sidebar h2 {
+	height: 32px;
+	padding: 8px 0 0 30px;
+	background: url(../images/img11.gif) no-repeat left top;
+	letter-spacing: -.5px;
+	color: #FFFFFF;
+}
+
+#sidebar p {
+	padding-bottom: 20px;
+	text-align: justify;
+}
+
+#sidebar a {
+	
+	
+}
+
+#sidebar a:hover {
+	
+	color: #787878;
+}
+
+
+/* Footer */
+
+#footer {
+	
+	margin: 0 auto;
+	padding: 0px 0 15px 0;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #B2B2B2;
+}
+
+#footer p {
+	margin: 0;
+	line-height: normal;
+	font-size: 12px;
+	text-align: center;
+}
+
+#footer a {
+	color: #3D444F;
+}
+
+
+
+fieldset#login {
+background: url(../images/login_bg.png) no-repeat top left;
+margin: 0px auto;
+padding: 5px 5px 5px 5px;
+width: 250px;
+height: 166px;
+margin-top:45px;
+margin-bottom:45px;
+margin-left:100px;
+font-size: 1.4em;
+border: none;
+position: relative;
+}
+#login h4 {
+font-size: 18px;
+font-weight: normal;
+font-family:  Georgia, "Times New Roman", Times, serif;
+width: 206px;
+height: 31px;
+padding: 6px 0px 0px 34px;
+margin: 0px;
+text-align: left;
+}
+#login form {
+height: 95px;
+width: 226px;
+padding: 10px 0px 0px 0px;
+margin: 0px;
+}
+#login p {
+width: 226px;
+margin: 0px;
+padding: 0px;
+font-family: Arial, Helvetica, sans-serif;
+}
+#login form p label {
+text-align: left;
+margin-left: 0.5em;
+float: left;
+font-size: 14px;
+}
+#login form p.check {
+padding-left: 77px;
+width: 199px;
+height: 23px;
+}
+#login #remlabel {
+float: left;
+font-size: 12px;
+position: relative;
+left: -3px;
+}
+#login #usuario{
+	margin-top:-2px;
+	font-weight:bold;
+}
+#login #clave{
+	margin-top:6px;
+	font-weight:bold;
+}
+
+#login #submit {
+background: url(../images/login.png) no-repeat top left;
+width: 77px;
+margin-top:1px;
+margin-right:2px;
+height: 27px;
+cursor: pointer;
+border: none;
+float: right;
+}
+#login #user, #login #pass {
+background: url(../../images/input_bg.png) no-repeat top left;
+border: 1px solid #d0d0d0;
+width: 142px;
+height: 19px;
+padding: 2px;
+color: #222222;
+font-size: 14px;
+float: right;
+margin-bottom: 10px;
+}
+
+#footer{
+	position:relative; margin:0 auto;; 
+	}
+#footer p{
+	font-size:12px; line-height:24px; color:#777;
+	}
+#footer p a {
+	color:#000;  text-decoration:underline; margin:0; padding:0;
+	}
+#footer p a:hover {	
+	color:#000;
+	}
+#footer ul.link{
+	width:122px; position:absolute; top:-8px; left:700px;
+	}
+#footer ul.link li{
+	float:left; display:block; font-size:0px; height:16px;
+	}
+#footer ul.link li a{
+	display:block; text-indent:-2000px;	height:16px; margin:10px 2px 0 0;	font-size:0px;
+	}
+#footer ul.link li a.html{
+	background:url(../images/html.gif) no-repeat; width:59px; height:16px;
+	}
+#footer ul.link li a.html:hover{
+	background:url(../images/html_h.gif) no-repeat; width:59px; height:16px;
+	}
+#footer ul.link li a.css{
+	background:url(../images/css_h.gif) no-repeat; width:59px; height:16px;
+	}
+#footer ul.link li a.css:hover{
+	background:url(../images/css.gif) no-repeat; width:59px; height:16px;
+	}
+	.first{
+font-size:14px;
+margin-right:10px;
+margin-top:35px;
+
+}
+.second{
+font-size:14px;
+width:300px;
+padding-top:2px;
+float:left;
+text-align: justify;
+
+margin-top:8px;
+}
+#bienvenida{
+	font-weight:bold;
+	margin-left:15px;
+}
+.logout{
+	color:#FF0000;
+	text-decoration: none;
+}
+#botones{
+	margin-left:2px;
+	margin-top:10px;
+}
+#botones a.desplegable{
+	padding-left:10px;
+	background-color:#DBECF6;
+	color:#FF8000;
+	height:30px;
+	font-size:19px;
+	
+	
+}
+
+
+
+#botones ul{
+	margin-left:10px;
+	margin-top:6px;
+	margin-bottom:2px;
+}
+#botones ul li{
+	margin-top:-5px;
+	
+}
+
+ul li a.desplegable{	background: url(../images.imgMenu/flecha_desplegable.png) no-repeat 10px center; }
+
+.calendar{
+background:url(../images/calendar.jpg) no-repeat ;
+background-position: -6px -3px;
+width:27px;
+height:27px;
+margin-left:3px;
+}
+
+.calen{
+background:url(../images/calendarIcon.png) no-repeat ;
+background-position: -6px -3px;
+width:27px;
+height:27px;
+margin-left:3px;
+}
+
+
+.calendar:hover{
+background:url(../images/calendar2.jpg) no-repeat ;
+background-position: -6px -3px;
+width:27px;
+height:27px;
+cursor:pointer;
+}
+.escondido{
+	display:none;
+}
+.hidden{
+	visibility:hidden;
+	display:none;
+}
+.mensajeok,.mensajebad{
+	color:#5FB404;
+	font-size:15px;
+	height:35px;
+	margin-left:42%;
+	padding-left:24px;
+	background:url(../images/icon_ok.gif)  no-repeat ;
+}
+.mensajebad{
+	background:url(../images/error-icon.gif)  no-repeat ;
+	color:#FF0000;
+}
+.titulo{
+	font-size:15px;
+	color:#FE9A2E;
+	font-weight:bold;
+	padding-left:6px;
+	padding-top:4px;
+}
+#datosMaestria{
+	width:660px;
+}
+#datosMaestria img{
+	border:0px;
+}
+.cols{
+	text-align:center;
+	font-weight:bold;
+	color:#333;
+	padding-top:8px;
+
+}
+.tdname{
+	font-weight:bold;
+	color:#333;
+	width:120px;
+	padding-top:6px;
+	font-size:15px;
+}
+td{
+	padding-top:3px;
+	padding-bottom:3px;
+}
+.tdinput{
+	color:#555;
+	width:400px;
+	font-size:14px;
+}
+.tdname2{
+	font-weight:bold;
+	color:#333;
+	width:100px;
+	
+	
+	padding-bottom:6px;
+	
+}
+.border-bottom{
+	padding-bottom:6px;
+}
+.border-bottom img{
+	vertical-align:middle;
+	margin-left:4px;
+}
+.border-bottom span{
+	color:#5FB404;
+	vertical-align:middle;
+	margin-left:4px;
+}
+#content .ingresar{
+	margin-left:30px;
+}
+#content table table{
+	margin-left:-4px;
+}
+.link{
+	cursor:pointer;
+	vertical-align:middle;
+	margin-left:4px;
+	margin-right:4px;
+}
+.agregar{
+	font-size:13px;
+	color:#5FB404;
+	vertical-align:middle;
+	margin-right:4px;
+}
+.buscar{
+	font-size:13px;
+	color:#888;
+	vertical-align:middle;
+}
+#spanAlumno{
+	font-size:14px;
+	vertical-align:middle;
+}
+#spanMaestria{
+	font-size:14px;
+	vertical-align:middle;
+}
+#buscarAlumnos{
+margin-left:40px;
+	width:520px;
+	min-height:100px;
+}
+#buscarAlumnos table{
+	width:520px;
+}
+#buscarBeneficiarios{
+margin-left:40px;
+	width:520px;
+	min-height:100px;
+}
+#buscarMaestrias{
+margin-left:40px;
+	width:520px;
+	min-height:100px;
+}
+#buscarMaestrias table{
+	width:520px;
+}
+#datosAlumnos{
+	width:520px;
+}
+#datosBeneficiarios{
+	width:520px;
+}
+#spanEspol,#spanCTT{
+	font-size:14px;
+	color:#333;
+}
+#migas{
+	margin-top:-6px;
+	margin-left:-15px;
+	margin-bottom:10px;
+}
+.numero{
+	font-family: sans-serif;
+}
+
+
+/*** tablas *****/
+#tbConMaestria{
+	width:650px;
+	margin:0 auto;
+}
+#tbConMaestria table{
+	width:650px;
+}
+#tbConMaestria .campo1{
+	width:300px;
+}
+
+#tbConPartiXMaes{
+	width:500px;
+	margin:0 auto;
+}
+#tbConPartiXMaes table{
+	width:500px;
+}
+#tbConPartiXMaes .campo1{
+	width:80px;
+}
+#tbConPartiXMaes .campo2{
+	width:200px;
+}
+.campo3{
+	width:200px;
+}
+.campo4{
+	width:300px;
+}
+#tbConOficios{
+	width:580px;
+	margin:0 auto;
+}
+#tbConOficios table{
+	width:580px;
+}
+
+#tbConParticipaciones{
+	width:580px;
+	margin:0 auto;
+}
+#tbConParticipaciones table{
+	width:580px;
+}
+#tbConParticipacionesCS{
+	width:580px;
+	margin:0 auto;
+}
+#tbConParticipacionesCS table{
+	width:580px;
+}
+#tbConParticipacionesAlumno{
+	width:640px;
+	margin:0 auto;
+}
+#tbConParticipacionesAlumno table{
+	width:640px;
+}
+#tbConParticipacionesAlumno .campo1{
+	
+}
+.opcion{
+	width:50px;
+}
+#tbGastoBeneficiario{
+	width:540px;
+	margin:0 auto;
+}
+#tbGastoBeneficiario table{
+	width:540px;
+}
+.nombre{
+	padding-left:4px;
+	color:#000;
+	font-family: sans-serif;
+	font-size:13px;
+}
+
+#cursoSeminario{
+	margin-top:30px;
+}
+#excel{
+	float:right;
+	font-weight:bold;
+	color:#006633;
+	margin-right:50px;
+	margin-top:-50px;
+	
+}
+#excel1{
+	float:right;
+	font-weight:bold;
+	color:#006633;
+	margin-right:10px;
+	margin-top:-50px;
+	
+}
+#reporte{
+	float:right;
+	font-weight:bold;
+	color:#006633;
+	margin-right:50px;
+	margin-top:-50px;
+	
+}

@@ -1,0 +1,3666 @@
+/** INICIO ESTILOS GLOBALES **/
+/* BEGIN: web.css*/
+/**
+ * Esta hoja de estilo guarda las partes que son comunes para toda la web: pie,cabecera...
+ *  *
+ * para cada una de las cajas existentes.
+ *
+ * @author Divisa Informática y Telecomunicaciones S.A.
+ * @since  Proxia Portal Server 6.4
+ * @copy   2011
+ */
+ 
+
+
+
+FORM.formUpdatePasswd button{
+	background-color:#2E5C8D;
+	color:#FFF;
+	padding:0.5em;
+}
+
+body.userData div.cmUpdatePasswdRow{
+	padding-bottom:0.4em;
+	overflow:hidden;
+}
+
+body.userData div.cmUpdatePasswdBottom{
+	text-align:center;
+}
+
+body.userData .infoError{
+	padding-top:1em;
+} 
+/* END: popup.css*/
+/* BEGIN: sqlQuery.css*/
+/**
+ * estilos generales 
+ */
+div.sqlQueryContent DIV.searcher FIELDSET,
+div.sqlQuerySearcher FIELDSET{
+	margin: 0 0 1em;
+}
+
+div.sqlQueryContent DIV.searcher LEGEND,
+div.sqlQuerySearcher LEGEND{
+	color: #022D5A;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin:0 0 0.6em;
+}
+
+div.sqlQueryContent DIV.searcher DIV.searcherButtons,
+div.sqlQuerySearcher DIV.searcherButtons{
+	text-align: center; 
+}
+
+DIV.searcherButtons BUTTON{ 
+	width: 9em;
+	background-color: #2E5C8D;
+	color: #fff;
+	margin-right:0.5em;
+	text-align: center;
+	border-style: outset;
+	padding:0.45em;
+	font-size:1.1em;
+}
+
+div.sqlQueryContent DIV.searcher DIV.campSearcher,
+div.sqlQuerySearcher DIV.campSearcher{
+	overflow:hidden;
+	background-color:#F2F4F7;
+	padding: 1em 1em 0;
+}
+
+div.sqlQueryContent  DIV.searcher DIV.label,
+DIV.sqlQuerySearcher DIV.label{
+	float: left;
+	text-align: left;
+	padding-right: 0.4em;
+	width: 13em;
+}
+
+div.sqlQueryContent  DIV.searcher DIV.check LABEL,
+DIV.sqlQuerySearcher DIV.check LABEL{
+	font-weight: normal;	
+	float:left;
+	padding-left:0.5em;
+	padding-right:1em;
+	color:#022D5A;
+}
+
+div.sqlQueryContent  DIV.searcher DIV.label LABEL,
+DIV.sqlQuerySearcher DIV.label LABEL{
+	font-weight: normal;
+	color:#022D5A;
+	display:inline-block;
+	padding:0.2em 0;
+}
+
+div.sqlQueryContent  DIV.searcher DIV.field SELECT,
+DIV.sqlQuerySearcher DIV.field SELECT{
+	width: 13em;
+	background-color:#e7e9ea;
+	border:1px solid #c2ccd8;
+	margin:0;
+}
+
+div.sqlQueryContent  DIV.searcher DIV.field INPUT,
+DIV.sqlQuerySearcher DIV.field INPUT{
+	margin:0;
+	background-image:url('../imagenes/web/formBox.jpg');
+	background-repeat:repeat-x;
+	border:1px solid #c2ccd8;
+	width: 13.2em;
+}
+div.sqlQueryContent  DIV.searcher DIV.field INPUT[type=checkbox],
+div.sqlQueryContent  DIV.searcher DIV.field INPUT[type=radiobutton],
+DIV.sqlQuerySearcher DIV.field INPUT[type=checkbox],
+DIV.sqlQuerySearcher DIV.field INPUT[type=radiobutton]{
+	width:auto;
+}
+
+div.sqlQueryContent  DIV.searcher DIV.field DIV.check INPUT ,
+DIV.sqlQuerySearcher DIV.field DIV.check INPUT{
+	border: none;	
+	background: none;
+	margin:0;
+	float:left;
+}
+
+/**
+ * Directorio de centros
+ */
+div.sqlQueryContent div.searcher,
+div.sqlQuerySearcher{
+	background-color: #CCD5DE;
+	padding:1.5em;
+	font-size:1.1em;
+}
+
+DIV.sqlQueryContent DIV.header{
+	background-color: #CCD5DE;
+	padding:1.5em;
+}
+
+td.centro1 DIV.directorioCentros {
+	margin-top:1.6em;
+	margin-left:0;
+}
+
+DIV.campSearcher > DIV {
+	overflow:hidden;
+	min-width:45%;
+	float:left;
+	margin:0 0 1em 5%;
+}
+
+DIV.directorioCentros DIV.campSearcherCNATCENT {
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+DIV.directorioCentros DIV.campSearcherCNATCENT DIV.field{
+	width: 100%;
+	overflow:hidden;
+}
+
+DIV.directorioCentros DIV.campSearcherCNATCENT DIV.check {
+	overflow:hidden;
+	float:left;
+	width:25%;
+}
+
+DIV.directorioCentros DIV.campSearcherCNATCENT DIV.label{
+	display: none;
+}
+
+/** Listado Resultadosss */
+
+
+/*** DETALLE **/
+DIV.sqlQueryContent H3 {
+	color: #FFF;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	font-weight: normal;
+	padding: 0.1em 0em 0.1em 0.3em;
+	background-color:#2E5C8D;
+	font-weight:bold;
+}
+
+DIV.detailView {
+	padding: 1em;
+	border:1px solid #999;
+	position:relative;
+}
+
+div.sqlQueryContent DIV.detailView DIV.fields {
+	margin-bottom: 2em;
+	height: 100%;
+	overflow:hidden;
+}
+
+div.sqlQueryContent DIV.detailView DIV.fields >div{
+	margin-bottom:0.5em;
+}
+
+div.sqlQueryContent div.detailView DIV.headerElement{
+	min-height: 1.35em;
+	height: auto!important;
+	height: 1.35em;
+	margin-bottom: 0.4em;
+	padding: 0;
+	text-transform:uppercase;
+	font-weight: bold;
+	font-size: 1.3em;
+	color:#022d5a;
+	border-bottom:1px solid #bababa;
+	padding-left:0;
+}
+
+div.sqlQueryContent div.detailView DIV.headerElement H3{
+	color:#022d5a;
+	padding-left:0;
+	font-size:1em;
+	background:none;
+}
+
+DIV.groupDetailDETIDENTIFICACION DIV.headerElement{
+	background: transparent url('../imagenes/fondos/contenido/icoFichCentro.gif') no-repeat right center;
+}
+
+div.sqlQueryContent .prevContent{
+	background:url('../imagenes/bullets/arrowDown.gif') no-repeat 0.4em 0.8em;
+	padding: 0.5em 0.5em 0.5em 1.5em;
+	margin:0.5em 0 0.3em;
+	width: 16.4em;
+	font-weight: bold;
+	text-align: left;
+	color: #022d5a;
+
+}
+
+div.sqlQueryContent .prevContent a{
+	color: #022d5a;
+}
+
+DIV.groupDetailDETUBICACION,
+div.groupDetailDATOSTITULAR{
+	width:47%;
+}
+
+DIV.groupDetailDETUBICACION DIV.headerElement{
+	background: transparent url('../imagenes/fondos/contenido/icoFichCentro02.gif') no-repeat right center;
+}
+
+DIV.groupDetailDETCARACTERISTICAS,
+div.groupDetailDETCONTACTO{
+	width: 47%;
+	float: right;
+}
+
+DIV.groupDetailDETCARACTERISTICAS DIV.headerElement{
+	background: transparent url('../imagenes/fondos/contenido/icoFichCentro03.gif') no-repeat right center;
+}
+
+DIV.groupDetailDETCONTACTO  DIV.headerElement{
+	background: transparent url('../imagenes/fondos/contenido/icoFichCentro04.gif') no-repeat right center;
+}
+
+DIV.groupDetailDATOSTITULAR  DIV.headerElement{
+	background: transparent url('../imagenes/fondos/contenido/icoFichCentro06.gif') no-repeat right center;
+}
+
+DIV.groupDetailDETTITULARES {
+	display:none;
+}
+
+DIV.groupDetailDETTITULARES  DIV.headerElement{
+	background:  transparent url('../imagenes/fondos/contenido/icoFichCentro05.gif') no-repeat right center;
+}
+
+DIV.groupDetailDETENSENANZAS DIV.headerElement{
+	background: transparent url('../imagenes/fondos/contenido/icoFichCentro06.gif') no-repeat right center;
+}
+
+div.sqlQueryContent DIV.elementDetailViewIMAGEN {
+	float: left;
+	border: 2px solid #F3F3F3;
+	height: 85px;
+	width: 70px;
+	text-align: center;
+	padding-top: 30px;
+	margin-right: 0.5em;
+	display: none;
+}
+
+div.sqlQueryContent SPAN.fieldDetailView {
+	width:7em;
+	font-weight: bold;
+	margin-bottom: 0.3em;
+	height: 1.5em;
+}
+
+DIV.detailView table.groupDetail{
+	width:100%;
+}
+
+DIV.detailView DIV.groupDetailDETENSENANZAS TR.fieldDetail{
+	font-weight: bold;
+	color: #797979;
+}
+
+DIV.detailView DIV.groupDetailDETENSENANZAS TR.fieldDetail TH {
+	padding-bottom: 0.3em;
+	padding-top: 0.3em;
+	background-color: #F3F3F3;
+	border: 1px solid #E2E2E2;
+	text-align: center;
+}
+
+DIV.detailView DIV.groupDetailDETENSENANZAS TR.valueDetail TD {
+	border-bottom: 1px dotted #E2E2E2;
+	padding-bottom: 0.3em;
+	padding-top: 0.3em;
+	padding-left:1em;
+}
+
+TD.valueDetailViewFECHRENCON ,
+TD.valueDetailViewNUMUND_ENS ,
+TD.valueDetailViewNUMPTO_ENS,
+TD.valueDetailViewNUMUNDCON,
+td.valueDetailViewREGIMEN{
+	text-align: center;
+}
+
+
+/************ Oferta Educativa FP *********************/
+/* Buscador */
+div.ofertaEducativaFP div.campSearcherFPF_CLCIC,
+DIV.ofertaEducativaFP DIV.campSearcherCOD_FAMILIA,
+DIV.ofertaEducativaFP DIV.campSearcherFPF_GRADO{
+	padding-left:5%;
+	overflow:hidden;
+	width:90%;
+}
+
+
+DIV.ofertaEducativaFP DIV.campSearcherNATURALEZA SELECT,
+DIV.ofertaEducativaFP DIV.campSearcherfpf_famil SELECT,
+DIV.ofertaEducativaFP DIV.campSearcherfpf_ciclo SELECT,
+DIV.ofertaEducativaFP  DIV.campSearcherfpf_local  SELECT{
+	width: 18em;
+}
+
+DIV.ofertaEducativaFP DIV.campSearcherCOD_FAMILIA DIV.label,
+DIV.ofertaEducativaFP DIV.campSearcherFPF_GRADO DIV.label,
+DIV.ofertaEducativaFP DIV.campSearcherFPF_CLCIC DIV.label{
+	width:20em;
+}
+
+DIV.ofertaEducativaFP DIV.campSearcherCOD_FAMILIA div.field SELECT,
+DIV.ofertaEducativaFP DIV.campSearcherFPF_GRADO  div.field SELECT,
+DIV.ofertaEducativaFP DIV.campSearcherFPF_CLCIC div.field SELECT{
+	width: 20em;
+}
+
+/* resultados */
+DIV.resultListFP SPAN.campData A {
+	color:#022D5A;
+	font-weight:bold;
+}
+
+/*  Detalle  */
+DIV.groupDetaildetalleCentrosFP DIV.headerElement{
+	background: transparent url('../imagenes/fondos/contenido/icoFichCentro.gif') no-repeat right center;
+}
+
+
+DIV.groupDetailcontactoCentrosFP DIV.headerElement{
+	background: transparent url('../imagenes/fondos/contenido/icoFichCentro02.gif') no-repeat right center;
+}
+
+DIV.groupDetailciclosFormativosFP DIV.headerElement{
+	background: transparent url('../imagenes/fondos/contenido/icoFichCentro06.gif') no-repeat right center;
+}
+
+
+
+/***************/
+DIV.detailViewFP DIV.groupDetailciclosFormativosFP TR.fieldDetail{
+	font-weight: bold;
+}
+
+DIV.detailViewFP DIV.groupDetailciclosFormativosFP TR.fieldDetail th{
+	border:1px solid #e2e2e2;
+	padding-bottom:0.3em;
+	padding-top:0.3em;
+}
+
+DIV.detailViewFP DIV.groupDetailciclosFormativosFP TR.valueDetail TD {
+	border-bottom: 1px dotted #E2E2E2;
+	padding-bottom:0.3em;
+	padding-top:0.3em;
+	padding-left:0.5em;
+}
+
+DIV.detailViewFP DIV.groupDetailciclosFormativosFP TD.fieldDetailViewFPF_DURAC, 
+DIV.detailViewFP DIV.groupDetailciclosFormativosFP TH.fieldDetailViewFPF_DURAC,
+DIV.detailViewFP DIV.groupDetailciclosFormativosFP TD.fieldDetailViewFPF_GRADO{
+	text-align: center;
+}
+
+/**/
+
+TD.category, TH.category {
+	padding-bottom:0.3em;
+	padding-top:0.3em;
+	background-color:#F3F3F3;
+	border:1px solid #e2e2e2;
+	font-weight: bold;
+}
+
+/***************** FEDERACIONES DEPORTIVAS **********************/
+
+DIV.pageList {
+	overflow:hidden;
+	margin-bottom: 1em;
+}
+
+/** Listado Resultados */
+DIV.federaciones  DIV.campListTIPO {
+	background-color: #CCD5DE;
+	color: #022D5A;
+	float:right;
+	padding: 0.2em;
+}
+
+DIV.federaciones DIV.campListDEPORTE{
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #022D5A;
+}
+
+
+DIV.federaciones DIV.campListCORREO{
+	background: transparent url('../imagenes/iconos/correo.gif') no-repeat left center;
+	padding: 0.2em 0.2em 0.2em 1.7em;
+}
+
+DIV.federaciones  DIV.campListFAX {
+	float: none;
+}
+/* END: sqlQuery.css*/
+/* BEGIN: portada.css*/
+/**
+ *	En esta hoja de estilo se encuentran definidos todos aquellos estilos utilizados en la portada del portal.
+ 
+ * @author Divisa Informática y Telecomunicaciones S.A.
+ * @since  Proxia Portal Server 6.4
+ * @copy   2011
+ */
+ 
+BODY.portada {
+	background-color:#EAEDF2;
+	margin:0 auto;
+}
+
+div#portada{
+	min-width:86.9em;
+}
+
+/*slider portada*/
+DIV#portada DIV.sliderPortada DIV.title,
+DIV#main DIV.sliderPortada DIV.title{
+ 	display:none;
+ }
+ 
+DIV#portada DIV.sliderPortada UL,
+DIV#main DIV.sliderPortada UL{
+	margin:0;
+	padding:0;
+	overflow:auto;
+	height:17.3em;
+}
+
+DIV#portada DIV.sliderPortada  LI,
+DIV#main DIV.sliderPortada  LI {
+	list-style:none;
+	margin:0;
+	padding:0 0 1em;
+	float:left;
+	width:100%;
+}
+
+DIV#portada DIV.sliderPortada  LI.lastNode,
+DIV#main DIV.sliderPortada  LI.lastNode{
+	padding:0;
+}
+
+DIV#portada div.sliderPortadaControls,
+DIV#main div.sliderPortadaControls{
+	text-align: right;
+	padding-right:3.6em;
+	overflow:hidden;
+}
+
+DIV#portada div.sliderPortadaControls div.sliderPortadaControlsInner,
+DIV#main div.sliderPortadaControls div.sliderPortadaControlsInner{
+	display:inline;
+	float:right;
+	margin-left:1.5em;
+}
+
+DIV#portada div.sliderPortadaControls div.paging,
+DIV#main div.sliderPortadaControls div.paging{
+	display:inline;
+	float:right;
+	padding-top:3px;
+}
+
+DIV#portada div.sliderPortadaControls div.paging a,
+DIV#main div.sliderPortadaControls div.paging a{
+	display:block;
+	height:11px;
+	width:11px;
+	background-image:url('../imagenes/web/pageSlider.png');
+	background-repeat:no-repeat;
+	float:left;
+	margin-right:0.5em;
+	cursor: pointer;
+}
+
+DIV#portada div.sliderPortadaControls div.paging a.active,
+DIV#main div.sliderPortadaControls div.paging a.active{
+	background-image:url('../imagenes/web/pageSliderBlueActive.png');
+}
+
+DIV#portada DIV.sliderPortadaControls A.ContentLink,
+DIV#portada DIV.sliderPortadaControls A.contentLink,
+DIV#main DIV.sliderPortadaControls A.ContentLink,
+DIV#main DIV.sliderPortadaControls A.contentLink{
+	font-size: 1.4em;
+	font-weight: bold;
+	color:#0f2962;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+div#portada table.mainContainer{ 
+	width:100%;
+}
+
+body.bodyMain div#mainContainer{
+	background:url('../imagenes/educajccm/sliderLat.jpg') repeat-x 0 0;
+}
+
+.portada div.blancoBottomSlider .blancoLInner,
+.portada div.blancoBottomSlider .blancoRInner{
+	display:none;
+}
+
+/* Cambios Agosto 2015 */
+.blancoLInner,
+.blancoRInner{
+	display:none;
+}
+
+DIV#portada div.sliderPortada,
+DIV#main div.sliderPortada{ 
+	background:url('../imagenes/educajccm/slider.jpg') no-repeat top center;
+	position:relative;
+	padding:4.6em 0 4em;
+}
+
+DIV#portada div.sliderPortada div.contentHeader,
+DIV#main div.sliderPortada div.contentHeader{
+	padding:0;
+	margin:0;
+}
+
+.bodyMain div.sliderPortada div.contentData{
+	background-image:url('../imagenes/web/sliderFondoTexto.png');
+	background-repeat:repeat-x;
+	background-position:0 0;
+}
+
+.portada div.sliderPortada div.contentData,
+#educa_jccm div.sliderContenido div.contentData,
+#alumnado div.sliderContenido div.contentData,
+#profesorado div.sliderContenido div.contentData{
+	background-image:url('../imagenes/educajccm/sliderFondoTexto.png');
+}
+
+
+DIV#portada div.sliderPortada div.newSlider,
+DIV#main div.sliderPortada div.newSlider{ 
+	overflow:hidden;
+	padding:0 10%;
+}
+
+DIV#portada div.sliderPortada div.newSlider a.cmContentLink,
+DIV#main div.sliderPortada div.newSlider a.cmContentLink{ 
+	text-decoration:none;
+	color:#fff;
+}
+
+DIV#portada div.sliderPortada div.newSlider span.newsImageNameBody,
+DIV#main div.sliderPortada div.newSlider span.newsImageNameBody{ 
+	overflow:hidden;
+	display:block;
+	color:#FFF;
+}
+
+DIV#main div.sliderPortada div.newSlider span.newsImageNameBody span.contentTextName span.contentBackgroundName{
+	color:#FFF;
+}
+
+DIV#portada div.sliderPortada div.newSlider span.newsImage,
+DIV#main div.sliderPortada div.newSlider span.newsImage{
+	float:left;
+	display:block;
+	height:15.3em;
+	padding:0.5em;
+	margin-right:2em;
+	position:relative;
+	background:none;
+	border:none;
+	margin:0.5em;
+}
+
+DIV#portada div.sliderPortada div.newSlider span.newsImage img,
+DIV#main div.sliderPortada div.newSlider span.newsImage img{ 
+	z-index:2;
+	position:relative;
+}
+
+DIV#portada div.sliderPortada div.newSlider span.newsImage span.sliderFlash img,
+DIV#main div.sliderPortada div.newSlider span.newsImage span.sliderFlash img{
+	float:left;
+}
+
+DIV#portada div.sliderPortada div.newSlider span.newsImage span.newsImage2,
+DIV#main div.sliderPortada div.newSlider span.newsImage span.newsImage2{
+	display:block;
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	z-index:0;
+	background-image:url('../imagenes/web/sliderMarcoFoto.png');
+	background-repeat:repeat;
+	background-position:top left;
+}
+	
+DIV#portada div.sliderPortada div.newSlider span.newsImage span.sliderFlash,
+DIV#main div.sliderPortada div.newSlider span.newsImage span.sliderFlash{
+	z-index:2;
+	position:relative;
+}
+
+DIV#portada div.sliderPortada div.newSlider span.contentNewsNameBody,
+DIV#main div.sliderPortada div.newSlider span.contentNewsNameBody{
+	display:block;
+	text-align:left;
+	height:16em;
+	overflow:hidden;
+}
+
+DIV#portada div.sliderPortada div.newSlider span.contentNewsNameBody span.contentTextName,
+DIV#main div.sliderPortada div.newSlider span.contentNewsNameBody span.contentTextName{
+	display:block;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:2em;
+	color:#FFF;
+	padding:1.5em 0 0 0;
+	line-height:1em;
+	font-weight:normal;
+	cursor:pointer;
+	max-height:43px;
+	overflow:hidden;
+}
+
+DIV#portada div.sliderPortada div.newSlider span.contentNewsNameBody span.contentNewsBody,
+DIV#main div.sliderPortada div.newSlider span.contentNewsNameBody span.contentNewsBody{
+	display:block;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1.4em;
+	color:#FFF;
+	padding-top:0.4em;
+	line-height:1.2em;
+	height:73px;
+	overflow:hidden;
+	font-weight:normal;
+}
+
+DIV#portada div.sliderPortada div.newSlider span.contentNewsNameBody span.contentNewsBody span.contentAbstract,
+DIV#main div.sliderPortada div.newSlider span.contentNewsNameBody span.contentNewsBody span.contentAbstract{
+	color:#FFF;
+}
+
+DIV#portada div.sliderPortada div.newSlider a:hover span.contentNewsNameBody span.contentNewsBody span.contentAbstract,
+DIV#main div.sliderPortada div.newSlider a:hover span.contentNewsNameBody span.contentNewsBody span.contentAbstract{
+	text-decoration:none;
+}
+
+DIV#portada div.sliderPortada div.newSlider span.contentDate ,
+DIV#main div.sliderPortada div.newSlider span.contentDate{
+	float:right;
+	padding-top:0.3em;
+	font-weight:normal;
+}
+
+/*zona central*/
+td.portadaMedioCentral{ 
+	padding:0 3.6em;
+	position: relative;
+}
+
+td.portadaMedioCentral table{
+	background-color:#FFF;
+}
+
+td.portadaMedioCentral > table{
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+
+td.portadaMedioCentral div.centro{ 
+	background:none;
+	border:none;
+}
+
+td.portadaMedioCentral1,td.portadaMedioCentral2{
+	padding:2em 1.7em 0 1.7em;
+}
+
+/** Sombra azul lateral en portadas **/
+div.azulL,
+div.azulR{
+	position:absolute;
+	top:0;
+	bottom:0;
+	width: 5px;
+	height: 100%;
+	background:#f0f4f5;
+}
+div.azulL{
+	left:3.7em;
+}
+div.azulR{
+	right:3.7em;
+}
+
+/*menu de novedades, lo mas visto*/
+div.novedadesPortada ul.blueTabMenu li.title{
+	width:31%;
+	min-width:10em;
+}
+
+
+/*novedades*/
+div.novedadesPortada,
+div.destacadoDeportesContainer{
+}
+
+ul.cmContentList li.cmContentItem{
+	list-style:none;
+}
+
+td.novedadesVistoPortada ul.cmContentList li.cmContentItem a.cmContentLink,
+div.novedadesContainer ul.cmContentList li.cmContentItem a.cmContentLink,
+td.destacadoAgendaPortadaDeporte ul.cmContentList li.cmContentItem a.cmContentLink{
+	padding:1em 1em 1em 0;
+	overflow:hidden;
+}
+
+div.novedadesTituloAzul ul.cmContentList li.cmContentItem{
+	margin-bottom: 1.8em;
+}
+
+.portadaMedioCentral td.novedadesVistoPortada ul.cmContentList li.cmContentItem:hover,
+.portadaMedioCentral div.novedadesContainer ul.cmContentList li.cmContentItem:hover,
+.portadaMedioCentral td.destacadoAgendaPortadaDeporte ul.cmContentList li.cmContentItem:hover{
+	background-color: #eaeaea;
+
+}
+	
+div#preloader{
+	background-image:url('../imagenes/web/preloader.gif');
+	background-repeat:no-repeat;
+	height:5.9em;
+	margin:0 40%;
+	display:none;
+}
+
+.novedadesPortada a.contentLink,
+.destacadoDeportesContainer a.contentLink{
+	color:#416b95;
+	float:right;
+	font-size: 1.1em;
+	padding-right:1em;
+	margin-top:0.5em;
+}
+
+div.novedadesTituloAzul{
+	margin-top:1em;
+}
+
+div.novedadesTituloAzul h2{
+	background-color:#DEE8F1;
+	color:#465666;
+	border: none;
+	background-image:none;
+	padding:0.5em 0.5em 0.5em 1em;
+	font-size:1.3em;
+	margin-bottom: 1em;
+}
+
+/*lo mas visto*/
+td.novedadesVistoPortada div.ajaxContainer{
+}
+
+td.novedadesVistoPortada div.ajaxContainer div.contentHeader,
+div.novedadesContainer div.contentHeader,
+div.agendaDeportesContainer div.contentHeader{
+	display:none;
+}
+
+td.novedadesVistoPortada div.contentData{
+}
+
+.loMasVistoContainer ul.cmContentList li.cmContentItem,
+.novedadesVistoPortada ul.cmContentList li.cmContentItem,
+.destacadoAgendaPortadaDeporte ul.cmContentList li.cmContentItem{
+	padding-left: 1em;
+}
+
+
+/*lo mas visto en el iframe*/
+td.novedadesVistoPortada div.iframeContentMostView{
+	width:96.1%;
+}
+
+div.iframeBody ul.cmContentList{
+	margin:0;
+	padding:0;
+}
+	
+div.iframeBody ul.cmContentList li.cmContentItem{
+	list-style:none;
+	padding-bottom:2.5em;
+}
+
+div.iframeBody div.contentHeader{
+	display:none;
+}
+
+
+/*bannerGris*/
+td.bannerFront{
+	width:22.4em;
+}
+
+
+/*buscado*/
+div#portada td.buscado div.containerSearcherCloud div.contentBody {
+padding:0.5em 1em;
+}
+
+td.portadaMedioCentral td.buscado,
+td.buscado div.containerSearcherCloud div.contentBody,
+td.centro2_int div.containerSearcherCloud{ 
+	background-color:#eaeaea;
+}
+
+td.portadaMedioCentral td.buscado{ 
+	width:23.7%;
+}
+
+td.portadaMedioCentral td.buscado + td.portalLayoutCell{ 
+	width:76.3%;
+}
+
+td.buscado h2,
+td.centro2_int div.containerSearcherCloud h2{
+	color:#282828;
+	font-weight:bold;
+	text-transform:none;
+	text-align:left;
+	padding:0.8em 0 0.5em 0.8em;
+	font-size:1.3em;
+	background-color:#FFF;
+}
+	
+td.buscado a{
+	color:#444444;
+}
+	
+td.buscado div.containerSearcherCloud div.contentBody{
+	text-align:justify;
+}
+	
+td.buscado div.containerSearcherCloud div.contentHeader{
+	text-align:center;
+	padding:0;
+}
+
+/*banners de la portada de la derecha*/	
+td.menuDerechoAzul div.menuContainer,
+td.portadaMedioCentral2 div.bannerPortadaDcha{
+	margin-left:8.5%;
+}
+
+td.portadaMedioCentral2 div.bannerPortadaDcha{
+	text-align:center;
+	position:relative;
+}
+
+td.portadaMedioCentral2 div.bannerPortadaDcha li{
+	padding-bottom:0.5em;
+}
+	
+td.portadaMedioCentral2 div.bannerPortadaDcha li.firstChild{
+	padding-top:0.3em;
+}
+
+
+
+/*menu de la izquierda de la portada*/
+div.menuContainer {
+	background:none;
+	position:relative;
+}
+
+div.menuContainer ul.menuIzqdo li.opcionMenuIzdo,
+div.menuContainer ul.menuIzqdoContenidos li.opcionMenuIzdo{
+	list-style:none;
+	padding-bottom:0.2em;
+}
+	
+div.menuContainer ul.menuIzqdo{
+	position:absolute;
+	top:3em;
+	left:1em;
+	z-index:5;
+}
+
+div.menuContainer ul.menuIzqdoContenidos{
+	position:absolute;
+	top:16em;
+	left:1em;
+	z-index:5;
+}
+
+body.bodyContent td.menuIzqdoZona > table.portalLayoutTable {
+	min-height: 53.5em;
+	height:auto !important;
+	height: 53.5em;
+}
+
+body.bodyMain div.menuContainer ul.menuIzqdoContenidos{
+	top:3em;
+}
+
+
+body.portada div.bannerGris ul.cmBannersVerticalMode{
+	padding-top:0;
+}
+
+body.bodyMain .menuDerechoAzul ul.cmBannersVerticalMode{
+	padding:2em 1em 1em 5em;
+}
+body.bodyMain .menuDerechoAzul .bannerPortadaDcha ul.cmBannersVerticalMode{
+	padding:0;
+}
+
+body.bodyMain .menuDerechoAzul .bannerPortadaDcha .banner{
+	padding:1em 1em 0 1em;
+	overflow:hidden;
+}
+
+body.bodyMain .menuDerechoAzul .bannerPortadaDcha .banner a{
+	display: block;
+	margin-bottom:1em;
+}
+
+body.bodyMain .menuDerechoAzul .bannerPortadaDcha img{
+	max-width: 225px;
+	width: 100%;
+	height: auto;
+}
+/* END: portada.css*/
+/* BEGIN: webmap.css*/
+/**
+ * Esta hoja de estilo del mapa web
+ *  *
+ * para cada una de las cajas existentes.
+ *
+ * @author Divisa Informática y Telecomunicaciones S.A.
+ * @since  Proxia Portal Server 6.4
+ * @copy   2011
+ */
+ 
+body.bodyWebMap div#main{
+	min-width:86.9em;
+}
+
+body.bodyWebMap div#main TABLE.mainContainer{
+	margin: 0 auto;
+	width:100%;
+}
+
+body.bodyWebMap div#main TD.Centro_mapa_Web TABLE, 
+body.bodyWebMap div#main TD.Centro_Mapa_Web TABLE {
+	background-color:#ccd5de;
+}
+
+body.bodyWebMap div#main TD.Centro_mapa_Web TABLE TD, 
+body.bodyWebMap div#main TD.Centro_Mapa_Web TABLE TD{
+	width:20%;
+}
+
+DIV.headerWebMap{
+ 	background-color:#2E5C8D;
+	margin: 0 0 1em 0;
+	padding:0.7em;
+}
+
+DIV.headerWebMap h2 {
+	font-size:1.15em;
+	color:#FFF;
+}
+
+DIV.headerWebMap h2 a{
+	color:#FFF;
+	text-decoration:none;
+}
+
+DIV.headerWebMap h2 a:hover{
+	text-decoration:underline;
+}
+
+body.bodyWebMap div#main li.cmWebMapLevel1{
+   color:#022d5a;
+   margin:0 0 2px 0;
+   padding:0.6em 0 0 1.5em;
+   background-image:url('../imagenes/webmap/PuntoMapaWeb.png');
+   background-repeat:no-repeat;
+   background-position:0.7em 1.1em;
+ }
+ 
+body.bodyWebMap div#main li.cmWebMapLevel1 a.cmWebMapLevel1{
+	color:#022d5a;
+	display: block;
+        margin-bottom: 0.5em;
+}
+
+body.bodyWebMap div#main li.cmWebMapLevel1 span.cmWebMapLevel1{
+	color:#022d5a;
+	margin-bottom:0.5em;
+	display:block;
+}
+
+body.bodyWebMap UL.cmWebMapLevel1 {
+	padding-right:0;
+	padding-bottom:0;
+	background-image:url('../imagenes/webmap/mapaWebBottom.jpg');
+	background-repeat:repeat-x;
+	background-position:bottom;
+	font-size: 1.1em;
+}
+
+body.bodyWebMap LI.cmWebMapLevel1 {
+	width: auto;
+	background-color:#f2f4f7;
+	line-height: 1.6em;
+}
+
+
+
+	
+/* END: model.css*/
+
+/** los estilos de impresion lo ultimo */
+/* BEGIN: printContent.css*/
+/*ocultar la cabecera de servicios superior */
+
+/* END: printContent.css*/
+
+/* BEGIN: estilo_general.css*/
+/**
+ * Estilo general de los distintos elementos globales del sistema, cuerpo,
+ * controles de formulario, celdas y cabeceras, etc.
+ */
+ 
+
+
+BODY {
+	font-family:Arial, Helvetica, sans-serif;
+	color : #454545;
+	background-color: #EAEDF2;
+	margin:0 auto;
+	padding: 0;
+	font-size: 68%;
+}
+
+
+
+
+LABEL {
+	font-weight : bold;
+   	color: #454545;
+}
+
+INPUT {
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333;
+	font-size: 1em;
+	border : 1px solid #454545;
+}
+
+INPUT.noBorder {
+	border: none;
+}
+
+SELECT {
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+	font-size: 1em;
+}
+
+TEXTAREA {
+	background-color: white;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color: #454545;
+	border : 1px solid #454545;
+}
+
+BUTTON {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	color : #000;
+	background-color : transparent;
+	border : 0px outset;
+	border-color : #DDD;
+	cursor : pointer;
+	display: inline;
+}
+
+BUTTON.normalButton {
+	border: 1px outset;
+	background-color: ButtonFace;
+	font-size: 1.1em;
+}
+
+FORM {
+	margin-bottom: 0;
+}
+
+FIELDSET{
+	padding: 0;
+	border: none;
+}
+
+LEGEND{
+	margin-left: -5px; 	
+}
+
+
+P {
+	font-size: 1em;
+}
+
+A {
+	text-decoration : none;
+	color: #454545;
+}
+
+A:visited {
+	text-decoration : none;
+	color: #454545;
+}
+
+A:active {
+	text-decoration : underline;
+	color: #454545;
+}
+
+A:hover {
+	text-decoration : underline;
+	color: #454545;
+}
+
+HR {
+	color : #ccc;
+	height : 1px;
+	margin : 0;
+}
+
+HR.blackrule {
+	color : #454545;
+	height : 1px;
+	margin : 0;
+}
+
+/**
+ * Estilos de lista
+ */
+OL {
+	margin: 0;
+}
+
+UL {
+	margin: 0;
+	padding:0;
+	list-style-type: disc;
+}
+
+H2, H3, H4, H5, H6{
+	margin:0;
+	padding:0;}
+	
+	
+UL.squarelist {
+	margin: 0 0 0 0.75em;
+	list-style-type: square;
+}
+
+LI.squarelist {
+	margin: 0 0 0 0.75em;
+	list-style-type: square;
+}
+
+/* FIN ESTILOS GLOBALES */
+
+/* INICIO ESTILOS GLOBALES VENTANAS EMERGENTES */
+/** Estilos que nos definen el comportamiento de los popup **/
+DIV.popupTitle {
+	background-color: #FF9B0D;
+	min-height: 2.25em;
+	height: auto!important;
+	height: 2.25em;
+	color: #FFF;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 0.4em 0.4em 0 0;
+}
+
+/** Estilo aplicado a la cabecera del popup **/
+DIV.popupContentName {
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 0.4em 0.4em 0.2em 0;
+	border-bottom: 1px solid #454545;
+	color: #000;
+}
+
+/** Estilo aplicado a una descripciÃ³n asociada al POPUP **/
+DIV.popupDescription {
+	font-size: 1em;
+	font-weight: normal;
+	padding: 0.4em 0.4em 0.4em 0.2em;
+	color: #000;
+}
+
+/** Estilo aplicado al contenido del popup **/
+DIV.popupContent {
+	padding: 1em 0;
+}
+
+/** Cuerpo del POPUP **/
+DIV.popupBody {
+	vertical-align: top;
+	background-color: #FFF;
+	padding:0 0 1em 0;
+}
+
+/** Estilo para la zona de cerrar de los popup **/
+DIV.close {
+	vertical-align: bottom;
+	height: 25px;
+	overflow: auto;
+}
+
+/* FIN ESTILOS GLOBALES VENTANAS EMERGENTES */
+
+
+/**
+ * Zona de componentes, la desplazamos un pelÃ­n a la izquierda y hacia abajo
+ */
+TD.components {
+	padding-top: 1px;
+	padding-left: 2px;
+}
+
+/** ESTILOS ESPECIALES DE COMPONENTE DE LOGIN **/
+DIV.auth {
+	font-family: Arial, "Trebuchet MS", Helvetica, sans-serif;
+	background-image: url('../imagenes/auth/fondoAcceso.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: left;
+}
+
+DIV.authError {
+	align: left; 
+	margin: 150px 25px;
+	font-size: 1.5em;
+}
+
+BODY.loginName,
+BODY.loginName DIV.auth{
+	background: none;
+}
+
+DIV.auth A{
+	padding-left: 0.7em;
+}
+
+DIV.auth A IMG {
+	border: none;	
+}
+
+DIV.titleAuth {	
+	background: transparent url('../imagenes/fondos/menus/fondo03.gif') repeat-x bottom center;
+	padding-top: 0.5em;
+	padding-left: 1em;
+	font-size: 1.2em;
+	background-color: #ECEEEF;
+	height: 2.5em;
+	margin-bottom: 0.4em;
+	text-align: center;
+}
+
+DIV.titleAuth SPAN{	
+	background: transparent url('../imagenes/fondos/menus/acceso.gif') no-repeat 0 -0.1em;
+	padding-left: 2em;
+	height: 2em;
+	display: block;
+}
+
+DIV.auth Label {
+	background-repeat: no-repeat;
+	background-position: 0 0.2em;
+	padding-left: 0.7em;
+	color : #454545;
+	font-weight: normal;
+}
+
+DIV.auth DIV.title {
+	background-repeat: no-repeat;
+	background-position: 0em 0.2em;
+	padding: 1em 0 0.1em 0.7em;
+	color : #000;
+	font-weight: bold;	
+}
+
+DIV.auth SPAN.info {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.5em;
+	color: #022D5A;
+	font-weight: bold;
+	background-image: url('../imagenes/auth/usuario.png');
+	background-repeat: no-repeat;
+	background-position: 0 100%;
+	padding-left: 1.5em;
+}
+
+DIV.auth DIV.intro {
+	font-family: Verdana, Arial, "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 0.9em;
+	text-align: justify;
+	padding: 0.3em 0.4em 0.8em 0.4em;
+}
+
+DIV.auth INPUT {
+	width: 9em;
+	margin-left: 0.3em;
+	border-color: #A2A2A2;
+	background-color: #F4F4F4;
+}
+
+DIV.auth BUTTON {
+	font-family: Verdana, Arial, "Trebuchet MS", Helvetica, sans-serif;
+	color: #454545;
+	font-size: 0.9em;
+}
+
+DIV.loginInfo {
+	font-family: Verdana, Arial, "Trebuchet MS", Helvetica, sans-serif;
+	color : #454545;
+	font-size: 0.8em;
+	padding-left: 1.8em;
+	padding-right: 0.7em;
+	text-align: left;
+}
+
+DIV.userActions {
+	overflow: auto;
+	clear: both;
+	padding: 1.5em 1.8em 1.5em 0.8em;
+}
+
+DIV.userActions .userLogout,
+DIV.userActions .userData {
+	width: 43%;
+	display: block;
+	float: left;
+	font-size: 1.2em;
+	padding-left: 1.1em;
+	background-image: url('../imagenes/arrows/flechaAccesoIntranet.png');
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+DIV.userActions .userLogout {
+}
+
+DIV.userActions .userData {
+}
+
+DIV.intranetAccess {
+	padding-top: 0.5em;
+	clear: both;	
+}
+
+DIV.intranetAccess BUTTON {
+	font-family: Verdana ,Arial, Trebuchet MS, Helvetica, sans-serif;
+	width: 18.9em;
+	color: #FFF;
+	margin-left: 0.3em;
+	border: 1px solid #FFF;
+	background: url('../imagenes/auth/formButton.png') no-repeat top center;
+	font-size: 1.5em;
+	padding: 0;
+	font-weight: bold;
+	height: 1.9em;
+	line-height: 1.9em;
+	border: 0;
+}
+
+/* Componente de login pero para cada portal */
+DIV.authEsp {
+	font-family: Verdana, Arial, "Trebuchet MS", Helvetica, sans-serif;
+	background-color: white;
+	padding: 0em 0.5em 0.7em 0em;
+	text-align: right;
+}
+
+
+DIV.authEsp Label {
+	font-family: Verdana, Arial, "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 0.9em;
+	background: transparent url('../imagenes/fondos/menus/menuItem.jpg') no-repeat 0 0.2em;
+	padding-left: 0.7em;
+	color: #454545;
+	font-weight: normal;
+}
+
+DIV.authEsp INPUT {
+	width: 12em;
+	margin-left: 0.3em;
+	border-color: #A2A2A2;
+	background-color: #F4F4F4;
+}
+
+DIV.authEsp BUTTON {
+	font-family: Verdana, Arial, "Trebuchet MS", Helvetica, sans-serif;
+	color : #454545;
+	font-size: 0.9em;
+}
+
+DIV.loginHelp{
+	font-family: Verdana, Arial, "Trebuchet MS", Helvetica, sans-serif;
+	color : #87560C;
+	font-size: 1em;
+	padding-right: 0.7em;
+	text-align: left;
+	float: left;
+	width: 22em;
+	padding: 0.4em;
+}
+
+DIV.login {
+	float: left;
+	width: 90em;
+}
+
+DIV.loginInfoEsp {
+	font-family: Verdana, Arial, "Trebuchet MS", Helvetica, sans-serif;
+	color : #454545;
+	font-size: 0.8em;
+	padding-right: 0.7em;
+	margin-right: 19em;
+	text-align: left;
+	width: 18em;
+	float: left;
+}
+
+TD.buttonSubmit {
+	background: transparent url('../imagenes/iconos/acceder.gif') no-repeat 11.4em 0.2em;
+}
+
+TABLE.loginTable {
+	text-align : justify;
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;	
+	border: 1px solid #F4F4F4;
+	color: #6A6A6A;
+}
+
+TABLE.loginTable TD.loginTableHead {
+	font-size: 0.8em;
+	padding: 0.5em 1em;
+	background-color: silver;
+	font-weight: bold;
+	
+}
+
+/** FIN ESTILOS ESPECIALES COMPONENTE DE LOGIN **/
+
+
+/** ESTILOS ESPECIALES COMPONENTE DE BANNER **/
+DIV.floatingBanner {
+	position: absolute;	
+	left: -266px;
+	top: 16px;
+}
+
+DIV.tematico {
+	position: absolute;
+	top: 10px;
+}
+
+DIV.centered {
+	text-align: center;
+}
+
+P.bannerSeparatorMin {
+	padding-top: 0.3em;
+}
+
+/**
+ * Estilo para la zona de idiomas
+ */
+DIV.langSelector {
+	text-align: right;
+	padding-right: 0.5em;
+} 
+
+DIV.langSelector UL {
+	margin: 0;
+	padding: 0;
+}
+
+DIV.langSelector UL LI {
+	display: inline;
+	margin: 0 0.2em 0 0;
+	padding: 0 0.5em 0 0.3em;
+	background: transparent url('../imagenes/bullets/bullet03.gif') no-repeat 100% 70%;
+}
+
+/**
+ * Estilos correspondientes al formulario para el buscador externo
+ */
+DIV.externalSearch {
+	background-color: #FFF;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	font-family: Arial, "Trebuchet MS", Helvetica, sans-serif;
+	font-weight: bold;	
+}
+
+DIV.externalSearchHeader {
+	text-align: left;
+	padding-top: 0.5em;
+	padding-bottom: 0.7em;	
+	font-weight: bold;	
+}
+
+DIV.externalSearchData {
+	text-align: left;
+	vertical-align : middle;
+}
+
+DIV.externalSearchData FORM {
+	padding: 0;
+	margin: 0;
+}
+
+DIV.externalSearchData INPUT {
+	width: 8em; 	
+}
+
+DIV.externalSearchData SELECT {
+	width: 10em;
+}
+
+DIV.externalSearchData BUTTON {
+	color: #454545;
+	background-color: #CCC;
+	width: auto;	
+	height: 1.7em;	
+	font-size: 0.9em;	
+	font-weight: bold;	
+	border: 1px solid #000;
+	margin-left: 0.5em;
+}
+
+/**
+ *	componente de encabezados
+ */
+.headerComponent.title H2 {
+	color: #6D585B;	
+	font-size: 0.9em;
+	width: auto;
+	padding: 0 0.4em;
+}
+
+
+/**
+ * Clases comunes
+ */
+
+.hide {
+	display:none;
+}
+
+.flt {
+	float:left;
+}
+
+.frt {
+	float: right;
+}
+
+.accessKey {
+	position: absolute;
+	top: -9999px
+}
+
+/* la siguiente clase sustituye un <table><tr><td>texto</td></tr></table> puesto que un table tiene por defecto un cellpadding="1" y un cellspacing="2" */
+DIV.celdaBasica {
+	padding: 0.3em 0;
+}
+
+DT.celdaBasica {
+	font-weight: bold;
+	text-decoration: underline;	
+	padding-bottom: 0.5em;
+}
+
+DL.celdaBasica DD, DD.celdaBasica {
+	margin: 0;
+	padding-bottom: 0.3em;
+}
+
+DD.celdaBasica UL {
+	padding-top: 0.3em;	
+}
+
+/* overDiv */
+#overDiv {
+	position:absolute; 
+	left:0; 
+	top:0; 
+	visibility:hidden; 
+	z-index:1000;
+}
+
+/* Para alinear tablas a la derecha */
+.cmTableAlignright {
+	float: right;
+}
+/* END: estilo_general.css*/
+/* BEGIN: dvFormsWeb.css*/
+/**
+ * Esta hoja de estilo guarda la definición de xforms
+ *
+ * Copyright(c) Divisa Informática y Telecomunicaciones S.A.
+ */
+
+/*
+ * Específicos del formulario
+ */
+span.xforms-value {
+    font-weight: bold;
+}
+
+input.xforms-value,
+input.xforms-livesearch-value,
+input.dvforms-file-input,
+textarea.xforms-value,
+select.xforms-value {
+    font-size: 1.1em;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 156px;
+    border: 1px solid #999;
+    padding: 0;
+    margin: 0 0 0 17px !important;
+    vertical-align: middle;
+}
+
+/* Si es un control tipo calendario, el input tiene menos ancho */
+.xforms-control .xforms-input-calendar input.xforms-value {
+    width: 11.3em;
+}
+
+.xforms-control .xforms-input-calendar span.value.input,
+fieldset.xforms-full .xforms-control .xforms-input-calendar span.value.input,
+div.xforms-full .xforms-control .xforms-input-calendar span.value.input{
+	width:16.15em;
+}
+
+/* Si es un control tipo calendario, los iconos de ayuda y pista
+   deben quedar más separados de la derecha, para dejar hueco al
+   botón que muestra el calendario */
+.xforms-input-calendar .icons span.xforms-hint-help {
+    right: 52px;
+}
+
+/* Si es un control tipo listado, los iconos de ayuda y pista
+	deben quedar más separados de la derecha para dejar hueco
+	al scroll o flecha del select*/
+.xforms-select1 .icons span.xforms-hint-help,
+.xforms-select .icons span.xforms-hint-help {
+    right: 49px;
+}
+
+/* Si es un control tipo calendario y está desactivado, como el
+   botón que muestra el calendario no aparece, el ancho del input
+   es el habitual y la posición de los iconos de ayuda también */
+.xforms-readonly .xforms-input-calendar input.xforms-value {
+    width: 11.3em;
+}
+
+.xforms-readonly .xforms-input-calendar .icons span.xforms-hint-help {
+    right: 32px;
+}
+
+/* Para que en IE8 los select midan igual de altura que los input,
+   así flotan bien a la izquierda los elementos posteriores y no
+   se quedan encajados a la derecha. */
+.xforms-appearance-minimal select.xforms-value {
+    height: 18px;
+    display: table;
+}
+
+.xforms-select1.xforms-appearance-minimal {
+    display: table !important;
+}
+
+.xforms-select1.xforms-appearance-minimal select.xforms-value {
+    display: block !important;
+}
+
+.xforms-select1 span.xforms-value,
+.xforms-select span.xforms-value{
+	display: block;
+	margin: 0 0 0 17px;
+	width: 158px;
+}
+
+
+/* Grupos de radiobutton y checkbox, respectivamente */
+.xforms-select1.xforms-appearance-full span.xforms-value,
+.xforms-select.xforms-appearance-full span.xforms-value {
+    white-space: normal;
+    margin: 0 0 0 17px;
+}
+
+.xforms-select1.xforms-appearance-full span.xforms-value .xforms-item,
+.xforms-select.xforms-appearance-full span.xforms-value .xforms-item {
+    position: relative;
+    margin: 0.2em 0;
+    padding:0 1em 0 0; 
+}
+
+.xforms-select1.xforms-appearance-full span.xforms-value .xforms-item input,
+.xforms-select.xforms-appearance-full span.xforms-value .xforms-item input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 !important;
+    width: 13px;
+}
+
+.xforms-select1.xforms-appearance-full span.xforms-value .xforms-item-label,
+.xforms-select.xforms-appearance-full span.xforms-value .xforms-item-label {
+    padding: 0 0 0 1.5em;
+}
+
+.xforms-select1.xforms-appearance-full span.xforms-value .xforms-item label,
+.xforms-select.xforms-appearance-full span.xforms-value .xforms-item label {
+    position: relative;
+    padding: 0 0 0 18px;
+    float: none;
+    display: block;
+    line-height: 1.2em;
+    margin: 0 0 4px 0;
+}
+
+input[type=radio].xforms-value,
+input[type=checkbox].xforms-value {
+    width: auto;
+    border: none;
+    padding: 0;
+    margin: 0 0.4em !important;
+    float: left;
+}
+
+.xforms-control.xforms-textarea {
+    clear: both;
+    width: 100%;
+}
+
+.xforms-control.xforms-textarea > span,
+.xforms-control.xforms-textarea > span > span{
+	width: 100%;
+}
+
+.xforms-control.xforms-textarea span.value.textarea{
+	width: 70.5%;
+}
+
+textarea.xforms-value {
+    height: 108px;
+    width:95%;
+}
+
+div.xforms-container {
+    padding: 0;
+    margin: 1.5em 2em 0 2em;
+}
+
+div.xforms-repeat-item span.xforms-label-repeat {
+    font-weight: bold;
+    padding: 0.1em 0.6em 0.2em 0.6em;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+.xforms-repeat {
+    padding: 0.5em 0.5em;
+}
+
+.xforms-repeat-item {
+    margin: 0.5em 0.5em;
+}
+
+.xforms-repeat-item-end {
+    clear: both;
+}
+
+.xforms-repeat-item-selected {
+    background-color: #e2eadf;
+    padding-bottom: 0.5em;
+}
+
+
+
+/*disposición en vertical*/
+fieldset.xforms-full .xforms-select1.xforms-appearance-full span.xforms-value,
+fieldset.xforms-full .xforms-select.xforms-appearance-full span.xforms-value,
+div.xforms-full .xforms-select1.xforms-appearance-full span.xforms-value,
+div.xforms-full .xforms-select.xforms-appearance-full span.xforms-value{
+    width: 314px;
+}
+
+fieldset.xforms-full input.xforms-value,
+fieldset.xforms-full input.xforms-livesearch-value,
+fieldset.xforms-full select.xforms-value,
+div.xforms-full input.xforms-value,
+div.xforms-full input.xforms-livesearch-value,
+div.xforms-full select.xforms-value,
+fieldset.xforms-full textarea.xforms-value, 
+div.xforms-full textarea.xforms-value{
+    width: 95%;
+}
+
+fieldset.xforms-full .xforms-control, 
+div.xforms-full .xforms-control {
+    white-space: normal;
+    width:100%;
+}
+
+fieldset.xforms-full .xforms-control > span , 
+div.xforms-full .xforms-control > span,
+fieldset.xforms-full .xforms-control > span  > span, 
+div.xforms-full .xforms-control > span > span{
+	width: 100%;	
+}
+
+fieldset.xforms-full .xforms-readonly .xforms-input-calendar input.xforms-value,
+div.xforms-full .xforms-readonly .xforms-input-calendar input.xforms-value {
+    width: 11.3em;
+}
+
+fieldset.xforms-full .xforms-control span.value.input,
+div.xforms-full .xforms-control span.value.input,
+fieldset.xforms-full .xforms-control span.value.secret,
+div.xforms-full .xforms-control span.value.secret,
+fieldset.xforms-full .xforms-control span.value.select1,
+div.xforms-full .xforms-control span.value.select1,
+fieldset.xforms-full .xforms-control span.value.select,
+div.xforms-full .xforms-control span.value.select,
+div.xforms-full .xforms-control span.value.livesearch {
+	width: 57%;
+}
+
+fieldset.xforms-full .xforms-control .value.textarea, 
+div.xforms-full .xforms-control .value.textarea {
+    float: left;
+    margin-top: 3px;
+    width:57%;
+}
+
+fieldset.xforms-full .xforms-control.xforms-textarea , 
+div.xforms-full .xforms-control.xforms-textarea{
+    clear: both;
+}
+
+fieldset.xforms-full .xforms-select1 span.xforms-value, 
+div.xforms-full .xforms-select1 span.xforms-value {
+    width: 331px;
+}
+
+fieldset.xforms-full span.xforms-item label.xforms-item-label, 
+div.xforms-full span.xforms-item label.xforms-item-label {
+    width: 280px;
+}
+
+fieldset.xforms-full div.dvforms-url-repeat .xforms-control,
+div.xforms-full div.dvforms-url-repeat .xforms-control{
+	width:auto;
+}
+
+fieldset.xforms-full span.upload input.xforms-value {
+    width: 156px;
+}
+
+fieldset.xforms-full .xforms-control.xforms-upload .xforms-value, 
+div.xforms-full .xforms-control.xforms-upload .xforms-value{
+    min-width: 11.3em;
+    width: 11.3em;
+}
+
+fieldset.xforms-full .xforms-select1.xforms-appearance-full span.xforms-value .xforms-item input,
+fieldset.xforms-full .xforms-select.xforms-appearance-full span.xforms-value .xforms-item input,
+div.xforms-full .xforms-select1.xforms-appearance-full span.xforms-value .xforms-item input,
+div.xforms-full .xforms-select.xforms-appearance-full span.xforms-value .xforms-item input {
+    width: 26px;
+}
+
+fieldset.xforms-full .xforms-select1.xforms-appearance-full span.xforms-value .xforms-item label,
+fieldset.xforms-full .xforms-select.xforms-appearance-full span.xforms-value .xforms-item label,
+div.xforms-full .xforms-select1.xforms-appearance-full span.xforms-value .xforms-item label,
+div.xforms-full .xforms-select.xforms-appearance-full span.xforms-value .xforms-item label {
+    padding: 0 0 0 25px;
+}
+
+fieldset.xforms-full span.value.upload.paddingIcons1 input[type=text].xforms-value, 
+div.xforms-full span.value.upload.paddingIcons1 input[type=text].xforms-value {
+    padding-right: 0em;
+}
+
+fieldset.xforms-full span.value.upload.paddingIcons2 input[type=text].xforms-value,
+div.xforms-full span.value.upload.paddingIcons2 input[type=text].xforms-value{
+    padding-right: 0em;
+}
+
+.xforms-full .xforms-upload label{
+	width: 8.9em;
+	text-align:right;
+}
+
+fieldset.xforms-full .xforms-upload .dvforms-file-noupload {
+    padding:10px 80px 10px 80px;
+}
+
+fieldset.xforms-full .xforms-upload input.dvforms-file-input ,
+div.xforms-full .xforms-upload input.dvforms-file-input {
+    width: 187px;
+}
+/***/
+
+
+/* Botones */
+div.value .xforms-button {
+    margin: 1em 0 1.2em 1.8em;
+}
+
+.xforms-button {
+    font-weight: bold;
+    color: #666;
+    background-color: #fff;
+    border: 1px solid #000;
+    width: auto;
+    margin: 1em 0 1em 0.5em;
+    padding: 0;
+}
+
+.xforms-button span.xforms-label {
+    font-weight: bold;
+    color: ;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: auto;
+    float: none;
+    padding: 0.2em 0.8em 0.4em 0.8em;
+    min-width: 0;
+}
+
+/* Por defecto los botones quedan alineados a la derecha */
+.xforms-control.xforms-submit,
+.xforms-control.xforms-signedsubmit,
+.xforms-control.xforms-trigger {
+    width: auto;
+    min-width: 0;
+    float: right;
+    margin-left: 1em;
+}
+
+/* Si los botones están dentro de un grupo quedan alineados a la izquierda */
+.xforms-group .xforms-control.xforms-submit,
+.xforms-group .xforms-control.xforms-signedsubmit {
+    float: left;
+    margin-left: 0;
+    margin-right: 1em;
+}
+
+.xforms-group .xforms-control.xforms-trigger{
+	float:none;
+}
+
+.xforms-control.xforms-submit span,
+.xforms-control.xforms-signedsubmit span,
+.xforms-control.xforms-trigger span {
+    float: none;
+}
+
+.xforms-control.xforms-submit span.icons,
+.xforms-control.xforms-signedsubmit span.icons,
+.xforms-control.xforms-trigger span.icons {
+    display: none;
+}
+
+.xforms-control.xforms-submit span.value,
+.xforms-control.xforms-signedsubmit span.value,
+.xforms-control.xforms-trigger span.value {
+    position: relative;
+    height: 42px;
+}
+
+.xforms-control.xforms-submit,
+.xforms-control.xforms-signedsubmit,
+.xforms-control.xforms-trigger {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+.xforms-control.xforms-submit .xforms-button,
+.xforms-control.xforms-signedsubmit .xforms-button,
+.xforms-control.xforms-trigger .xforms-button,
+.dvforms-success-button {
+    background: none;
+    border: none;
+    height: 42px;
+    padding:0 0 42px 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.xforms-control.xforms-submit .xforms-button span.xforms-button-left,
+.xforms-control.xforms-signedsubmit .xforms-button span.xforms-button-left,
+.xforms-control.xforms-trigger .xforms-button span.xforms-button-left,
+.dvforms-success-button span.xforms-button-left {
+    background-image: url('../imagenes/dvFormsWeb/btn_bgleft.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: transparent;
+    position: absolute;
+    width: 5px;
+    height: 42px;
+    top: 0;
+    left: 0;
+}
+
+.xforms-control.xforms-submit .xforms-button span.xforms-button-middle,
+.xforms-control.xforms-signedsubmit .xforms-button span.xforms-button-middle,
+.xforms-control.xforms-trigger .xforms-button span.xforms-button-middle,
+.dvforms-success-button span.xforms-button-middle {
+    background-image: url('../imagenes/dvFormsWeb/btn_bg.png');
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: transparent;
+    position: absolute;
+    height: 42px;
+    top: 0;
+    left: 5px;
+    right: 8px;
+}
+
+.xforms-control.xforms-submit .xforms-button span.xforms-button-right,
+.xforms-control.xforms-signedsubmit .xforms-button span.xforms-button-right,
+.xforms-control.xforms-trigger .xforms-button span.xforms-button-right,
+.dvforms-success-button span.xforms-button-right {
+    background-image: url('../imagenes/dvFormsWeb/btn_bgright.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: transparent;
+    position: absolute;
+    width: 8px;
+    height: 42px;
+    top: 0;
+    right: 0;
+}
+
+.xforms-control.xforms-submit .xforms-button span.xforms-label,
+.xforms-control.xforms-signedsubmit .xforms-button span.xforms-label,
+.xforms-control.xforms-trigger .xforms-button span.xforms-label,
+.dvforms-success-button span.xforms-label {
+    background-color: transparent;
+    color: #fff;
+    position: relative;
+    display: block;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 9px 14px 9px 12px;
+    white-space: nowrap;
+    min-width: 0;
+    width: auto;
+}
+
+/* Botón especial Firmar y Enviar */
+.xforms-control.xforms-submit .xforms-button span.xforms-label, 
+.xforms-control.xforms-signedsubmit .xforms-button span.xforms-label {
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: transparent;
+    height: 22px;
+}
+
+/* Botón para abrir el diseñador de formularios */
+#formulario\.editarFormulario {
+    margin: 2px 1em 0 0;
+}
+
+/* Botón gris, usado para abrir el diseñador de formularios */
+.xforms-gray-button span.xforms-button-left {
+    background-image: url('../imagenes/dvFormsWeb/btn_gray_bgleft.png');
+}
+
+.xforms-gray-button span.xforms-button-middle {
+    background-image: url('../imagenes/dvFormsWeb/btn_gray_bg.png');
+}
+
+.xforms-gray-button span.xforms-button-right {
+    background-image: url('../imagenes/dvFormsWeb/btn_gray_bgright.png');
+}
+
+/* Botones usados para los mensajes de ok */
+.dvforms-success-container {
+    text-align: center;
+}
+
+/** Botones de descarga y validación **/
+.dvforms-option-buttons {
+    text-align: left;
+}
+
+.dvforms-option-buttons ul.dvforms-option-list {
+    margin: 0;
+    list-style-type: none;
+    margin: 1em 0 0 2em;
+}
+
+.dvforms-option-buttons ul.dvforms-option-list li {
+    width: 49%;
+    display: block;
+    float: left;
+    margin: 0.5em 0;
+}
+
+.dvforms-option-buttons .dvforms-option-link:link,
+.dvforms-option-buttons .dvforms-option-link:visited,
+.dvforms-option-buttons .dvforms-option-link:active,
+.dvforms-option-buttons .dvforms-option-link:hover {
+    background-image: url('../imagenes/dvFormsWeb/btn_icon.png');
+    font-weight: bold;
+    color: #0a72a7;
+    background-repeat: no-repeat;
+    display: block;
+    cursor: pointer;
+}
+
+.dvforms-option-buttons span {
+    background-repeat: no-repeat;
+    background-position: 5px 6px;
+    height: 2.3em;
+    padding: 0.3em 1em 0.3em 2.5em;
+    display: block;
+}
+
+.dvforms-option-buttons span.xforms-download:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.dvforms-option-buttons span.xforms-download {
+    min-height: 2.3em;
+    height: auto!important;
+    height: 1%;
+    background-image: url('../imagenes/dvFormsWeb/ico_download.png');
+}
+
+.dvforms-option-buttons  span.xforms-sign {
+    background-image: url('../imagenes/dvFormsWeb/ico_sign.png');
+}
+
+/** Botón volver **/
+.dvforms-success-buttons {
+    margin: 1em auto 0 auto;
+}
+
+.dvforms-success-button {
+    margin-left: 0;
+    margin-right: 1em;
+    float: none;
+    display: inline;
+}
+
+.dvforms-success-button .xforms-back-button {
+    background-image: url('../imagenes/iconos/leftArrow.gif');
+    background-repeat: no-repeat;
+    background-position: 10px 16px;
+    padding-left: 25px !important;
+}
+
+.dvforms-success-button span.xforms-button-left {
+    background-image: url('../imagenes/dvFormsWeb/btn_success_bgleft.png');
+}
+
+.dvforms-success-button span.xforms-button-middle {
+    background-image: url('../imagenes/dvFormsWeb/btn_success_bg.png');
+}
+
+.dvforms-success-button span.xforms-button-right {
+    background-image: url('../imagenes/dvFormsWeb/btn_success_bgright.png');
+}
+
+/* Grupos de controles */
+.xforms-group-content:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.xforms-group-content {
+    min-height: 0;
+    height: auto!important;
+    height: 1%;
+    margin: 0 1em;
+    padding: 0.6em 0 0.6em 0;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+span.xforms-output {
+    clear: both;
+    float: none;
+    display: block;
+    white-space: normal;
+}
+
+span.xforms-output span {
+    float: none;
+    display: block;
+    white-space: normal;
+}
+
+span.xforms-output span.xforms-label {
+    clear: both;
+    float: none;
+    display: block;
+}
+
+span.xforms-output span.xforms-value {
+    clear: both;
+    float: left;
+    font-size: 1.3em;
+    font-weight: normal;
+    padding: 0.6em 0;
+}
+
+.xforms-group span.xforms-output span.xforms-value {
+    font-size: 1.1em;
+    font-weight: normal;
+    padding: 0.6em 0 0.2em 0;
+    display: block;
+    float: none;
+}
+
+span.xforms-output label.xforms-label {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+span.xforms-output.dvforms-title span.xforms-value {
+    font-weight: bold;
+}
+
+span.xforms-output span.icons {
+    display: none;
+}
+
+span.xforms-item {
+    display: block;
+    clear: both;
+    cursor: default;
+}
+
+span.xforms-item span.xforms-item-field {
+    display: table-cell;
+    margin: 0;
+    padding: 0.5em 0 0 0;
+    vertical-align: top;
+    float: left;
+}
+
+span.xforms-item span.xforms-item-label {
+    display: table-cell;
+    margin: 0;
+    padding: 0.7em 0.4em 0 0.2em;
+    vertical-align: top;
+    float: left;
+}
+
+span.xforms-item label.xforms-item-label {
+    width: 130px;
+    white-space: normal;
+}
+
+
+/** Grupos dentro de grupos **/
+.xforms-group .xforms-group .xforms-group-content {
+    margin: 0;
+}
+
+.xforms-group .xforms-group-content .xforms-group-label {
+    background: none;
+    border-bottom: 1px solid #5E5E5E;
+    color: #000;
+    padding: 0.1em 0 0.2em;
+    margin: 0.5em 0;
+}
+
+
+/* Etiquetas */
+.xforms-group:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.xforms-group {
+    min-height: 0;
+    height: auto!important;
+    height: 1%;
+    background-color: #EFEFEF;
+    margin-bottom: 1em;
+    clear: both;
+}
+
+.xforms-group-label {
+    background-color:#5e5e5e;
+    margin: 0;
+    font-weight: bold;
+    padding: 0.1em 0.6em 0.2em 0.6em;
+    color: #fff;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 1.4em;
+}
+
+.xforms-container label,
+.xforms-container p{
+	color: #000;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 1.1em;
+}
+
+.xforms-control .xforms-label{
+    color: #000;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 1.1em;
+    padding: 0.2em 0 0 0;
+    display: table-cell;
+    float: left;
+    min-width: 10.4em;
+    width: 10.4em;
+    white-space: normal;
+}
+
+fieldset.xforms-full .xforms-control .xforms-label, 
+div.xforms-full .xforms-control .xforms-label{
+    min-width: 13.8em;
+    width: 13.8em;
+}
+
+/* Controles */
+.xforms-control {
+    border: 0;
+    margin-top: 0.6em;
+    float: left;
+    white-space: nowrap;
+    min-width: 32.5em;
+    display: table;
+}
+
+.xforms-control span {
+    vertical-align: middle;
+    display: block;
+    float: left;
+}
+
+.xforms-control .value {
+    vertical-align: middle;
+}
+
+.xforms-control.xforms-appearance-minimal {
+    display: block;
+}
+
+.focus {
+    font-size:1.1em;
+    margin: 0.5em 0.4em 0 0.5em;
+    width: 6px;
+    height: 10px;
+    display: block;
+}
+
+.xforms-focus .focus {
+    background: transparent url('../imagenes/dvFormsWeb/focus.gif') no-repeat;
+}
+
+.xforms-focus .xforms-hint-help{
+	display:none;
+}
+
+.xforms-readonly input, .xforms-readonly textarea, .xforms-readonly select, .xforms-readonly option {
+    background-color: #e0e0d8;
+    color: #777768;
+}
+
+.xforms-disabled, #xforms-body .xforms-disabled {
+    display: none;
+}
+
+/* Iconos */
+
+/* Contenedor para todos los iconos */
+span.icons {
+    position: relative;
+}
+
+.xforms-upload span.icons{
+    width: auto;
+    padding-top: 1em;
+}
+
+
+/* Todos los iconos con alineación vertical */
+span.xforms-required-icon, span.xforms-alert, span.xforms-help, span.xforms-hint {
+    vertical-align: middle;
+}
+
+/* Tooltips que se muetran con el ratón encima de los iconos
+   siempre y cuando hayamos asociado texto a cada icono */
+span.xforms-required-value, span.xforms-help-value, span.xforms-alert-value, span.xforms-hint-value {
+    display: none;
+    position: absolute;
+    left: -30px;
+    top: -20px;
+    padding: 0 4px;
+    font-size: 1.1em;
+    color: #fff;
+    border: 1px solid #fff;
+    z-index: 12;
+    white-space: nowrap;
+    line-height:1.55em;
+}
+
+/* La tooltip para el asterisco de obligatoriedad y error de validación respectivamente con fondo rojo */
+span.xforms-required-value, span.xforms-alert-value {
+    background-color: #cc0000;
+}
+
+/* La tooltip para la interrogación de ayuda con fondo naranja */
+span.xforms-help-value {
+    background-color: #ff9600;
+}
+
+/* La tooltip para la I de información con fondo azul */
+span.xforms-hint-value {
+    background-color: #037cbd;
+}
+
+/* Estilos propios de cada icono */
+.xforms-hint-help {
+    position: absolute;
+    right: 32px;
+    width: 32px;
+}
+
+span.xforms-alert {
+    visibility: hidden;
+    position: relative;
+}
+
+.xforms-invalid span.xforms-alert {
+    visibility: visible;
+    float: left;
+}
+
+span.xforms-help {
+    display: block;
+    float: right;
+    position: relative;
+}
+
+span.xforms-hint {
+    display: block;
+    float: right;
+    position: relative;
+}
+
+/* Estilos comunes para todos los iconos */
+span.xforms-alert-icon, span.xforms-help-icon, span.xforms-hint-icon, span.xforms-required-icon {
+    cursor: help;
+    width: 16px;
+    height: 16px;
+    display: block;
+    margin: 3px 0 1px 0;
+    background-repeat: no-repeat;
+}
+
+/* Icono de obligatoriedad oculto por defecto */
+span.xforms-required-icon {
+    visibility: hidden;
+    background-image: url('../imagenes/dvFormsWeb/icon_required.png');
+    color: red;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+span.xforms-required-value {
+    display: none;
+}
+
+/* Icono de obligatoriedad cuando el control sea obligatorio */
+span.xforms-required span.xforms-required-icon {
+    visibility: visible;
+}
+
+/* Icono de aviso cuando el valor del campo no sea correcto */
+span.xforms-alert-icon {
+    background-image: url('../imagenes/dvFormsWeb/icon_error.png');
+}
+
+/* Icono de ayuda */
+span.xforms-help-icon {
+    background-image: url('../imagenes/dvFormsWeb/icon_help.png');
+}
+
+/* Icono de tipo pista */
+span.xforms-hint-icon {
+    background-image: url('../imagenes/dvFormsWeb/icon_hint.png');
+}
+
+/* Tabs */
+span.ajx-tabs {
+    margin-top: 5px;
+}
+
+ul.ajx-tabs-list {
+    margin: 5px 0px 0px 0px;
+    padding: 0px;
+    height: 22px;
+}
+
+ul.ajx-tabs-list li {
+    list-style-type: none;
+    float: left;
+    font-weight: bold;
+}
+
+ul.ajx-tabs-list li a {
+    margin-left: 0px;
+    margin-right: 3px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 3px 10px 3px 10px;
+    font-size: 1.1em;
+    color: #333333;
+}
+
+ul.ajx-tabs-list li a:hover {
+    background-position: 0px -23px;
+    color: black;
+}
+
+ul.ajx-tabs-list li.ajx-tab-selected a {
+    background-color: #9999bb;
+    background-position: 0px -46px;
+}
+
+ul.ajx-tabs-list li.ajx-tab-selected a:hover {
+    background-position: 0px -69px;
+}
+
+fieldset.ajx-tab {
+    clear: both;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 0px;
+    background-color: #f8f8f8;
+}
+
+/* Trees */
+div.xforms-tree {
+    overflow: auto;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+div.xforms-tree ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+div.xforms-tree ul ul {
+    padding-left: 25px;
+}
+
+li.xforms-tree-item {
+    list-style-type: none;
+}
+
+a.xforms-label.xforms-tree-item-label {
+    font-weight: normal;
+}
+
+a.xforms-tree-item-label, a.xforms-tree-item-label:visited {
+    cursor: pointer;
+    padding: 0px 3px 0px 3px;
+    color: black;
+    text-decoration: none;
+}
+
+a.xforms-tree-item-label:hover {
+    color: white;
+    background-color: #777777;
+}
+
+a.xforms-tree-item-label.xforms-tree-item-label-selected,
+a.xforms-tree-item-label.xforms-tree-item-label-selected:visited {
+    background-color: blue;
+    color: white;
+}
+
+.xforms-tree-item-button {
+    padding-left: 18px;
+    width: 18px;
+    height: 15px;
+}
+
+.xforms-tree-item-fork {
+    background-image: url('../imagenes/dvFormsWeb/icon_folder.png');
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.xforms-tree-item-leaf {
+    background-image: url('../imagenes/dvFormsWeb/icon_file.png');
+    background-repeat: no-repeat;
+}
+
+.xforms-tree-label {
+    padding-bottom: 10px;
+}
+
+.xformsComponent,
+div.xforms-container {
+    min-height: 170px;
+    height: auto !important;
+    height: 170px;
+}
+
+span.xforms-message {
+    display: none;
+}
+
+div.ajx-dialog {
+    display: none;
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom: 3px solid black;
+    border-right: 3px solid black;
+    padding: 10px;
+    z-index: 10;
+}
+
+.aid-button {
+    padding: 0;
+    margin: 0 0 0 4px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-indent: -9999px;
+    background-image: url('../imagenes/calendar/calendar.gif');
+    background-repeat: no-repeat;
+    width: 16px;
+    height: 16px;
+    border: none;
+}
+
+#console {
+    font-size: 0.8em;
+    color: #888888;
+    border-top: thin solid #888888;
+    display: none;
+    clear: both;
+    margin: 1.5em 2em;
+}
+
+div#statusPanelOverlay {
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div#statusPanel {
+    display: none;
+    position: absolute;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    width: 300px;
+    min-width: 300px;
+    max-width: 350px;
+    min-height: 150px;
+    height: auto !important;
+    height: 150px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #333;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    z-index: 11;
+}
+
+div#statusPanel .statusPanelContainer {
+    position:relative;
+    min-height: 150px;
+    height: auto !important;
+    height: 150px;
+}
+
+div#statusPanel .statusPanelHeader {
+    position:absolute;
+    width: 100%;
+    height: 46px;
+    background-image: url('../imagenes/dvFormsWeb/msgbox-header.jpg');
+    background-repeat: no-repeat;
+    text-align: left;
+}
+
+div#statusPanel .statusPanelHeaderText {
+    font-weight: normal;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    display: block;
+}
+
+div#statusPanel .statusPanelTextContainer {
+    width: 100%;
+    height: 100%;
+    padding: 65px 0 40px 0;
+    text-align: center;
+}
+
+div#statusPanel .statusPanelTextContainer .statusPanelLoader {
+    background-image: url('../imagenes/dvFormsWeb/process.gif');
+    background-repeat: no-repeat;
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+div#statusPanel .statusPanelTextContainer #statusPanelText {
+    display: block;
+    font-size: 13px;
+    padding:0 15px;
+}
+
+/** Botón para el diálogo modal de xforms **/
+div#statusPanel .statusPanelTextContainer .statusPanelButtons {
+    padding: 5px 0 0 0;
+    text-align: center;
+}
+
+div#statusPanel .statusPanelTextContainer .statusPanelButtons .xforms-button {
+    background: none;
+    border: none;
+    height: 42px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: block;
+    width: 9em;
+    cursor: pointer;
+}
+
+div#statusPanel .statusPanelTextContainer .statusPanelButtons .xforms-button span.xforms-button-left {
+    background-image: url('../imagenes/dvFormsWeb/btn_gray_bgleft.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: transparent;
+    position: absolute;
+    width: 5px;
+    height: 42px;
+    top: 0;
+    left: 0;
+}
+
+div#statusPanel .statusPanelTextContainer .statusPanelButtons .xforms-button span.xforms-button-middle {
+    background-image: url('../imagenes/dvFormsWeb/btn_gray_bg.png');
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: transparent;
+    position: absolute;
+    height: 42px;
+    top: 0;
+    left: 5px;
+    right: 8px;
+}
+
+div#statusPanel .statusPanelTextContainer .statusPanelButtons .xforms-button span.xforms-button-right {
+    background-image: url('../imagenes/dvFormsWeb/btn_gray_bgright.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: transparent;
+    position: absolute;
+    width: 8px;
+    height: 42px;
+    top: 0;
+    right: 0;
+}
+
+div#statusPanel .statusPanelTextContainer .statusPanelButtons .xforms-button span.xforms-label {
+    background-color: transparent;
+    color: #fff;
+    position: relative;
+    font-size: 1.4em;
+    text-align: center;
+    display: block;
+    padding: 9px 17px 9px 12px;
+    height: 22px;
+    white-space: nowrap;
+}
+
+div#statusPanel .statusPanelFooter {
+    position:absolute;
+    width: 100%;
+    height: 23px;
+    line-height: 20px;
+    bottom: 0;
+    color: #ffffff;
+    background: url('../imagenes/dvFormsWeb/msgbox-footer.jpg') no-repeat #000;
+    text-align: right;
+    font-size: 11px;
+    right:0;
+    left:0;
+}
+
+/** signDataPanel **/
+
+div#signDataPanelOverlay {
+    display: none;
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div#signDataPanel {
+    display: none;
+    position: absolute;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    width: 600px;
+    min-width: 400px;
+    max-width: 600px;
+    min-height: 150px;
+    height: auto !important;
+    height: 600px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #333;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    z-index: 11;
+}
+
+div#signDataPanel .signDataPanelContainer {
+    position:relative;
+    min-height: 600px;
+    height: auto !important;
+    height: 600px;
+}
+
+div#signDataPanel .signDataPanelHeader {
+    position:absolute;
+    width: 100%;
+    height: 46px;
+    background-image: url('../imagenes/dvFormsWeb/msgbox-header.jpg');
+    background-repeat: no-repeat;
+    text-align: left;
+}
+
+div#signDataPanel .signDataPanelHeaderText {
+    font-weight: normal;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    display: block;
+}
+
+div#signDataPanel .signDataPanelTextContainer{
+    width: 100%;
+    height: 100%;
+    padding: 65px 0 40px 0;
+    text-align: center;
+}
+
+div#signDataPanel .signDataPanelTextContainer  #signDataPanelText{
+    display: block;
+    font-size: 13px;
+    padding:0 15px;
+}
+
+div#signDataPanel .signDataPanelHtmlContainer {
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    top: 130px;
+    overflow: auto;
+    text-align: left;
+    left:0;
+    right:0;
+}
+
+div#signDataPanel .signDataPanelButtonsContainer {
+    position:absolute;
+    width: auto;
+    height: 30px;
+    line-height: 20px;
+    bottom: 25px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 11px;
+    right: 0;
+}
+
+/** Botón para el diálogo modal de xforms **/
+div#signDataPanel .signDataPanelButtonsContainer .signDataPanelButtons {
+    padding: 5px 0 0 0;
+    text-align: center;
+}
+
+div#signDataPanel  .signDataPanelButtonsContainer .xforms-button {
+    background: none;
+    border: none;
+    height: 42px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display: block;
+    width: 9em;
+    cursor: pointer;
+    float: left;
+}
+
+div#signDataPanel  .signDataPanelButtonsContainer .xforms-button span.xforms-button-left {
+    background-image: url('../imagenes/dvFormsWeb/btn_gray_bgleft.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: transparent;
+    position: absolute;
+    width: 5px;
+    height: 42px;
+    top: 0;
+    left: 0;
+}
+
+div#signDataPanel  .signDataPanelButtonsContainer .xforms-button span.xforms-button-middle {
+    background-image: url('../imagenes/dvFormsWeb/btn_gray_bg.png');
+    background-repeat: repeat-x;
+    background-position: top;
+    background-color: transparent;
+    position: absolute;
+    height: 42px;
+    top: 0;
+    left: 5px;
+    right: 8px;
+}
+
+div#signDataPanel  .signDataPanelButtonsContainer .xforms-button span.xforms-button-right {
+    background-image: url('../imagenes/dvFormsWeb/btn_gray_bgright.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-color: transparent;
+    position: absolute;
+    width: 8px;
+    height: 42px;
+    top: 0;
+    right: 0;
+}
+
+div#signDataPanel .signDataPanelButtonsContainer .xforms-button span.xforms-label {
+    background-color: transparent;
+    color: #fff;
+    position: relative;
+    font-size: 1.4em;
+    text-align: center;
+    display: block;
+    padding: 9px 17px 9px 12px;
+    height: 22px;
+    white-space: nowrap;
+}
+
+div#signDataPanel .signDataPanelFooter {
+    position:absolute;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    bottom: 0;
+    color: #ffffff;
+    background: url('../imagenes/dvFormsWeb/msgbox-footer.jpg') no-repeat #000;
+    text-align: right;
+    font-size: 11px;
+    right:0;
+    left:0;
+}
+
+div#signDataPanel .dataHeader {
+	margin: 10px;
+   padding: 10px;
+   border-width: 2px;
+   border-style: solid;
+   border-color: #86004a;
+   color: #ffffff; 
+   font-size: 14px;
+   text-align: center; 
+}
+
+div#signDataPanel .contentName {
+	margin: 10px;
+	font-size: 14px; 
+}
+
+div#signDataPanel .dataToSign {
+   margin-left: 10px; 
+}
+
+div#signDataPanel .dataContainer {
+	margin: 10px;
+	padding: 0;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #818181; 
+   display:inline-block;
+   width: 573px;
+}
+
+div#signDataPanel table {
+	width: 100%; 
+}
+
+div#signDataPanel td {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; 
+}
+
+div#signDataPanel td.oddLabel {
+	width: 40%;
+	padding-top: 2px;
+	padding-right: 4px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	background-color: #dddddd;
+	font-weight: bold; 
+}
+
+div#signDataPanel td.evenLabel {
+	width: 40%;
+	padding-top: 2px;
+	padding-right: 4px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	background-color: #dddddd;
+	font-weight: bold; 
+}
+
+div#signDataPanel td.oddValue {
+	width: 60%;
+	padding-top: 2px;
+	padding-right: 4px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	background-color: #e8e8e8;
+	font-weight: bold; 
+}
+
+div#signDataPanel td.evenValue {
+	width: 60%;
+	padding-top: 2px;
+	padding-right: 4px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	background-color: #ffffff;
+	font-weight: bold; 
+}
+
+div#signDataPanel .label {
+	padding-top: 2px;
+	padding-right: 4px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	background-color: #ffffff;
+	font-weight: bold; 
+}
+
+div#signDataPanel .group {
+	padding-top: 2px;
+	padding-right: 4px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	color: #ffffff;
+	background-color: #5e5e5e;
+	font-weight: bold; 
+}
+
+/* Enlace de ayuda para los mensajes de error */
+a.xforms-help-link:link,
+a.xforms-help-link:visited,
+a.xforms-help-link:active {
+    color: #006297;
+    text-decoration: underline;
+}
+
+a.xforms-help-link:hover {
+    color: #1a82b7;
+}
+
+span.dvforms-success:after,
+span.dvforms-error:after,
+span.dvforms-warning:after{
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+span.dvforms-success span.xforms-value,
+span.dvforms-error span.xforms-value,
+span.dvforms-warning span.xforms-value{
+    width: 100%;
+}
+
+span.dvforms-success,
+span.dvforms-error,
+span.dvforms-warning{
+    clear: both;
+    height: 1%;
+    font-weight: bold;
+    background-position:10px 10px;
+    background-repeat:no-repeat;
+    display: block;
+    padding:10px 10px 10px 50px;
+    margin: 0 0 1.4em 4em;
+    width: 75%;
+    border: 1px solid;
+}
+
+span.dvforms-warning {
+    color: 343330;
+    border-color: #d9a02c;
+    background-color: #F0D9BB;
+    background-image:url('../imagenes/dvFormsWeb/warning.png');
+}
+
+span.dvforms-error {
+    color: red;
+    border-color: red;
+    background-color: #ffeeee;
+    background-image:url('../imagenes/dvFormsWeb/error.png');
+}
+
+span.dvforms-success {
+    color: #060;
+    border-color: green;
+    background-color: #eeffee;
+    background-image:url('../imagenes/dvFormsWeb/success.png');
+}
+
+span.dvforms-error span.icons,
+span.dvforms-success span.icons,
+span.dvforms-warning span.icons{
+	display: none;
+}
+
+/* Carga de ficheros */
+.xforms-control.xforms-upload .xforms-label{
+    min-width: 30em;
+    width: 30em;
+}
+
+.xforms-control.xforms-upload .xforms-value{
+    margin-left:20px !important;
+}
+
+.xforms-upload-container{
+    display: block;
+    clear:both;
+}
+
+.xforms-upload-container span.fileinput-button{
+    display:inline-block;
+    float:none;
+    width:15em;
+}
+
+.xforms-group-content noscript span{
+    margin:0 0 0.8em 2.55em;
+}
+
+.xforms-upload-container span.fileinput-button.showButtonFile{
+    background:url('../imagenes/dvFormsWeb/btn_gray_bg.png') repeat-x 0 #5E5E5E;
+    border: 0 none;
+    position: relative;
+    height: 1.7em;
+    cursor:pointer;
+    width: 11em;
+    left: 1em;
+    font-size:0.96em;
+}
+
+.xforms-upload-container span.fileinput-button.showButtonFile.disabled{
+    background:url('../imagenes/dvFormsWeb/btn_gray_bg_disabled.png') repeat-x 0 #5E5E5E;
+    cursor:default;
+}
+
+.xforms-upload-container.disabled{
+	display:none;
+}
+
+.fileinput-button .text-file-input-button{
+    display:none;
+}
+
+.xforms-upload span.fileinput-button.hideButtonFile{
+    overflow: hidden;
+    height: 0;
+    width:0;
+}
+
+span.fileinput-button.showButtonFile .text-file-input-button{
+    color: #fff;
+    margin-left:0.5em;
+    font-weight:bold;
+    font-size: 1em;
+    margin-top:0.2em;
+    background:url('../imagenes/dvFormsWeb/plus.png') no-repeat 0 0.1em;
+    padding-left:1.5em;
+}
+
+.xforms-upload span.fileinput-button.showButtonFile input.dvforms-file-input{
+    position: absolute;
+    top:0;
+    left:-1em;
+    width:7.2em;
+    font-size:1.5em;
+    height:1.2em;
+}
+
+.xforms-upload span.fileinput-button.showButtonFile input.dvforms-file-input:hover{
+    cursor: pointer;
+}
+
+.xforms-upload ul,
+.xforms-upload li {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+
+.xforms-upload span.filesContainer ul{
+    padding-top:1em;
+}
+
+.xforms-upload li span {
+    float:none;
+}
+
+.xforms-upload li.upload-file-name {
+    background-image: url('../imagenes/dvFormsWeb/icon_file.png');
+    background-repeat: no-repeat;
+    display: block;
+    padding: 0 0 0.7em 1.8em;
+    margin: 0 0.5em 0 8.3em;
+    color: #333;
+    overflow:hidden;
+}
+
+.xforms-upload label,
+.xforms-upload span.filesContainer {
+    vertical-align: middle;
+    margin: 0 0 0 1.95em;
+}
+
+.xforms-upload label{
+    display:inline-block;
+}
+
+.xforms-upload .dvforms-file-noupload{
+    color: #9F6000;
+    clear: both;
+    height: 1%;
+    font-weight: bold;
+    border: 1px solid #9F6000;
+    background-color: #FEEFB3;
+    padding: 10px 101px 10px 101px;
+    margin: 1em 0 0 0.5em;
+    display: block;
+}
+
+.xforms-upload label.dvforms-label-file,
+.xforms-upload-container label.dvforms-label-file{
+    margin-right: 3px;
+    margin-left:0.5em;
+}
+
+.xforms-upload .showButtonFile input.dvforms-file-input {
+    font-size: 1em;
+    vertical-align: middle;
+    width: 227px;
+}
+
+.xforms-upload button.dvforms-file-button {
+    background: url('../imagenes/dvFormsWeb/btn_gray_bg.png') repeat-x 0 #5E5E5E;
+    border:0 none;
+    cursor:pointer;
+    vertical-align: middle;
+    margin: 0 0.5em 0 1em;
+    color:#fff;
+    font-size:1em;
+    white-space: nowrap;
+}
+
+.xforms-upload button.dvforms-file-button.disabled{
+    background: url('../imagenes/dvFormsWeb/btn_gray_bg_disabled.png') repeat-x 0 #5E5E5E;
+    cursor:default;
+}
+
+.xforms-upload button.dvforms-file-button img{
+    display:inline;
+    vertical-align:middle;
+}
+
+.xforms-upload button.dvforms-file-button span{
+    display:inline;
+    float:none;
+    padding-left: 0.3em;
+}
+
+span.filesContainer.dvforms-file-container ul li+ li.upload-file-name{
+    border-top: 1px solid #d2d2d2;
+    padding-top:0.5em;
+    background-position:0 0.5em;
+}
+
+span.filesContainer.dvforms-file-container ul li.upload-file-name div.boxFileUploaded{
+    float:left;
+    white-space:normal;
+    max-width:13.9em;
+    line-height: 1.1em;
+    margin-top: 0.3em;
+}
+
+span.filesContainer.dvforms-file-container ul li button.dvforms-file-button{
+    background:url('../imagenes/dvFormsWeb/btn_gray_bg.png') repeat-x 0;
+    float:right;
+}
+
+span.filesContainer.dvforms-file-container ul li button.dvforms-file-button span.buttonDelete{
+    background:url('../imagenes/dvFormsWeb/minus.png') no-repeat 0 0.1em;
+}
+
+.xforms-upload button.dvforms-file-button span.buttonDelete{
+    background:url('../imagenes/dvFormsWeb/delete_file.gif') no-repeat 0 0.1em;
+    padding-left:1.5em;
+}
+
+.xforms-control .dvforms-file-container{
+    float:none;
+    clear:both;
+}
+
+.xforms-upload{
+    clear:both;
+    white-space:normal;
+    width: 100%;
+}
+
+.xforms-upload .value{
+    padding-top:1em;
+    float: left;
+    padding-bottom:1em; 
+    width: 38em;
+    clear:left;
+    margin-left:4.5em;
+}
+
+.xforms-upload .dvforms-file-description {
+    float: none;
+    display: block;
+    color: #000;
+    font-weight:bold;
+    margin-bottom:0.2em;
+}
+
+.xforms-upload .dvforms-file-name,
+.xforms-upload .dvforms-file-size {
+    float: none;
+    display: inline;
+    color:#666;
+}
+
+.xforms-upload .dvforms-file-hash {
+    visibility: hidden;
+    display:none;
+}
+
+.xforms-upload .xforms-hint-help {
+    right: 0;
+}
+
+/* Carga de ficheros desde una URL (control de repetición) */
+div.dvforms-url-repeat {
+    clear: both;
+    padding-left: 12px;
+}
+
+div.dvforms-url-repeat div.xforms-repeat-item {
+    clear: both;
+    min-width: 50em;
+}
+
+div.dvforms-url-repeat .xforms-control {
+    min-width: 0;
+}
+
+div.dvforms-url-repeat .xforms-control .xforms-label {
+    font-size: 1em;
+    width: auto;
+    min-width: 0;
+}
+
+div.dvforms-url-repeat .xforms-control input.xforms-value {
+    width: 13.4em;
+}
+
+div.dvforms-url-repeat span.value.paddingIcons1 input[type=text].xforms-value {
+    padding-right: 1.3em;
+    width: 12.1em;
+}
+
+div.dvforms-url-repeat span.value.paddingIcons2 input[type=text].xforms-value {
+    padding-right: 2.8em;
+    width: 10.6em;
+}
+
+
+ul.dvforms-url-repeat li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+/** botón añadir fichero desde URL **/
+span.dvforms-url-add  {
+    min-width: 12px !important;
+}
+
+span.dvforms-url-add span.value {
+    height: auto !important;
+}
+
+span.dvforms-url-add button.xforms-button {
+    width: 12px !important;
+    height: 12px !important;
+    padding: 0 !important;
+    margin: 4px 0 0 9px !important;
+    background-image: url('../imagenes/dvFormsWeb/add_file.gif') !important;
+}
+
+
+span.dvforms-url-add button.xforms-button .xforms-button-left,
+span.dvforms-url-add button.xforms-button .xforms-button-middle,
+span.dvforms-url-add button.xforms-button .xforms-button-right {
+    display: none;
+}
+
+span.dvforms-url-add button.xforms-button .xforms-label {
+    text-indent: -9999px;
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+/** botón eliminar fichero desde URL **/
+span.dvforms-url-del span.value {
+    height: auto !important;
+}
+
+span.dvforms-url-del button.xforms-button {
+    width: 12px !important;
+    height: 12px !important;
+    padding: 0 !important;
+    margin: 4px 0 0 0 !important;
+    background-image: url('../imagenes/dvFormsWeb/delete_file.gif') !important;
+}
+
+span.dvforms-url-del button.xforms-button .xforms-button-left,
+span.dvforms-url-del button.xforms-button .xforms-button-middle,
+span.dvforms-url-del button.xforms-button .xforms-button-right {
+    display: none;
+}
+
+span.dvforms-url-del button.xforms-button .xforms-label {
+    text-indent: -9999px;
+    overflow: hidden;
+    padding: 0 !important;
+}
+
+/* Administración de formularios */
+.xforms-control .xforms-label-admin {
+    color: #000;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-size: 1.1em;
+    padding: 0.2em 0 0 1.2em;
+    display: table-cell;
+    float: left;
+    width: 16em;
+    white-space: normal;
+}
+
+
+/* Resultados de búsqueda */
+#jquery-live-search {
+    background: #fff;
+    max-height: 300px;
+    overflow: auto;
+    position: absolute;
+    z-index: 99;
+    border: 1px solid #A9A9A9;
+    border-width: 0 1px 1px 1px;
+}
+
+#jquery-live-search ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#jquery-live-search ul li {
+    background: url('../imagenes/dvFormsWeb/list.png') no-repeat scroll 5px 9px transparent;
+    list-style-type: none;
+    padding: 5px 6px 3px 15px;
+    margin: 0;
+    font-size: 1.1em;
+    line-height: 1.2em;
+    cursor: default;
+}
+
+#jquery-live-search ul li.hover {
+    background-color: #F2DFE8;
+}
+
+#jquery-live-search ul li span.liveSearchValue {
+    display: none;
+}
+
+span .xforms-livesearch-ajaxloader {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    display: none;
+}
+
+span .xforms-livesearch-ajaxloader img {
+    padding-top: 3px;
+}
+
+.xforms-control.xforms-hidden {
+    display: none;
+}
+
+.ui-dialog.loader .ui-dialog-titlebar {
+    display: none;
+}
+
+.ui-dialog.loader .ui-dialog-content {
+    color: #444;
+    background: #fff;
+} 
+
+.xforms-radio,
+.xforms-checkbox{
+    border:none !important;
+    background:none !important;
+}
+/* END: dvFormsWeb.css*/

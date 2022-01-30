@@ -1,0 +1,778 @@
+/*  h1
+field
+	project:  internet corporation
+	author:   luka cvrk (www.solucija.com) 
+
+   
+*/
+
+
+*{ margin: 0; padding: 0; }* 
+body { 
+	font: .74em Verdana, Arial, "Trebuchet MS", Tahoma, sans-serif; 
+	line-height: 1.6em;
+	background: #fff url(../images/bg.png) repeat-x; 
+	color: #444; 
+}
+
+
+
+
+a{
+	text-decoration:none;
+	padding:0;
+}
+
+
+#tbConOficios{
+	width:880px;
+	margin:0 auto;
+}
+#tbConOficios table{
+	width:880px;
+}
+
+#tbConOficios2{
+	width:490px;
+	
+}
+#tbConOficios2 table{
+	width:490px;
+	margin-left:-16px;
+}
+
+#tbConOficios3 table{
+	width:450px;
+	margin-left:-2px;
+}
+
+#content { width: 1200px; margin: 0 auto; position:relative;}
+
+#logo { margin: 10px 0 0 0; height: 60px; width: 600px; float: left;  text-align: left;}
+#logo img{width:80px;height:60px; border:0;}
+#logo h1{
+	color: #33FF33;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin-left:350px;
+	margin-top:15px;
+	font-size:1.5em;
+}
+#logo h5{
+	color:#FFFFFF;
+	font-family:Tahoma,"Times New Roman",Times,serif;
+	margin-left:88px;
+	margin-top:7px;
+	font-size:12px;
+	margin-top:6px;
+	width:100%;
+}
+#menu { float: right; padding: 40px 0 60; margin: 8px 60 8px; margin-top:46px; }
+#menu li { font-size: 1.1em; display: inline; }
+#menu li a { padding: 30px 15px 0px 0; margin: 0 0 0 50px; color:#fff; background: #000 url(../images/tab.gif) no-repeat right bottom;  }
+#menu li a:hover { background: #000 url(../images/tabhover.gif) no-repeat right bottom; color: #FEFFB8; }
+
+#intro { 
+	clear: both;
+	background: #fff url(../images/intro2.png) no-repeat;
+	color:#111;
+	height: 55px;
+	margin: 0 0 20px;
+	padding: 65px 30px 0 0;
+	text-align: right;
+}
+	#intro h1 { margin: 0; font-size:21px; font-family:Georgia, "Times New Roman", Times, serif; margin-bottom:10px;}
+	#intro p { margin: 0; font-family:"Goudy Old Style"; font-size:18px}
+	#labs { font-size: 1.1em; margin: -60px auto;  }
+	
+
+	#labs h1{
+	color: #FF0000;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin-right:550px;
+	margin-top:-30px;
+	font-size:1.4em;
+}
+	#labs a { color: #000099;  padding: 4px 10px 6px;}
+	#labs a:hover { color: #00FF00;  }
+	img{
+	border:0;}
+	#labs ul{
+		height:35px;
+		}
+	#labs li{
+	display:inline;
+		list-style:none;
+		padding-left:2px;
+		color: #46852F;
+		
+		}
+		#labs span{
+		
+		padding-left:5px;
+		}
+		
+
+#left { clear: left; float: left; width: 238px; padding: 0 34px 0 6px; font-size: .9em; margin: 0 0 -32px; }
+	
+#right {
+	border-left:1px solid #CCCCCC;
+float:right;
+min-height:380px;
+margin:-15px 55px 20px 0;
+padding:10px 0 0 35px;
+text-align:justify;
+width:790px;
+}
+	#notice { padding: 12px 14px 1px; background: #f4f4f4 url(../images/noticebg.gif) no-repeat bottom right; color: #808080; }
+	
+
+	#left h3 { border-bottom: 1px solid #eee; padding: 0 0 7px; margin: 0 0 15px 0; }
+	#right h2 { border-bottom: 1px solid #ccc; padding: 0 0 8px; font-size:19px; float:left;  width:560px;}
+	#right h4 { margin-top:10px; float:left}
+
+#footer { clear: both;  border-top: 1px solid #ccc; padding: 2px 0; margin: 0 0 5px; font-size: .9em; color: #808080; background: #fff; }
+	#footer p { color: #317486; background: #fff; margin:0 auto; width:23%; text-align:center; }
+	
+	
+	fieldset#login {
+background: url(../images/login_bg.png) no-repeat top left;
+margin: 0px auto;
+padding: 6px 5px 5px 10px;
+width: 236px;
+height: 179px;
+font-size: 1.4em;
+border: none;
+position: relative;
+left: 15px;
+}
+#login h4 {
+font-size: 18px;
+font-weight: normal;
+font-family:  Georgia, "Times New Roman", Times, serif;
+width: 206px;
+height: 31px;
+padding: 5px 0px 0px 34px;
+margin: 0px;
+text-align: center;
+}
+#login form {
+height: 95px;
+width: 226px;
+padding: 10px 0px 0px 0px;
+margin: 0px;
+}
+#login p {
+width: 226px;
+margin: 0px;
+padding: 0px;
+font-family: Arial, Helvetica, sans-serif;
+}
+#login form p label {
+text-align: left;
+margin-left: 0.5em;
+float: left;
+font-size: 14px;
+}
+#login form p.check {
+padding-left: 77px;
+width: 199px;
+height: 23px;
+}
+#login #remlabel {
+float: left;
+font-size: 12px;
+position: relative;
+left: -3px;
+}
+#login #remember {
+float: left;
+width: 14px;
+height: 14px;
+margin: 0px;
+padding: 0px;
+position: relative;
+top: 3px;
+}
+#login #submit {
+background: url(../images/login.png) no-repeat top left;
+width: 77px;
+height: 27px;
+cursor: pointer;
+border: none;
+float: right;
+}
+#login #user, #login #pass {
+background: url(../images/input_bg.png) no-repeat top left;
+border: 1px solid #d0d0d0;
+width: 142px;
+height: 19px;
+padding: 2px;
+color: #222222;
+font-size: 14px;
+float: right;
+margin-bottom: 10px;
+}
+#login p.member {
+text-align: left;
+width: 270px;
+font-size: 11px;
+font-family: Arial, Helvetica, sans-serif;
+margin: 2px 2px 0px 2px;
+padding: 2px;
+line-height: 18px;
+}
+.clearfix:after {
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+.clearfix {display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height:1%; }
+.clearfix {display:block;}
+
+#laboratorio{
+	width:300px;
+	height:200px;
+	margin-top:10px;
+	float:left;
+}
+.first1{
+	float:right;
+margin-right:10px;
+margin-top:35px;
+width:234px;
+}
+.second{
+margin-right:10px;
+margin-top:8px;
+}
+
+#labsimg{
+	margin-left:12px;
+	margin-top:22px;}
+#labfen{
+	float:right;
+margin-right:10px;
+margin-top:-68px;}
+#login a{
+	color:#317486;
+
+}
+#menufooter {  padding: 4px 0 0; margin: 0 auto; width:400px;  text-align:center;}
+#menufooter li { font-size: 1.1em; display: inline; }
+#menufooter li a { padding: 10px 15px 0px 0; margin: 0 0 0 50px; color:#317486; }
+#menufooter li a:hover {color:#00CCFF; }
+
+.register{
+	border:1px solid #CDE1F5;
+margin:10px 100px;
+padding:20px 50px;
+float:left;
+width:588px;
+	}
+	.register tbody{
+	border:1px solid #CDE1F5;
+margin:10px auto;
+padding:20px 50px;
+width:588px;
+	}
+.register tr{
+	height:35px;
+       
+}
+.register .tdname{
+	padding-right:20px;
+       
+	font-size:16px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight:bold;
+	width:200px;
+	}
+		.register .tdinput {
+			
+                        text-align: justify;
+                        
+			}
+			.register option{
+			
+                        width:246px;
+                        
+			}
+		.register .tdinput span{
+			font-size:13px;
+			color:#949494;
+
+			}
+.register .tdinput input{
+	width:260px;
+	font-size:15px;
+	height:20px;
+	}
+	#explicacion{
+   color:#555555;
+font-size:12px;
+margin-left:6%;
+text-align:justify;
+width:85%;
+}
+#trmensaje{
+    height: 0px;
+
+
+}
+#advert{
+ font-size:12px;
+ color: red;
+   
+}
+ #messageUser{
+		margin-left:60%;
+width:150px;
+font-size:13px;
+margin-top:10px;
+	}
+	 #materias{
+		font-size:13px;
+margin-left:92%;
+margin-top:-19px;
+font-weight:bold;
+width:150px;
+
+	}
+	#divMaterias{
+		border:1px solid #CDE1F5;
+float:left;
+height:100px;
+margin-left:-80px;
+margin-top:10px;
+position:relative;
+width:180px;
+		
+	}
+	#messageMaterias{
+		font-size:12px;
+		margin-left:4px;
+	
+	}
+	.materia{
+		color:gray;
+		padding-left:5px;
+		padding-top:5px;
+	}
+	.materia img{
+		
+		
+		padding-top:5px;
+	}
+	#showmateria2,#showmateria3,#showmateria4,#showmateria5
+	{
+		visibility:hidden;
+	}
+	#center{
+		min-height:250px;
+	}
+	#ingresoMateria {
+		width:350px;
+		font-size:14px;
+	
+	}
+	#ingresoMateria div{
+		width:300px;
+		
+		margin-left: auto;
+		padding-top:10px;
+		
+	
+	}
+	#ingresoMateria input{
+		float:right;
+		margin-right:50px;
+	}
+	#ingresoMateria .name{
+		float:left;
+		width:31%;
+	}
+	.titulo{
+		width:300px;
+		margin-left:10px;
+	
+	}
+	#ingresoMateria img{
+		margin-left:33%;
+		margin-top:10px;
+	}
+	#menuleft {
+	width: 200px;
+	margin-left: 30px;
+	margin-top: 10px;
+	
+	}
+	#menuleft li{
+		list-style:none;
+	}
+#menuleft li a {
+	height: 32px;
+  	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	height: 24px;
+	color:gray;
+	text-decoration: none;
+	}	
+	
+#menuleft li a:link, #menuleft li a:visited {
+	color: #000;
+	display: block;
+	background:  url(../images/menu.gif);
+	padding: 8px 0 0 30px;
+	}
+#top_menu12{background:url(../images/menutop.jpg) no-repeat top center;width:510px;margin-top:0px;height:28px;}	
+#top_menu122{background:url(../images/menutop.jpg) no-repeat top center;width:600px;margin-top:0px;height:28px;}	
+#content_main12{background:#f1f1f1;width:470px;padding:20px;-moz-border-radius:13px;}
+#content_main122{background:#f1f1f1;width:550px;padding:20px;-moz-border-radius:13px;}
+#dashboard12{width:450px;background:#fff;padding:10px;border-top:1px solid #ddd;border-bottom:1px solid #ddd;}
+#dashboard122{width:520px;background:#fff;padding:10px;border-top:1px solid #ddd;border-bottom:1px solid #ddd;}
+#menuleft li a:hover {
+color: #4D4D4D;
+	background:  url(../images/menu.gif) 0 -32px;
+	padding: 8px 0 0 30px;
+	}
+	.bold{
+		font-weight:bold;
+		font-size:14px;
+	}
+	.logout{
+		font-weight:bold;
+		font-size:12px;
+		margin-left:40%;
+		color:red;
+	
+	}
+	#usuariobloque{
+		margin-left:3%;
+margin-top:20px;
+width:97%;
+	
+	}
+	#centerright{
+		width:100%;
+		margin-left:-2%;
+		margin-top:5px;
+	}
+	
+	.usuario2 .hora,.usuario2 .nombre,.usuario2 .permitido,.usuario2 .nombremateria,.usuario2 .nombremateria1,.usuario2 .reservafecha,.usuario2 .nombreprofe,.usuario2 .nombrelab {
+		background-color:#F0F0F0;
+		
+	}
+	.hora{
+		width:12%;
+		float:left;
+		text-align:center;
+	}
+	.nombre{
+		width:70%;
+		float:left;
+	}
+	.nombreprofe{
+		width:30%;
+		float:left;
+	}
+	.nombrelab1{
+		width:10%;
+		float:left;
+	}
+	.nombrelab{
+		width:10%;
+		float:left;
+	}
+	.nombremateria1{
+		width:30%;
+		float:left;
+	}
+	.nombremateria{
+		width:70%;
+		float:left;
+	}
+	.permitido {
+		width:15%;
+		float:left;
+		text-align:center;
+		color:#222;
+	
+	}
+	.reservafecha{
+		width:15%;
+		float:left;
+		text-align:center;
+		color:#222;
+	
+	}
+	.eliminar{
+		width:15%;
+		float:left;
+		
+		text-align:center;
+		
+	}
+	.eliminarMateria{
+		width:15%;
+		float:left;text-align:center;
+	
+	}
+	#headusuarios{
+		text-align:center;
+		font-weight:bold;
+	}
+	
+	.datos {
+		width:300px;
+		margin:10px auto;
+	
+	
+	}
+	.datos .tdname{
+		font-weight:bold;
+	
+	}
+	.nombreusuario{
+		color:#222;
+		padding-left:10px;
+		
+	
+	}
+	.aceptar{
+		margin-left:40%;
+	
+	}
+	.advertencia{
+		padding-top:30px;
+		margin-left:25px;
+	}
+	
+	.reservar{
+	border:1px solid #CDE1F5;
+
+padding:20px 50px;
+float:left;
+width:400px;
+	}
+	.reservar tbody{
+	border:1px solid #CDE1F5;
+margin:10px auto;
+padding:20px 50px;
+width:100px;
+	}
+.reservar tr{
+	height:35px;
+       
+}
+.reservar .tdname{
+	padding-right:20px;
+       
+	font-size:16px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight:bold;
+	width:200px;
+	}
+		.reservar.tdinput {
+			                        
+                        text-align: justify;
+                        
+			}
+			.reservar .labescogido{
+			
+                        width:140px;
+                        
+			}
+			.reservar .icono{
+			
+                        width:80px;
+float:left;
+margin-left:-40px;
+                        
+			}
+		.reservar .tdinput span{
+			font-size:13px;
+			color:#949494;
+
+			}
+.reservar .tdinput .field{
+	width:140px;
+	font-size:15px;
+	height:20px;
+	}
+	.reservar .tdinput .field2{
+	width:100px;
+	font-size:15px;
+	height:20px;
+	}
+.spanright{
+
+width:180px;
+float:left;
+}
+
+.calendar{
+background:url(../images/calendar.jpg) no-repeat ;
+background-position: -6px -3px;
+width:27px;
+height:27px;
+margin-left:3px;
+}
+
+
+.calendar:hover{
+background:url(../images/calendar2.jpg) no-repeat ;
+background-position: -6px -3px;
+width:27px;
+height:27px;
+cursor:pointer;
+}
+.horarioescogido{
+width:70px;
+
+}
+.duracionescogido{
+width:90px;
+margin-left:14px;
+
+}
+
+.fila{
+background-color:#fff;
+width:100px;
+text-align:center;
+
+}
+.filaalterna{background-color:#EFF8FC;
+
+text-align:center;
+}
+.fila:hover,.filaalterna:hover{
+background-color:#EEE;
+
+}
+
+.fdg_sortable {cursor:pointer;text-decoration:underline;color:#00c;}
+
+.fdg_1_header{
+text-align:center;
+background-color:#DFE7F0;
+border:1px outset #D4E0EE;
+}
+.tdhora{
+background-color:#DFE7F0;
+border:1px outset #D4E0EE;
+text-align:center;
+font-size:10px;
+font-weight:bold;
+width:80px;
+
+}
+#fdg_1_header_hora{
+background-color:#fff;
+border:0;
+}
+.horario {
+margin: 0 auto;
+
+}
+.clear{
+	clear:both;
+}
+
+#logo2 { margin: 0px 20px 10px  0; height: 66px; width: 240px; float: left; background: url(../images/LogoFen.png) no-repeat left; text-align: left;
+margin-left:30px;}
+#logo2 img{width:80px;height:60px; border:0;}
+#logo2 h1{
+	color:#000;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	margin-left:84px;
+	margin-top:20px;
+	font-size:2.0em;
+}
+#logo2 h5{
+	color:#000;
+	font-family:Georgia,"Times New Roman",Times,serif;
+	margin-left:84px;
+	margin-top:7px;
+	font-size:12px;
+	margin-top:0px;
+	width:100%;
+}
+
+#labnombre{
+	float:right;
+	font-family:Georgia,"Times New Roman",Times,serif;
+	font-size:14px;
+	width:200px;
+	margin-right:30px;
+}
+#labnombre span{
+	font-family:Georgia,"Times New Roman",Times,serif;
+	font-size:30px;
+	
+}
+.semana{
+	
+	color:red;
+	height:10px;
+	font-size:12px;
+	margin-left:340px;
+	float:left;
+
+}
+.cuadro{
+	float:left;
+	width:98px;
+	
+border:1px outset #888;
+text-align:center;
+}
+
+
+
+.clearfix12:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    }
+
+.clearfix12 {display: inline-block;}
+
+
+.eliminarReserva{
+	margin-top:-10px;
+	float:right;
+}
+
+#excel{
+	float:right;
+	font-weight:bold;
+	color:#006633;
+	margin-right:50px;
+	margin-top:-20px;
+	
+}
+#contactar{
+margin-top:80px;
+
+width:500px;
+font-size:16px;}
+#contactar a{
+color:#317486;
+margin-left:180px;
+padding-top:20px;}
+.html{
+margin-top:-50px;
+margin-left:700px;
+}
+.css{
+margin-top:-36px;
+margin-left:795px;
+}
+
