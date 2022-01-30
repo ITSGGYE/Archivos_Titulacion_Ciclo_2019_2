@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" whenNoDataType="BlankPage" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a0ac1ad8-4545-4f06-a943-6198f78c2fb4">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="valor1" class="java.lang.String"/>
+	<field name="valor2" class="java.lang.String"/>
+	<field name="valor3" class="java.lang.String"/>
+	<field name="valor4" class="java.lang.String"/>
+	<field name="valor5" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="102" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-175" y="-3" width="100" height="92" uuid="2c7286b2-c45c-4add-b2e5-3a2845cc86fe"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="227" y="38" width="140" height="20" uuid="9127511f-6b9f-4caa-b75e-623ac7f6301b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TRANSFIGURACION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="176" y="13" width="247" height="35" uuid="a23659e9-a159-44c2-a03c-0a7b61f11c82"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[ESCUELA DE EDUCACION BASICA]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="107" height="102" uuid="b973f9db-309a-4c95-ba25-48a030b023f4"/>
+				<imageExpression><![CDATA["C:\\Users\\Usuario\\Documents\\NetBeansProjects\\SistemaAcademico\\SistemaAcademico\\src\\ec\\com\\academico\\imagenes\\escuela transfiguracion Escudo.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="54" splitType="Stretch">
+			<staticText>
+				<reportElement x="176" y="19" width="247" height="35" uuid="509a0d74-c048-4130-a69b-8470044d4567"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[ESTUDIANTES MATRICULADOS]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="423" y="0" width="132" height="20" uuid="ba0b9b59-90e8-46e1-a732-39fc07a435b2"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="323" y="0" width="100" height="20" uuid="7316f31a-2084-4f6e-9675-27dfdc732c18"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="163" y="0" width="160" height="20" uuid="79baac60-84c8-435d-bba0-62f1e321943b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="76" y="0" width="87" height="20" uuid="32975d8e-08b2-451c-8b00-af0854d70ccd"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="0" width="76" height="20" uuid="1343aa68-f3dc-4bc4-8980-b1055b451bea"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="76" height="20" uuid="b4ad2e8e-64d4-46f0-8ea5-3d52b6196a63"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[" N°"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="76" y="0" width="87" height="20" uuid="6d945839-d19f-43e2-97a6-40ed71d4507c"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[" CODIGO "]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="323" y="0" width="100" height="20" uuid="d7a4e74f-2a60-44ec-9cfa-a2c7fea0207f"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[" PERIODO LECTIVO"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="423" y="0" width="132" height="20" uuid="0f285216-852b-4aa9-858d-68e99faa5369"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[" FECHA DE REGISTRO"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="0" width="160" height="20" uuid="1c873160-949c-446b-a7e7-13614ab1a74c"/>
+				<textElement markup="none"/>
+				<textFieldExpression><![CDATA[" ALUMNO"]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="423" y="0" width="132" height="20" uuid="496232d1-b92d-4700-8313-3225ab20688e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="323" y="0" width="100" height="20" uuid="c22a4f70-9852-4759-8e22-73831dab97a7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="163" y="0" width="160" height="20" uuid="dafb3dbe-284d-43e4-a34a-62a60ead2e62"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="76" y="0" width="87" height="20" uuid="6cd7870f-376f-49ef-a25e-d54ae4a24469"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="0" width="76" height="20" uuid="2f097704-ccc5-4489-b795-770539e3c59b"/>
+			</rectangle>
+			<textField>
+				<reportElement x="76" y="0" width="87" height="20" uuid="136aa009-6a8e-4029-9230-778510bcceb7"/>
+				<textFieldExpression><![CDATA[$F{valor2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="0" width="160" height="20" uuid="236218f4-af1c-4148-9efe-7ad8993303b8"/>
+				<textFieldExpression><![CDATA[$F{valor3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="323" y="0" width="100" height="20" uuid="dbdbf741-86f0-4875-8adf-6c1230911422"/>
+				<textFieldExpression><![CDATA[$F{valor4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="423" y="0" width="132" height="20" uuid="f7067b32-ea7a-477a-8c9a-684e033e72cf"/>
+				<textFieldExpression><![CDATA[$F{valor5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="76" height="20" uuid="acc98882-37c0-4782-9668-86470e8c5e14"/>
+				<textFieldExpression><![CDATA[$F{valor1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

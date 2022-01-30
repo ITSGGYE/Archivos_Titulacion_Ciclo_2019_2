@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="627cef8d-bc1c-4018-9e63-5e7ab3492bb9">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="4"/>
+	<parameter name="LogoEscuela" class="java.lang.String"/>
+	<field name="valor1" class="java.lang.String"/>
+	<field name="valor2" class="java.lang.String"/>
+	<field name="valor3" class="java.lang.String"/>
+	<field name="valor4" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="92" splitType="Stretch">
+			<staticText>
+				<reportElement x="220" y="35" width="140" height="20" uuid="9c9b6f7d-8a37-4a9a-90b6-f381cde01ed7"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TRANSFIGURACION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="169" y="10" width="247" height="35" uuid="95470fed-3d7d-45fa-a1dc-70cf1d5b3816"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[ESCUELA DE EDUCACION BASICA]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="-175" y="-3" width="100" height="85" uuid="a679846b-34e6-4f26-bb9d-ccb389f85666"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="-175" y="-3" width="100" height="85" uuid="f43eb22e-2009-4dfb-9d36-54391b28b043"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="-175" y="-3" width="100" height="85" uuid="ecc2bcad-fbb6-4554-8aee-f65119c1f813"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="-185" y="-13" width="100" height="85" uuid="a35138bc-db12-4023-a331-ca57c44be007"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="0" width="100" height="92" uuid="bde218de-3337-4201-8dd6-52c2603195ea"/>
+			</rectangle>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="33" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="128" height="20" uuid="c0fc677c-0cd0-42aa-b520-6e23196e8aee"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="128" height="20" uuid="6af81d55-bcf7-4197-b8ea-dc7965074941"/>
+				<text><![CDATA[N°]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="128" y="0" width="250" height="20" uuid="ef499466-79d9-4fdc-badc-1debf0a047ed"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="378" y="0" width="177" height="20" uuid="948cace1-5c1a-4534-8846-fe82052fd943"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="128" y="0" width="250" height="20" uuid="164fc7be-c709-445c-8197-f152b2388a9c"/>
+				<text><![CDATA[CURSO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="378" y="0" width="177" height="20" uuid="ce3b9578-1354-445d-a786-21730f4a0a8f"/>
+				<text><![CDATA[PARALELO]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="128" height="20" uuid="7e409545-9ef4-41e9-b7f7-6c59f27eb96e"/>
+			</rectangle>
+			<textField>
+				<reportElement x="0" y="0" width="128" height="20" uuid="06160035-76c9-46fd-8718-2f75c88f626d"/>
+				<textFieldExpression><![CDATA[$F{valor1}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="378" y="0" width="177" height="20" uuid="a7e4c42f-f71e-441e-a90e-b3279d17bf99"/>
+			</rectangle>
+			<textField>
+				<reportElement x="378" y="0" width="177" height="20" uuid="fef179ed-f75e-4cd1-a1fe-248519dccb95"/>
+				<textFieldExpression><![CDATA[$F{valor3}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="128" y="0" width="250" height="20" uuid="3e281e24-575a-47da-97ff-baba79f7191d"/>
+			</rectangle>
+			<textField>
+				<reportElement x="128" y="0" width="250" height="20" uuid="2503f1c2-aa2f-488f-8636-b9cfcaf91298"/>
+				<textFieldExpression><![CDATA[$F{valor2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="32" splitType="Stretch"/>
+	</summary>
+</jasperReport>

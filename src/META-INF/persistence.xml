@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="SistemaAcademicoPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>ec.com.academico.dto.Empresa</class>
+    <class>ec.com.academico.dto.Roles</class>
+    <class>ec.com.academico.dto.RelSucUsu</class>
+    <class>ec.com.academico.dto.Usuarios</class>
+    <class>ec.com.academico.dto.RelUsuarioRoles</class>
+    <class>ec.com.academico.dto.Sucursal</class>
+    <class>ec.com.academico.dto.Estudiantes</class>
+    <class>ec.com.academico.dto.Representantes</class>
+    <class>ec.com.academico.dto.Asistencias</class>
+    <class>ec.com.academico.dto.ClasesMateria</class>
+    <class>ec.com.academico.dto.Cursos</class>
+    <class>ec.com.academico.dto.CursoProfesor</class>
+    <class>ec.com.academico.dto.TipoMatricula</class>
+    <class>ec.com.academico.dto.PeriodoLectivo</class>
+    <class>ec.com.academico.dto.Docente</class>
+    <class>ec.com.academico.dto.RelCursoParalelo</class>
+    <class>ec.com.academico.dto.Paralelos</class>
+    <class>ec.com.academico.dto.Matricula</class>
+    <class>ec.com.academico.dto.Representante</class>
+    <class>ec.com.academico.dto.Parentesco</class>
+    <class>ec.com.academico.dto.Documentos</class>
+    <class>ec.com.academico.dto.RelMatriDoc</class>
+    <class>ec.com.academico.dto.TipoIdentificacion</class>
+    <class>ec.com.academico.dto.SeOpcionesMenu</class>
+    <class>ec.com.academico.dto.SeContactoEstudiante</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/bd_matriculacion_tesis?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
+</persistence>

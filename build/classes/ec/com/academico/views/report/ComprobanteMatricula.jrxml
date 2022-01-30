@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" printOrder="Horizontal" pageWidth="595" pageHeight="842" whenNoDataType="BlankPage" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="fced8d7a-c0f1-44be-b396-94bb8837fefa">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="fieldComprobante1" class="java.lang.String"/>
+	<field name="fieldComprobante2" class="java.lang.String"/>
+	<field name="fieldComprobante3" class="java.lang.String"/>
+	<field name="fieldComprobante4" class="java.lang.String"/>
+	<field name="fieldComprobante5" class="java.lang.String"/>
+	<field name="fieldComprobante6" class="java.lang.String"/>
+	<field name="fieldComprobante7" class="java.lang.String"/>
+	<field name="fieldComprobante8" class="java.lang.String"/>
+	<field name="fieldComprobante9" class="java.lang.String"/>
+	<field name="fieldComprobante10" class="java.lang.String"/>
+	<field name="fieldComprobante11" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="210" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="555" height="210" uuid="2b2c22eb-2c9c-4290-b250-a29813926871"/>
+				<imageExpression><![CDATA["C:\\Users\\Xtratech\\Downloads\\Membrete.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="35" uuid="89752c8e-5c1d-4fde-b25e-c68e3f5e99a0"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="246" y="0" width="206" height="35" uuid="40a26a9c-5a8a-46fe-b3a4-e9685f538ce6"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[MATRICULA]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="40" splitType="Stretch">
+			<rectangle>
+				<reportElement x="262" y="0" width="293" height="40" uuid="2b5653e0-4877-43eb-908e-a41667b4871f"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="0" width="262" height="40" uuid="aa00c438-23c3-4aa2-b9e4-3969cb7fd268"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="48e00c1e-d482-4113-bedb-1b4b84d48e0c"/>
+				<text><![CDATA[N° MATRICULA :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="0" width="162" height="20" uuid="9ed802f4-3ae1-4557-b246-735681e1de15"/>
+				<textFieldExpression><![CDATA[$F{fieldComprobante1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="274" y="20" width="125" height="20" uuid="ca84eb6e-773c-477e-9ee4-d7a949677396"/>
+				<text><![CDATA[PERIODO LECTIVO :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="399" y="20" width="156" height="20" uuid="c8262066-5c20-46a3-b1d8-58786e639b86"/>
+				<textFieldExpression><![CDATA[$F{fieldComprobante8}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="274" y="0" width="125" height="20" uuid="78148423-2530-49fe-9c21-bcc7c5093333"/>
+				<text><![CDATA[FECHA DE REGISTRO :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="399" y="0" width="156" height="20" uuid="61d99516-dc41-4e6b-b80b-719d42576640"/>
+				<textFieldExpression><![CDATA[$F{fieldComprobante3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="20" uuid="09f56687-ba05-4115-a7af-c9fa9d06dfc2"/>
+				<text><![CDATA[T. MATRICULA :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="20" width="162" height="20" uuid="de977b75-25f0-42e9-b8a0-234330c7bda1"/>
+				<textFieldExpression><![CDATA[$F{fieldComprobante5}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<rectangle>
+				<reportElement x="262" y="0" width="293" height="125" uuid="bf6f0b84-04bf-499a-9185-26e2b9f110e9"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="0" y="0" width="262" height="125" uuid="2c0b83c6-ba99-4b4b-b73c-3d85bf6e9c41"/>
+			</rectangle>
+			<textField>
+				<reportElement x="100" y="20" width="146" height="20" uuid="76af914d-dbb5-4a0b-80d1-e30e3552e500"/>
+				<textFieldExpression><![CDATA[$F{fieldComprobante2}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="20" width="100" height="20" uuid="0dc144d7-af91-405d-bcff-ca2032a89a9f"/>
+				<text><![CDATA[APELLIDOS :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="40" width="146" height="20" uuid="10b3bcd6-399b-46c7-b508-95fca34c34b8"/>
+				<textFieldExpression><![CDATA[$F{fieldComprobante6}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="40" width="100" height="20" uuid="97b1ba1e-3305-429d-bfaa-3ea2dc0f834e"/>
+				<text><![CDATA[NOMBRES :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="124" y="80" width="122" height="20" uuid="cc495e13-f49b-45d0-840b-81ead6a67e59"/>
+				<textFieldExpression><![CDATA[$F{fieldComprobante7}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="80" width="125" height="20" uuid="e00adf99-90f3-48bd-b939-eed8ed4b0687"/>
+				<text><![CDATA[N° IDENTIFICACION :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="125" y="60" width="121" height="20" uuid="4c2ff649-b41e-4158-ab8b-df159331e850"/>
+				<textFieldExpression><![CDATA[$F{fieldComprobante9}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="60" width="125" height="20" uuid="27b3ef23-fec5-44e5-bb04-a0155bc9c31f"/>
+				<text><![CDATA[T.IDENTIFICACION :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="399" y="0" width="156" height="20" uuid="87be6da6-3f61-450a-9ecb-0688d0926fe5"/>
+				<textFieldExpression><![CDATA[$F{fieldComprobante10}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="274" y="0" width="125" height="20" uuid="45defa2f-7d3a-4896-962a-aa04b453597b"/>
+				<text><![CDATA[CURSO :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="399" y="20" width="156" height="20" uuid="7c54e4f9-97dd-4d88-9202-57ad1acfb4a5"/>
+				<textFieldExpression><![CDATA[$F{fieldComprobante11}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="274" y="20" width="125" height="20" uuid="eb34f55c-2ca1-4be1-9d1d-aeb2cae101a0"/>
+				<text><![CDATA[PARALELO :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="20" uuid="60ceb078-74bc-4d2a-a17d-abedc9d50e53"/>
+				<text><![CDATA[COD. ESTUDIANTE :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="100" y="0" width="162" height="20" uuid="cf59e8a1-eb94-4a67-a2c0-9d4caf87c24f"/>
+				<textFieldExpression><![CDATA[$F{fieldComprobante4}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

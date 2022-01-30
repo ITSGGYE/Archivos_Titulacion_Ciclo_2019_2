@@ -1,0 +1,641 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package ec.com.academico.views.matricula;
+
+import ec.com.academico.dao.CursosJpaController;
+import ec.com.academico.dao.DocumentosJpaController;
+import ec.com.academico.dao.MatriculaJpaController;
+import ec.com.academico.dao.PeriodoLectivoJpaController;
+import ec.com.academico.dao.RelCursoParaleloJpaController;
+import ec.com.academico.dao.RelMatriDocJpaController;
+import ec.com.academico.dao.TipoMatriculaJpaController;
+import ec.com.academico.dao.ext.ObtenerDTO;
+import ec.com.academico.dto.Cursos;
+import ec.com.academico.dto.Documentos;
+import ec.com.academico.dto.Estudiantes;
+import ec.com.academico.dto.Matricula;
+import ec.com.academico.dto.Paralelos;
+import ec.com.academico.dto.PeriodoLectivo;
+import ec.com.academico.dto.RelCursoParalelo;
+import ec.com.academico.dto.RelMatriDoc;
+import ec.com.academico.dto.TipoIdentificacion;
+import ec.com.academico.dto.TipoMatricula;
+import ec.com.academico.util.EntityManagerUtil;
+import ec.com.academico.util.Tablas;
+import java.awt.MouseInfo;
+import java.awt.Point;
+import java.math.BigInteger;
+import java.util.Date;
+import java.util.List;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Usuario
+ */
+public class AgregarMatricula extends javax.swing.JDialog {
+
+    /**
+     * Creates new form AgregarMatricula
+     */
+    int x, y;
+    String valor = "";
+    Date d = new Date();
+    List<PeriodoLectivo> listPeriLect;
+    PeriodoLectivoJpaController plc = new PeriodoLectivoJpaController(EntityManagerUtil.obtenerEntityManager());
+    List<TipoMatricula> listTipMatri;
+    TipoMatriculaJpaController tmc = new TipoMatriculaJpaController(EntityManagerUtil.obtenerEntityManager());
+    List<Cursos> listCur;
+    CursosJpaController cc = new CursosJpaController(EntityManagerUtil.obtenerEntityManager());
+    List<RelCursoParalelo> listRelCursoParalelo;
+    RelCursoParaleloJpaController rcpc = new RelCursoParaleloJpaController(EntityManagerUtil.obtenerEntityManager());
+//    RelCursoParalelo objRelCurPar = new RelCursoParalelo();
+
+    List<Documentos> listDoc;
+    DocumentosJpaController dc = new DocumentosJpaController(EntityManagerUtil.obtenerEntityManager());
+    Estudiantes Estudiantes = new Estudiantes();
+    Matricula Matricula = new Matricula();
+    MatriculaJpaController Mc = new MatriculaJpaController(EntityManagerUtil.obtenerEntityManager());
+    RelMatriDoc RelMatriDoc = new RelMatriDoc();
+    RelMatriDocJpaController rmdc = new RelMatriDocJpaController(EntityManagerUtil.obtenerEntityManager());
+
+    public AgregarMatricula(java.awt.Frame parent, boolean modal) {
+        super(parent, modal);
+        setUndecorated(true);
+        initComponents();
+        setLocationRelativeTo(null);
+        cargarPeriodoLectivo();
+        cargarCbxTipoMatricula();
+        cargarCbxCursos();
+//        cargarCbxParalelos1();
+        cargarTbaDocumentos();
+        btn_guardar.setEnabled(false);
+    }
+
+    public void cargarTbaDocumentos() {
+        listDoc = dc.findDocumentosEntities();
+        Tablas.ListarDocumentoCheckMatricula(listDoc, TbaDocumentos);
+    }
+
+    public void cargarPeriodoLectivo() {
+        listPeriLect = plc.findPeriodoLectivoEntities();
+        for (int i = 0; i < listPeriLect.size(); i++) {
+            if (listPeriLect.get(i).getEstado() == 'A') {
+                txt_periodo.setText(listPeriLect.get(i).getPeriodo());
+            }
+        }
+    }
+
+    public void cargarCbxTipoMatricula() {
+        listTipMatri = tmc.findTipoMatriculaEntities();
+        for (int i = 0; i < listTipMatri.size(); i++) {
+            if (listTipMatri.get(i).getEstado() == 'A') {
+                cbx_tipo_matricula.addItem(listTipMatri.get(i).getTipoMatricula());/*cargar combo*/
+            }
+        }
+    }
+
+    public void cargarCbxCursos() {
+        listCur = cc.findCursosEntities();
+        for (int i = 0; i < listCur.size(); i++) {
+            if (listCur.get(i).getEstado().equals('A')) {
+                cbx_curso.addItem(listCur.get(i).getNombre());
+            }
+        }
+    }
+
+    public void cargarCbxParalelos1() {
+        Cursos cursos = ObtenerDTO.ObtenerCursos(cbx_curso.getSelectedItem().toString());
+        listRelCursoParalelo = rcpc.findRelCursoParaleloEntities();
+
+        for (int i = 0; i < listRelCursoParalelo.size(); i++) {
+            if (cursos.getIdCursos().equals(listRelCursoParalelo.get(i).getIdCurso().getIdCursos())) {
+                BigInteger id = BigInteger.valueOf(listRelCursoParalelo.get(i).getIdParalelo().getIdParalelos());
+                Paralelos paralelos = ObtenerDTO.ObtenerParalelos(id);
+                cbx_paralelo.addItem(paralelos.getNombre());
+            }
+        }
+    }
+
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        jPanel1 = new javax.swing.JPanel();
+        btn_guardar = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jPanel5 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        cbx_tipo_matricula = new javax.swing.JComboBox<>();
+        jLabel10 = new javax.swing.JLabel();
+        txt_periodo = new javax.swing.JTextField();
+        jPanel4 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        cbx_curso = new javax.swing.JComboBox<>();
+        jLabel8 = new javax.swing.JLabel();
+        cbx_paralelo = new javax.swing.JComboBox<>();
+        jPanel3 = new javax.swing.JPanel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        txt_apellidos = new javax.swing.JTextField();
+        txt_nombres = new javax.swing.JTextField();
+        btn_escoger_alumno = new javax.swing.JButton();
+        txt_tipo_identificacion = new javax.swing.JTextField();
+        jLabel14 = new javax.swing.JLabel();
+        txt_numero_identificacion = new javax.swing.JTextField();
+        jLabel15 = new javax.swing.JLabel();
+        txt_id_estudiante = new javax.swing.JTextField();
+        jPanel2 = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        TbaDocumentos = new javax.swing.JTable();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        btn_guardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/com/academico/iconos/salvar.png"))); // NOI18N
+        btn_guardar.setText("GUARDAR");
+        btn_guardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_guardarActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setBackground(new java.awt.Color(0, 153, 255));
+        jLabel2.setFont(new java.awt.Font("Ubuntu", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(254, 254, 254));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("MATRICULA");
+        jLabel2.setOpaque(true);
+        jLabel2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                jLabel2MouseDragged(evt);
+            }
+        });
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jLabel2MousePressed(evt);
+            }
+        });
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/com/academico/iconos/Salir.png"))); // NOI18N
+        jButton1.setText("SALIR");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "MATRICULA"));
+
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel9.setText("TIPO DE MATRICULA : ");
+
+        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel10.setText("PERIODO LECTIVO : ");
+
+        txt_periodo.setEditable(false);
+
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "AULA"));
+
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel7.setText("CURSO :");
+
+        cbx_curso.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cbx_cursoActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel8.setText("PARALELO :");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8)
+                    .addComponent(jLabel7))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(cbx_curso, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(cbx_paralelo, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(91, Short.MAX_VALUE))
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(0, 17, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(cbx_curso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cbx_paralelo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8))
+                .addContainerGap())
+        );
+
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "ESTUDIANTE "));
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel13.setText("TIPO DE IDENTIFICACION :");
+
+        jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel12.setText("APELLIDOS :");
+
+        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel11.setText("NOMBRES : ");
+
+        txt_apellidos.setEditable(false);
+
+        txt_nombres.setEditable(false);
+
+        btn_escoger_alumno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/com/academico/iconos/men_Estudiante.png"))); // NOI18N
+        btn_escoger_alumno.setText("+");
+        btn_escoger_alumno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn_escoger_alumnoActionPerformed(evt);
+            }
+        });
+
+        txt_tipo_identificacion.setEditable(false);
+
+        jLabel14.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel14.setText("NUMERO DE IDENTIFICACION :");
+
+        txt_numero_identificacion.setEditable(false);
+
+        jLabel15.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel15.setText("CODIGO : ");
+
+        txt_id_estudiante.setEditable(false);
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel15)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(193, 193, 193)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txt_apellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_tipo_identificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txt_nombres, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(txt_id_estudiante, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btn_escoger_alumno))))
+                    .addComponent(jLabel11)
+                    .addComponent(jLabel12)
+                    .addComponent(jLabel13)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel14)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txt_numero_identificacion, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 10, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel15)
+                            .addComponent(txt_id_estudiante, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(btn_escoger_alumno, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel11)
+                    .addComponent(txt_nombres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel12)
+                    .addComponent(txt_apellidos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel13)
+                    .addComponent(txt_tipo_identificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel14)
+                    .addComponent(txt_numero_identificacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(18, Short.MAX_VALUE))
+        );
+
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "DOCUMENTOS"));
+
+        TbaDocumentos.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {},
+                {},
+                {},
+                {}
+            },
+            new String [] {
+
+            }
+        ));
+        jScrollPane1.setViewportView(TbaDocumentos);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 146, Short.MAX_VALUE)
+        );
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel5Layout.createSequentialGroup()
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel10))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txt_periodo)
+                            .addComponent(cbx_tipo_matricula, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(152, 152, 152))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(5, 5, 5)))
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel10)
+                    .addComponent(txt_periodo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(14, 14, 14)
+                .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel9)
+                    .addComponent(cbx_tipo_matricula, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jButton1)
+                .addGap(44, 44, 44)
+                .addComponent(btn_guardar)
+                .addGap(292, 292, 292))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn_guardar)
+                    .addComponent(jButton1))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        setVisible(false);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btn_guardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_guardarActionPerformed
+//        if (txt_id_estudiante.getText().equals(" ")) {
+//            JOptionPane.showMessageDialog(null, "SELECCIONE ESTUDIANTE");
+//        } else {
+        guardar();
+//        }
+    }//GEN-LAST:event_btn_guardarActionPerformed
+    public void guardar() {
+        if (cbx_paralelo.getSelectedItem().toString().equals(" ")) {
+            JOptionPane.showMessageDialog(null, "SELECCIONE PARALELO");
+        } else {
+            Paralelos paralelos = ObtenerDTO.ObtenerParalelos(cbx_paralelo.getSelectedItem().toString());
+            Cursos cursos = ObtenerDTO.ObtenerCursos(cbx_curso.getSelectedItem().toString());
+            RelCursoParalelo id_curso = ObtenerDTO.ObtenerRelCursosParalelos(cursos.getIdCursos(), paralelos.getIdParalelos());
+            TipoMatricula id_tipo_matr = ObtenerDTO.ObtenerTipoMatricula(cbx_tipo_matricula.getSelectedItem().toString());
+            PeriodoLectivo id_peri_lect = ObtenerDTO.ObtenerPeriodoLectivo(txt_periodo.getText());
+
+            Matricula.setIdTipoMatricula(id_tipo_matr);
+            Matricula.setIdCurso(id_curso);
+            Matricula.setIdPeriodoLectivo(id_peri_lect);
+            Matricula.setIdEstudiante(Estudiantes);
+            Matricula.setFechaRegistro(d);
+            Matricula.setEstado('A');
+            try {
+                Mc.create(Matricula);
+                guardarDocumentos(Matricula);
+                JOptionPane.showMessageDialog(this, "EXITO AL GUARDAR");
+                setVisible(false);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public void guardarDocumentos(Matricula matri) {
+        for (int i = 0; i < TbaDocumentos.getRowCount(); i++) {
+            if (TbaDocumentos.getValueAt(i, 2).toString().equals("true")) {
+                Documentos doc = ObtenerDTO.ObtenerDocumentos(TbaDocumentos.getValueAt(i, 1).toString());
+                RelMatriDoc.setIdMatricula(matri);
+                RelMatriDoc.setIdDocumento(doc);
+                RelMatriDoc.setFechaCreacion(d);
+                RelMatriDoc.setEstado('A');
+                try {
+                    rmdc.create(RelMatriDoc);
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            } else {
+                Documentos doc = ObtenerDTO.ObtenerDocumentos(TbaDocumentos.getValueAt(i, 1).toString());
+                RelMatriDoc.setIdMatricula(matri);
+                RelMatriDoc.setIdDocumento(doc);
+                RelMatriDoc.setFechaCreacion(d);
+                RelMatriDoc.setEstado('I');
+                try {
+                    rmdc.create(RelMatriDoc);
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+    private void jLabel2MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseDragged
+        Point point = MouseInfo.getPointerInfo().getLocation();
+        setLocation(point.x - x, point.y - y);
+    }//GEN-LAST:event_jLabel2MouseDragged
+
+    private void jLabel2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MousePressed
+        x = evt.getX();
+        y = evt.getY();
+    }//GEN-LAST:event_jLabel2MousePressed
+
+    private void cbx_cursoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbx_cursoActionPerformed
+        actualizarCbx();
+    }//GEN-LAST:event_cbx_cursoActionPerformed
+    public void actualizarCbx() {
+        cbx_paralelo.removeAllItems();
+//        id_curso = ObtenerIdCurso(cbx_curso.getSelectedItem().toString());
+        Cursos cursos = ObtenerDTO.ObtenerCursos(cbx_curso.getSelectedItem().toString());
+        listRelCursoParalelo = rcpc.findRelCursoParaleloEntities();
+
+        for (int i = 0; i < listRelCursoParalelo.size(); i++) {
+            if (cursos.getIdCursos().equals(listRelCursoParalelo.get(i).getIdCurso().getIdCursos())) {
+
+                BigInteger id = BigInteger.valueOf(listRelCursoParalelo.get(i).getIdParalelo().getIdParalelos());
+                Paralelos paralelos = ObtenerDTO.ObtenerParalelos(id);
+                cbx_paralelo.addItem(paralelos.getNombre());
+            }
+        }
+
+    }
+    private void btn_escoger_alumnoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_escoger_alumnoActionPerformed
+        EscogerEstudiantes cr = new EscogerEstudiantes(new javax.swing.JFrame(), true);
+        cr.setVisible(true);
+        Estudiantes = cr.getObj();
+        if (Estudiantes.getIdEstudiantes() != null) {
+//            id_representante = representante.getIdRepresentante();
+            txt_id_estudiante.setText(Estudiantes.getIdEstudiantes().toString());
+            txt_nombres.setText(Estudiantes.getNombres());
+            txt_apellidos.setText(Estudiantes.getApellidos());
+            TipoIdentificacion ident = ObtenerDTO.ObtenerIndetificacion(Estudiantes.getIdTipoIdentificacion().longValue());
+
+            txt_tipo_identificacion.setText(ident.getIdentificacion());
+            txt_numero_identificacion.setText(Estudiantes.getIdentificacion());
+            btn_guardar.setEnabled(true);
+        } else {
+            JOptionPane.showMessageDialog(null, "ELIJA UN ESTUDIANTE");
+        }
+
+    }//GEN-LAST:event_btn_escoger_alumnoActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(AgregarMatricula.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(AgregarMatricula.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(AgregarMatricula.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(AgregarMatricula.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the dialog */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                AgregarMatricula dialog = new AgregarMatricula(new javax.swing.JFrame(), true);
+                dialog.addWindowListener(new java.awt.event.WindowAdapter() {
+                    @Override
+                    public void windowClosing(java.awt.event.WindowEvent e) {
+                        System.exit(0);
+                    }
+                });
+                dialog.setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTable TbaDocumentos;
+    private javax.swing.JButton btn_escoger_alumno;
+    private javax.swing.JButton btn_guardar;
+    private javax.swing.JComboBox<String> cbx_curso;
+    private javax.swing.JComboBox<String> cbx_paralelo;
+    private javax.swing.JComboBox<String> cbx_tipo_matricula;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel5;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextField txt_apellidos;
+    private javax.swing.JTextField txt_id_estudiante;
+    private javax.swing.JTextField txt_nombres;
+    private javax.swing.JTextField txt_numero_identificacion;
+    private javax.swing.JTextField txt_periodo;
+    private javax.swing.JTextField txt_tipo_identificacion;
+    // End of variables declaration//GEN-END:variables
+}

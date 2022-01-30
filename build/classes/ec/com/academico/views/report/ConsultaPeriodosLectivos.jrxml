@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" whenNoDataType="BlankPage" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="42ee3086-eb4a-491f-986a-1ecf7c3d57f6">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="field1" class="java.lang.String"/>
+	<field name="field2" class="java.lang.String"/>
+	<field name="field3" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="185" y="13" width="247" height="35" uuid="40728852-fd4d-47bf-abc1-ac9743ef44eb"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[ESCUELA DE EDUCACION BASICA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="236" y="38" width="140" height="20" uuid="5097aeb9-00cf-4d6c-b7e4-cb6438bb65fd"/>
+				<textElement>
+					<font fontName="Times New Roman" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TRANSFIGURACION]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="156" height="100" uuid="542c5694-70b7-411b-a3a4-c26602b77b98"/>
+				<imageExpression><![CDATA["C:\\Users\\Usuario\\Documents\\NetBeansProjects\\SistemaAcademico\\SistemaAcademico\\src\\ec\\com\\academico\\imagenes\\escuela transfiguracion Escudo.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="72" splitType="Stretch">
+			<staticText>
+				<reportElement x="218" y="37" width="247" height="35" uuid="96897816-499a-46a6-b23d-bd6767bfeb4b"/>
+				<textElement>
+					<font fontName="Times New Roman" size="12" isBold="true" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[PERIODOS LECTIVOS]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="41" splitType="Stretch">
+			<rectangle>
+				<reportElement x="354" y="0" width="100" height="20" uuid="94dcd1cb-926c-47a3-a842-59a66a269893"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="122" y="0" width="232" height="20" uuid="31548bb8-7fce-40a0-8209-5fd42a50bae7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="22" y="0" width="100" height="20" uuid="b09b0e26-4f9d-4a92-8546-3c2215d543a4"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="22" y="0" width="100" height="20" uuid="769bd36c-874d-49a6-a391-dece72be7806"/>
+				<text><![CDATA[N°]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="122" y="0" width="232" height="20" uuid="56bce34f-e420-4323-857f-a1339340e939"/>
+				<text><![CDATA[PERIODO LECTIVO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="354" y="0" width="100" height="20" uuid="deaa253d-059c-44df-ab69-21a69bc33856"/>
+				<text><![CDATA[ESTADO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="122" y="21" width="232" height="20" uuid="0e258b53-e0e4-4c2a-b462-b84343ddb23b"/>
+				<textFieldExpression><![CDATA[$F{field2}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="122" y="21" width="232" height="20" uuid="03f49dcb-e1a3-4839-91a3-882d3c127bed"/>
+			</rectangle>
+			<textField>
+				<reportElement x="354" y="21" width="100" height="20" uuid="737df92d-fb84-40fc-8387-30acd25f9327"/>
+				<textFieldExpression><![CDATA[$F{field3}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="354" y="21" width="100" height="20" uuid="d5005f75-4cc8-4504-babe-5f593ebd3f2b"/>
+			</rectangle>
+			<textField>
+				<reportElement x="22" y="21" width="100" height="20" uuid="5b5f5492-7714-47bb-a67c-18474de24e86"/>
+				<textFieldExpression><![CDATA[$F{field1}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="22" y="21" width="100" height="20" uuid="a923729b-43a4-4d39-bdbe-13f325924005"/>
+			</rectangle>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
