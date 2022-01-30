@@ -90,26 +90,31 @@ WSGI_APPLICATION = 'proyecto.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
-"""DATABASES = {
+"""
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }"""
 
-"""DATABASES = {
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'humtrusa',
         'USER': 'root',
-        'PASSWORD': 'root',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '3306',
-    }
-}"""
+        'OPTIONS': {
+            'sql_mode': 'traditional',
+        }
 
-import dj_database_url
+
+    }
+}
+
+"""import dj_database_url
 from decouple import config
 
 DATABASES = {
@@ -118,7 +123,7 @@ DATABASES = {
 
     )
 
-}
+}"""
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
