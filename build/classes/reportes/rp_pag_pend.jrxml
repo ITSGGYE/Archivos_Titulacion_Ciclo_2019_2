@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="dc1db431-58ae-4660-ba1f-c39879811699">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<subDataset name="dataset1" uuid="8c871dff-e5bf-4deb-b29e-cc8fadfd4a3f"/>
+	<parameter name="cd_trans" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     matricula.`id` AS matricula_id,
+     matricula.`est_reg` AS matricula_est_reg,
+     matricula.`id_alumno` AS matricula_id_alumno,
+     matricula.`id_periodo` AS matricula_id_periodo,
+     matricula.`id_paralelo` AS matricula_id_paralelo,
+     paralelo.`id` AS paralelo_id,
+     paralelo.`paralelo` AS paralelo_paralelo,
+     paralelo.`est_reg` AS paralelo_est_reg,
+     periodo.`id` AS periodo_id,
+     periodo.`periodo` AS periodo_periodo,
+     periodo.`est_reg` AS periodo_est_reg,
+     pag_pend.`id` AS pag_pend_id,
+     pag_pend.`id_matricula` AS pag_pend_id_matricula,
+     pag_pend.`id_transaccion` AS pag_pend_id_transaccion,
+     pag_pend.`saldo` AS pag_pend_saldo,
+     pag_pend.`cancelado` AS pag_pend_cancelado,
+     pag_pend.`est_reg` AS pag_pend_est_reg,
+     transaccion.`id` AS transaccion_id,
+     transaccion.`transaccion` AS transaccion_transaccion,
+     transaccion.`est_reg` AS transaccion_est_reg,
+     alumno.`id` AS alumno_id,
+     alumno.`apellidos` AS alumno_apellidos,
+     alumno.`nombres` AS alumno_nombres,
+     alumno.`est_reg` AS alumno_est_reg,
+     inicio_lectivo.`id` AS inicio_lectivo_id,
+     inicio_lectivo.`est_reg` AS inicio_lectivo_est_reg,
+     inicio_lectivo.`id_periodo` AS inicio_lectivo_id_periodo
+FROM
+     `paralelo` paralelo INNER JOIN `matricula` matricula ON paralelo.`id` = matricula.`id_paralelo`
+     INNER JOIN `periodo` periodo ON matricula.`id_periodo` = periodo.`id`
+     INNER JOIN `pag_pend` pag_pend ON matricula.`id` = pag_pend.`id_matricula`
+     INNER JOIN `alumno` alumno ON matricula.`id_alumno` = alumno.`id`
+     INNER JOIN `transaccion` transaccion ON pag_pend.`id_transaccion` = transaccion.`id`
+     INNER JOIN `inicio_lectivo` inicio_lectivo ON periodo.`id` = inicio_lectivo.`id_periodo`
+WHERE pag_pend.id_transaccion = $P!{cd_trans}
+AND pag_pend.cancelado =  'N'
+AND matricula.est_reg =  'A'
+AND inicio_lectivo.`est_reg`=  'A']]>
+	</queryString>
+	<field name="matricula_id" class="java.lang.Integer"/>
+	<field name="matricula_est_reg" class="java.lang.String"/>
+	<field name="matricula_id_alumno" class="java.lang.Integer"/>
+	<field name="matricula_id_periodo" class="java.lang.Integer"/>
+	<field name="matricula_id_paralelo" class="java.lang.Integer"/>
+	<field name="paralelo_id" class="java.lang.Integer"/>
+	<field name="paralelo_paralelo" class="java.lang.String"/>
+	<field name="paralelo_est_reg" class="java.lang.String"/>
+	<field name="periodo_id" class="java.lang.Integer"/>
+	<field name="periodo_periodo" class="java.lang.String"/>
+	<field name="periodo_est_reg" class="java.lang.String"/>
+	<field name="pag_pend_id" class="java.lang.Integer"/>
+	<field name="pag_pend_id_matricula" class="java.lang.Integer"/>
+	<field name="pag_pend_id_transaccion" class="java.lang.Integer"/>
+	<field name="pag_pend_saldo" class="java.lang.Double"/>
+	<field name="pag_pend_cancelado" class="java.lang.String"/>
+	<field name="pag_pend_est_reg" class="java.lang.String"/>
+	<field name="transaccion_id" class="java.lang.Integer"/>
+	<field name="transaccion_transaccion" class="java.lang.String"/>
+	<field name="transaccion_est_reg" class="java.lang.String"/>
+	<field name="alumno_id" class="java.lang.Integer"/>
+	<field name="alumno_apellidos" class="java.lang.String"/>
+	<field name="alumno_nombres" class="java.lang.String"/>
+	<field name="alumno_est_reg" class="java.lang.String"/>
+	<field name="inicio_lectivo_id" class="java.lang.Integer"/>
+	<field name="inicio_lectivo_est_reg" class="java.lang.String"/>
+	<field name="inicio_lectivo_id_periodo" class="java.lang.Integer"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="24299de5-149d-4105-a84a-d5f27dcdea94" x="203" y="30" width="182" height="22"/>
+				<textElement>
+					<font fontName="Arial" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA["Manitos Traviesas"]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="e883ce12-c6e6-41d2-ac71-0939039c7b91" x="79" y="0" width="83" height="79"/>
+				<imageExpression><![CDATA["C:\\Users\\Antonio\\Documents\\NetBeansProjects\\Manitas_Traviesas\\src\\imagenes\\Logo_Rep_Matri.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="1a9ba40f-d787-4717-a884-f8298d9003c6" x="174" y="56" width="273" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[Alamos Norte Av Base Sur y Tiwinza Mz 25 Solar 5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="915cdb16-eff7-4c7d-ad56-fa61d93445f4" x="191" y="10" width="204" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Centro de Educación Inicial]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="41" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="2dc2915b-d046-4219-94fb-bd35632ed523" x="174" y="15" width="100" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="15" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Año Lectivo:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="2191640c-1f2e-411e-a7dd-f4391077b655" x="279" y="15" width="138" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="15"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{periodo_periodo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="5781eae1-bcd6-4c0d-9be3-7d47e3636332" x="18" y="41" width="100" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Paralelo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6525571d-2f10-4ea8-9dbf-55a69afd44ab" x="141" y="41" width="100" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Apellidos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="512c6db4-9601-4c22-9480-444b4a923051" x="279" y="41" width="100" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombres]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9f461b55-bcdc-44c8-9fd3-29663e6653f8" x="447" y="41" width="48" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Saldo]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6bc1b0d5-3015-4962-8573-6d7f053b7220" x="18" y="0" width="123" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Pago Pendiente:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="cc1c4c33-b901-4a5b-8b86-cd32ccac72a9" x="162" y="0" width="206" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{transaccion_transaccion}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement uuid="4958193e-7dfc-4015-9eb8-7ead5ffc3398" x="18" y="0" width="112" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{paralelo_paralelo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3f72aa6c-fa44-40d7-8c77-e175dfa85d75" x="141" y="0" width="127" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alumno_apellidos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="d6315180-17c0-47a9-a44a-3f39719268da" x="279" y="0" width="127" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alumno_nombres}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1d3be28e-f77f-4edc-87ed-0355c1210047" x="417" y="0" width="80" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pag_pend_saldo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

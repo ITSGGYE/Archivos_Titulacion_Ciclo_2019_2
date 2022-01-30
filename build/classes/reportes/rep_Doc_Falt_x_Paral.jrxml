@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="416df337-1978-4524-abfd-2e84a447c133">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="entregado" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<parameter name="cod_paralelo" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     matricula.`id` AS matricula_id,
+     matricula.`f_mat` AS matricula_f_mat,
+     matricula.`h_mat` AS matricula_h_mat,
+     matricula.`est_reg` AS matricula_est_reg,
+     matricula.`cant_doc_recib` AS matricula_cant_doc_recib,
+     matricula.`edad` AS matricula_edad,
+     matricula.`id_alumno` AS matricula_id_alumno,
+     matricula.`id_periodo` AS matricula_id_periodo,
+     matricula.`id_paralelo` AS matricula_id_paralelo,
+     rel_matri_doc.`id` AS rel_matri_doc_id,
+     rel_matri_doc.`id_matricula` AS rel_matri_doc_id_matricula,
+     rel_matri_doc.`id_documento` AS rel_matri_doc_id_documento,
+     rel_matri_doc.`entregado` AS rel_matri_doc_entregado,
+     rel_matri_doc.`est_reg` AS rel_matri_doc_est_reg,
+     documento.`id` AS documento_id,
+     documento.`documento` AS documento_documento,
+     documento.`est_reg` AS documento_est_reg,
+     alumno.`id` AS alumno_id,
+     alumno.`cedula` AS alumno_cedula,
+     alumno.`apellidos` AS alumno_apellidos,
+     alumno.`nombres` AS alumno_nombres,
+     periodo.`id` AS periodo_id,
+     periodo.`periodo` AS periodo_periodo,
+     periodo.`est_reg` AS periodo_est_reg,
+     paralelo.`id` AS paralelo_id,
+     paralelo.`paralelo` AS paralelo_paralelo,
+     paralelo.`est_reg` AS paralelo_est_reg
+FROM
+     `matricula` matricula INNER JOIN `rel_matri_doc` rel_matri_doc ON matricula.`id` = rel_matri_doc.`id_matricula`
+     INNER JOIN `documento` documento ON rel_matri_doc.`id_documento` = documento.`id`
+     INNER JOIN `alumno` alumno ON matricula.`id_alumno` = alumno.`id`
+     INNER JOIN `periodo` periodo ON matricula.`id_periodo` = periodo.`id`
+     INNER JOIN `paralelo` paralelo ON matricula.`id_paralelo` = paralelo.`id`]]>
+	</queryString>
+	<field name="matricula_id" class="java.lang.Integer"/>
+	<field name="matricula_f_mat" class="java.sql.Date"/>
+	<field name="matricula_h_mat" class="java.sql.Time"/>
+	<field name="matricula_est_reg" class="java.lang.String"/>
+	<field name="matricula_cant_doc_recib" class="java.lang.Integer"/>
+	<field name="matricula_edad" class="java.lang.Integer"/>
+	<field name="matricula_id_alumno" class="java.lang.Integer"/>
+	<field name="matricula_id_periodo" class="java.lang.Integer"/>
+	<field name="matricula_id_paralelo" class="java.lang.Integer"/>
+	<field name="rel_matri_doc_id" class="java.lang.Integer"/>
+	<field name="rel_matri_doc_id_matricula" class="java.lang.Integer"/>
+	<field name="rel_matri_doc_id_documento" class="java.lang.Integer"/>
+	<field name="rel_matri_doc_entregado" class="java.lang.String"/>
+	<field name="rel_matri_doc_est_reg" class="java.lang.String"/>
+	<field name="documento_id" class="java.lang.Integer"/>
+	<field name="documento_documento" class="java.lang.String"/>
+	<field name="documento_est_reg" class="java.lang.String"/>
+	<field name="alumno_id" class="java.lang.Integer"/>
+	<field name="alumno_cedula" class="java.lang.String"/>
+	<field name="alumno_apellidos" class="java.lang.String"/>
+	<field name="alumno_nombres" class="java.lang.String"/>
+	<field name="periodo_id" class="java.lang.Integer"/>
+	<field name="periodo_periodo" class="java.lang.String"/>
+	<field name="periodo_est_reg" class="java.lang.String"/>
+	<field name="paralelo_id" class="java.lang.Integer"/>
+	<field name="paralelo_paralelo" class="java.lang.String"/>
+	<field name="paralelo_est_reg" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="1a9ba40f-d787-4717-a884-f8298d9003c6" x="152" y="42" width="273" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[Alamos Norte Av Base Sur y Tiwinza Mz 25 Solar 5]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="e883ce12-c6e6-41d2-ac71-0939039c7b91" x="31" y="0" width="83" height="79"/>
+				<imageExpression><![CDATA["C:\\Users\\Antonio\\Documents\\NetBeansProjects\\Manitas_Traviesas\\src\\imagenes\\Logo_Rep_Matri.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="915cdb16-eff7-4c7d-ad56-fa61d93445f4" x="185" y="0" width="194" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Centro de Educación Inicial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="24299de5-149d-4105-a84a-d5f27dcdea94" x="197" y="20" width="182" height="22"/>
+				<textElement>
+					<font fontName="Arial" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA["Manitos Traviesas"]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="9443096c-9d27-4373-ad76-10bd7c35289d" x="0" y="41" width="100" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Apellidos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="50964e30-e32e-4960-8256-8df8b4ba3cf2" x="185" y="41" width="100" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombres]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f2ab7a1c-114d-40eb-9f88-8545bd8b0726" x="363" y="41" width="100" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Documentos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="018bbbfa-d21d-49bb-96c2-b4243d1bf13c" x="0" y="0" width="60" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Paralelo:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="8e27ac5a-2117-4090-8ae3-bc3e995d2016" x="78" y="0" width="171" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{paralelo_paralelo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement uuid="606da4e7-c1aa-4a1a-bc8c-d5938f119649" x="0" y="0" width="165" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alumno_apellidos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ff8f45e1-7d72-4929-8099-f65b2ba65bd1" x="185" y="0" width="165" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alumno_nombres}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="0b540ebf-645d-41d4-a7ad-b8f5a24ff97a" x="363" y="0" width="192" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{documento_documento}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="555" pageHeight="802" columnWidth="535" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="4808b344-155f-45ef-87cb-b64caa2dfb6c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="cd_prl" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+     matricula.`id` AS matricula_id,
+     matricula.`f_mat` AS matricula_f_mat,
+     matricula.`est_reg` AS matricula_est_reg,
+     matricula.`cant_doc_recib` AS matricula_cant_doc_recib,
+     matricula.`id_alumno` AS matricula_id_alumno,
+     matricula.`id_periodo` AS matricula_id_periodo,
+     matricula.`id_paralelo` AS matricula_id_paralelo,
+     paralelo.`id` AS paralelo_id,
+     paralelo.`paralelo` AS paralelo_paralelo,
+     paralelo.`est_reg` AS paralelo_est_reg,
+     alumno.`id` AS alumno_id,
+     alumno.`cedula` AS alumno_cedula,
+     alumno.`apellidos` AS alumno_apellidos,
+     alumno.`nombres` AS alumno_nombres,
+     alumno.`direccion` AS alumno_direccion,
+     alumno.`sexo` AS alumno_sexo,
+     alumno.`fecha_nac` AS alumno_fecha_nac,
+     alumno.`lug_nac` AS alumno_lug_nac,
+     alumno.`vive_padres` AS alumno_vive_padres,
+     alumno.`nacionalidad` AS alumno_nacionalidad,
+     alumno.`observaciones` AS alumno_observaciones,
+     alumno.`est_reg` AS alumno_est_reg,
+     rel_matri_doc.`id` AS rel_matri_doc_id,
+     rel_matri_doc.`id_matricula` AS rel_matri_doc_id_matricula,
+     rel_matri_doc.`id_documento` AS rel_matri_doc_id_documento,
+     rel_matri_doc.`entregado` AS rel_matri_doc_entregado,
+     rel_matri_doc.`est_reg` AS rel_matri_doc_est_reg,
+     documento.`id` AS documento_id,
+     documento.`documento` AS documento_documento,
+     documento.`est_reg` AS documento_est_reg
+FROM
+     `paralelo` paralelo INNER JOIN `matricula` matricula ON paralelo.`id` = matricula.`id_paralelo`
+     INNER JOIN `alumno` alumno ON matricula.`id_alumno` = alumno.`id`
+     INNER JOIN `rel_matri_doc` rel_matri_doc ON matricula.`id` = rel_matri_doc.`id_matricula`
+     INNER JOIN `documento` documento ON rel_matri_doc.`id_documento` = documento.`id`
+WHERE
+     matricula.`id_paralelo` = $P!{cd_prl}
+ AND rel_matri_doc.`entregado` = 'N'
+ AND rel_matri_doc.`est_reg` = 'A'
+ AND matricula.`est_reg` = 'A']]>
+	</queryString>
+	<field name="matricula_id" class="java.lang.Integer"/>
+	<field name="matricula_f_mat" class="java.sql.Date"/>
+	<field name="matricula_est_reg" class="java.lang.String"/>
+	<field name="matricula_cant_doc_recib" class="java.lang.Integer"/>
+	<field name="matricula_id_alumno" class="java.lang.Integer"/>
+	<field name="matricula_id_periodo" class="java.lang.Integer"/>
+	<field name="matricula_id_paralelo" class="java.lang.Integer"/>
+	<field name="paralelo_id" class="java.lang.Integer"/>
+	<field name="paralelo_paralelo" class="java.lang.String"/>
+	<field name="paralelo_est_reg" class="java.lang.String"/>
+	<field name="alumno_id" class="java.lang.Integer"/>
+	<field name="alumno_cedula" class="java.lang.String"/>
+	<field name="alumno_apellidos" class="java.lang.String"/>
+	<field name="alumno_nombres" class="java.lang.String"/>
+	<field name="alumno_direccion" class="java.lang.String"/>
+	<field name="alumno_sexo" class="java.lang.String"/>
+	<field name="alumno_fecha_nac" class="java.sql.Date"/>
+	<field name="alumno_lug_nac" class="java.lang.String"/>
+	<field name="alumno_vive_padres" class="java.lang.String"/>
+	<field name="alumno_nacionalidad" class="java.lang.Integer"/>
+	<field name="alumno_observaciones" class="java.lang.String"/>
+	<field name="alumno_est_reg" class="java.lang.String"/>
+	<field name="rel_matri_doc_id" class="java.lang.Integer"/>
+	<field name="rel_matri_doc_id_matricula" class="java.lang.Integer"/>
+	<field name="rel_matri_doc_id_documento" class="java.lang.Integer"/>
+	<field name="rel_matri_doc_entregado" class="java.lang.String"/>
+	<field name="rel_matri_doc_est_reg" class="java.lang.String"/>
+	<field name="documento_id" class="java.lang.Integer"/>
+	<field name="documento_documento" class="java.lang.String"/>
+	<field name="documento_est_reg" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="103" splitType="Stretch">
+			<image>
+				<reportElement uuid="e883ce12-c6e6-41d2-ac71-0939039c7b91" x="80" y="24" width="83" height="79"/>
+				<imageExpression><![CDATA["C:\\Users\\Antonio\\Documents\\NetBeansProjects\\Manitas_Traviesas\\src\\imagenes\\Logo_Rep_Matri.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement uuid="915cdb16-eff7-4c7d-ad56-fa61d93445f4" x="190" y="37" width="194" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Centro de Educación Inicial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1a9ba40f-d787-4717-a884-f8298d9003c6" x="166" y="79" width="273" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial"/>
+				</textElement>
+				<text><![CDATA[Alamos Norte Av Base Sur y Tiwinza Mz 25 Solar 5]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="24299de5-149d-4105-a84a-d5f27dcdea94" x="202" y="57" width="182" height="22"/>
+				<textElement>
+					<font fontName="Arial" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA["Manitos Traviesas"]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="ca494706-c03f-4a02-921b-351c079ac320" x="43" y="15" width="80" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Paralelo:]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="e6a4ed42-4bb5-4bb4-8c1f-3f708511f038" x="143" y="15" width="176" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{paralelo_paralelo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="7fbad891-45ac-46e9-a306-349439923e27" x="43" y="18" width="100" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Apellidos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="8408f0f3-c8a4-4add-9c43-20ff5fc6a7d7" x="192" y="18" width="100" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nombres]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2ecfde40-79d7-4d2b-9d59-631c7c527462" x="353" y="18" width="198" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Documentos por entregar]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement uuid="f329c66e-e35c-467f-bbab-2b5dc77909c6" x="43" y="0" width="138" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alumno_apellidos}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="3dbcf0d6-b821-4c2d-a5fe-12af2176b93d" x="192" y="0" width="138" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alumno_nombres}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="1e69b4a3-e5ec-484e-9cf5-eaaf55d967f3" x="345" y="0" width="167" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{documento_documento}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="47" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="158"/>
+	</summary>
+</jasperReport>
