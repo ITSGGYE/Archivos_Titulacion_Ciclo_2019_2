@@ -1,0 +1,66 @@
+body{
+  background: url(../img/fondo-2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  margin-bottom: 70px;
+   margin-right: 10px;
+
+}
+.btn-lg{
+    background-color:#033FFA;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 93px;
+    padding-left: 93px;
+    
+
+}
+
+.btn-only{
+    margin-top: 200px;
+     margin-left: 100px;
+
+}
+
+.btn-primary{
+   background-color:#033FFA;
+    
+    width: 135px;
+    height: 40px;
+
+   padding-bottom: 20px;
+   padding-left: 5px;
+   padding-right: 25px;
+   margin-left: 50px;
+   margin-top: 0px;
+
+}
+.float-left{
+   width: 150px;
+   height: 150px;
+   padding-bottom: 20px;
+   padding-left: 5px;
+   padding-right: 25px;
+   margin-left: 50px;
+   margin-top: 100px;
+}
+
+
+------------------------------
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />	
+	  <title>Diagnosis</title>
+	<link  rel="icon"   href="../estilos/img/fondo-login.png" type="image/png" />
+	<link href = "diagnostico.css" rel="stylesheet"/>
+	<script src = "secuencia1234.js"></script>
+	<script src = "voz123.js"></script>
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+<nav class="navbar navbar-dark bg-dark" >
+<a class="navbar-brand" href="../index.php">Start</a>
+<a class="navbar-brand" href="../abecedario.php">Alphabet</a>
+<a class="navbar-brand" href="../numeros.php">Numbers</a>
+<a class="navbar-brand" href="../colors.php">Colors</a>
+<a class="navbar-brand" href="../diagnostico/index.html">Diagnosis</a>
+
+
+    <a  style=" color: #fff;">
+  <span class="mr-2 d-none d-lg-inline text-gray-600 small">
+  <font style="vertical-align: inherit; margin-left: 420px;border-bottom-width: 10px;padding-bottom: 10px;color: #fff;">Student</font></font></span>
+<img class="img-profile rounded-circle" src="../estilos/img/fondo-login.png" style="width: 35px">
+              </a>
+<div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown" style="margin-left: 720px;background-color: #9DA0F9">
+          
+                <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="login.php" secuencia1234-toggle="modal" secuencia1234-target="#logoutModal" > 
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div>
+<button type="button" class="btn btn-success" onclick="location.href='../../cerrarsesion.php'">Logout</a></button>  </nav>
+</div>
+<body>
+
+	<div id = "page-selector" class = "page center" current>
+		<div class = "top">
+			<div>Choose a category</div>
+			
+		</div>
+		<div class = "content">
+			<div id = "abecedario123" class = "group">Alphabet / abecedario</div>
+			<div id = "numbers" class = "group">Numbers / Los números</div>
+			<div id = "colors" class = "group">Colors / Colores</div>
+			
+					
+		</div>
+	</div>
+
+	<div id = "page-card" class = "page center">
+		<div id = "option" class = "top">
+			
+		</div>	
+		
+		<div class = "content">
+			<div id = "word"></div>
+		
+			<div id = "image"></div>
+			<div id = "answer"></div>					
+		</div>		
+		
+		<div id = "button"></div>
+	</div>
+</body>
+</html>
